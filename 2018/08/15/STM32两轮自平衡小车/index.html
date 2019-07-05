@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>STM32两轮自平衡小车 | love421博客</title>
+  
+  
+
+  
+  <link rel="alternate" href="/atom.xml" title="love421博客">
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1de4410ogb66l0417en15dc65oc.png">
+  
+
+  
+    <link rel="stylesheet" href="/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+  <link rel="stylesheet" href="/live2d/css/live2d.css">
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <h1 class='title'>love421</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-home fa-fw'></i>&nbsp;首页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/archives/"
+            
+              rel="nofollow"
+            
+            
+            id="archives">
+            <i class='fas fa-archive fa-fw'></i>&nbsp;归档
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/categories/"
+            
+              rel="nofollow"
+            
+            
+            id="categories">
+            <i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/tags/"
+            
+              rel="nofollow"
+            
+            
+            id="tags">
+            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于我
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+    </cover>
+    <header class="l_header material">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="material"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          love421博客
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-home fa-fw'></i>&nbsp;首页
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-tags fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-home fa-fw'></i>&nbsp;首页
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/atom.xml"
+                
+                
+                id="atom.xml">
+								<i class='fas fa-rss fa-fw'></i>&nbsp;订阅
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/categories/"
+                
+                  rel="nofollow"
+                
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
+                
+                  rel="nofollow"
+                
+                
+                id="tags">
+								<i class='fas fa-tags fa-fw'></i>&nbsp;标签
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/about/"
+                
+                  rel="nofollow"
+                
+                
+                id="about">
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于我
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2018/08/15/STM32两轮自平衡小车/">
+        STM32两轮自平衡小车
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="http://www.makedreamsir.xyz" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>love421</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2018-08-15</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/电子DIY/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>电子DIY</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p>
+<a id="more"></a>
+
+<h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。
+
+<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p>
+<h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p>
+<p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p>
+<p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p>
+<p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p>
+<p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p>
+<p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p>
+<p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p>
+</font>
+
+<hr>
+<p><strong>最后附上安装文件：</strong></p>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p>
+<p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>
+
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-03T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>最后更新于 Jul 3, 2019</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/STM32/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>STM32</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/平衡车/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>平衡车</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.makedreamsir.xyz/2018/08/15/STM32两轮自平衡小车/&title=STM32两轮自平衡小车 | love421博客&summary=毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.makedreamsir.xyz/2018/08/15/STM32两轮自平衡小车/&title=STM32两轮自平衡小车 | love421博客&summary=毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3aMXLjMBAEQP//076qiy440TO7gOSgGalUIolGAKwG+/UVX99/r38/P1+v7k2e/Oo3z89ZXXh4eHijoT8P9Hno7V35vbMpxsPDw3sPb7YZvGK01FdvmW0heHh4eL+HlxS7z5tHjtmMBw8PD++38WYxRL4x5CU1Hh4e3md5bTTQBqz50M9OMR4eHt4N3uwA7LOfr5/v4eHh4Y1O1WeHYbO4oY13o9Hi4eHhXeA9DyL/w7851mpbCpK7otfj4eHhrXntkp0EuMn3m8gjeg4eHh7eBV5yWJUMK/9NmyTkG0a0PeDh4eGtebMQYVNY54wDjQV4eHh4b+TVf/vjUnu2JcxaFvDw8PDez5uV2vc6HZINptgY8PDw8Erepi21Xfo3gcWwBQEPDw/vGq+NJJKWrLYU3gQQL8F4eHh413jtxpCX1LNGrnaiD+97eHh4eHGOeu/Ivx1ijizKejw8PLxDvPyG/Ogrn6y2jaAeIR4eHt41Xrv4zo7/ZyV1/t7//BIPDw/vAq+NA04V3/nSn0fJP4wBDw8P7xCvzS02cW3bnrWPkvHw8PBu8A784R+1auVxbV7ER6d8eHh4eEd5SSSRL9mzLWRDimIIPDw8vDUvH0TbBLApnZOpL3rK8PDw8I7yNtFq+4RZC1c7oUVKjYeHhzfitcVuXjpvpiyf1h+CDDw8PLwP8fJHt0t8XRa3z8TDw8O7wJvd0IYRM96pwAIPDw/vLO+7vJKBthvM2WnFw8PDu82bHcnnsewMmb83PxjDw8PDO8ubRbQ5JimXk8ijbWvAw8PDu83LF+UkDmgnpW1TKLIWPDw8vI/y8g1j08KVhwvR0RceHh7eL+BtFvQ26j1QmuPh4eFd47UNWO3x2KZ9Kp+4AzEuHh4e3rUDsPaVs+aATcyBh4eHd4H3ByQeK/D6267HAAAAAElFTkSuQmCC'>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://www.makedreamsir.xyz/2018/08/15/STM32两轮自平衡小车/&title=STM32两轮自平衡小车 | love421博客&summary=毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3aMXLjMBAEQP//076qiy440TO7gOSgGalUIolGAKwG+/UVX99/r38/P1+v7k2e/Oo3z89ZXXh4eHijoT8P9Hno7V35vbMpxsPDw3sPb7YZvGK01FdvmW0heHh4eL+HlxS7z5tHjtmMBw8PD++38WYxRL4x5CU1Hh4e3md5bTTQBqz50M9OMR4eHt4N3uwA7LOfr5/v4eHh4Y1O1WeHYbO4oY13o9Hi4eHhXeA9DyL/w7851mpbCpK7otfj4eHhrXntkp0EuMn3m8gjeg4eHh7eBV5yWJUMK/9NmyTkG0a0PeDh4eGtebMQYVNY54wDjQV4eHh4b+TVf/vjUnu2JcxaFvDw8PDez5uV2vc6HZINptgY8PDw8Erepi21Xfo3gcWwBQEPDw/vGq+NJJKWrLYU3gQQL8F4eHh413jtxpCX1LNGrnaiD+97eHh4eHGOeu/Ivx1ijizKejw8PLxDvPyG/Ogrn6y2jaAeIR4eHt41Xrv4zo7/ZyV1/t7//BIPDw/vAq+NA04V3/nSn0fJP4wBDw8P7xCvzS02cW3bnrWPkvHw8PBu8A784R+1auVxbV7ER6d8eHh4eEd5SSSRL9mzLWRDimIIPDw8vDUvH0TbBLApnZOpL3rK8PDw8I7yNtFq+4RZC1c7oUVKjYeHhzfitcVuXjpvpiyf1h+CDDw8PLwP8fJHt0t8XRa3z8TDw8O7wJvd0IYRM96pwAIPDw/vLO+7vJKBthvM2WnFw8PDu82bHcnnsewMmb83PxjDw8PDO8ubRbQ5JimXk8ijbWvAw8PDu83LF+UkDmgnpW1TKLIWPDw8vI/y8g1j08KVhwvR0RceHh7eL+BtFvQ26j1QmuPh4eFd47UNWO3x2KZ9Kp+4AzEuHh4e3rUDsPaVs+aATcyBh4eHd4H3ByQeK/D6267HAAAAAElFTkSuQmCC'>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+        
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/2019/06/03/frp内网穿透/" rel="prev" title="自用frp服务器分享及客户端配置连接教程">
+                                  
+                                      自用frp服务器分享及客户端配置连接教程
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/frp/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>frp</a> <a class="tag" href="/tags/内网穿透/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>内网穿透</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'STM32两轮自平衡小车',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content material'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1de42c3h9dl99uds5o1h8ha0oa.jpg'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+          <h2>love421博客</h2>
+        
+        
+        
+          <!-- <p><span id="jinrishici-sentence">dagd</span></p> -->
+          <!-- <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script> -->
+
+          <div id="chakhsu" style="text-align: center; color: #ee0beeea;"></div>    
+          <script>var chakhsu = function (r) {    
+                  function t() {    
+                      return b[Math.floor(Math.random() * b.length)]    
+                  }    
+                  function e() {    
+                      return String.fromCharCode(94 * Math.random() + 33)    
+                  }    
+                  function n(r) {    
+                      for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {    
+                          var l = document.createElement("span");    
+                          l.textContent = e(), l.style.color = t(), n.appendChild(l)    
+                      }    
+                      return n    
+                  }    
+                  function i() {    
+                      var t = o[c.skillI];    
+                      c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)    
+                  }    
+                  /*以下内容自定义修改*/    
+                  var l = "",    
+                      o = ["尚未佩妥剑，转眼便江湖。","愿历尽千帆，归来仍是少年。" ].map(function (r) {    
+                          return r + ""    
+                      }), a = 2, g = 1, s = 5, d = 75,    
+                      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],    
+                      c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g};    
+                  i()    
+              };    
+              chakhsu(document.getElementById('chakhsu'));</script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=makedreamsir@foxmail.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/love421"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=626963382&site=qq&menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://blog.csdn.net/qq_37449342"
+              class="social fab fa-cuttlefish flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://www.jianshu.com/u/f636eed07847"
+              class="social fas fa-book flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、硬件介绍"><span class="toc-text">一、硬件介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、主控板资源介绍"><span class="toc-text">二、主控板资源介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、软件介绍"><span class="toc-text">三、软件介绍</span></a></li></ol>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/atom.xml" href="/atom.xml"
+          
+          
+          id="atom.xml">
+          
+            <i class="fas fa-rss fa-fw" aria-hidden="true"></i>
+          
+          订阅
+        </a></li>
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于我
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget category'>
+    
+<header class='material'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/frp内网穿透/" href="/categories/frp内网穿透/"><div class='name'>frp内网穿透</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/电子DIY/" href="/categories/电子DIY/"><div class='name'>电子DIY</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/黑群晖/" href="/categories/黑群晖/"><div class='name'>黑群晖</div><div class='badge'>(3)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/PVE虚拟机/" style="font-size: 14px; color: #999">PVE虚拟机</a> <a href="/tags/SSH/" style="font-size: 19px; color: #777">SSH</a> <a href="/tags/STM32/" style="font-size: 14px; color: #999">STM32</a> <a href="/tags/frp/" style="font-size: 14px; color: #999">frp</a> <a href="/tags/内网穿透/" style="font-size: 14px; color: #999">内网穿透</a> <a href="/tags/平衡车/" style="font-size: 14px; color: #999">平衡车</a> <a href="/tags/黑群晖/" style="font-size: 24px; color: #555">黑群晖</a>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            <section class='widget plain'>
+  
+<header class='material'>
+  <div><i class="fas fa-file-signature fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;IP签名图</div>
+  
+</header>
+
+  <div class='content material'>
+    <p><img src="http://sign.dy208.cn/?s=ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJ56YCg5qKmU2ly" alt=""></p>
+
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            <section class='widget plain'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-marked-alt fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;访客地图</div>
+  
+</header>
+
+  <div class='content material'>
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/4.js?i=50359f47dmh&amp;m=0&amp;h=102&amp;c=ff0000&amp;r=0" async="async"></script>
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+
+
+  <section class='widget music'>
+    
+<header class='material'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/user/home?id=375060996"
+    title="https://music.163.com/#/user/home?id=375060996">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="530945372"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=makedreamsir@foxmail.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/love421"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=626963382&amp;site=qq&amp;menu=yes"
+            class="social fab fa-qq flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://blog.csdn.net/qq_37449342"
+            class="social fab fa-cuttlefish flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://www.jianshu.com/u/f636eed07847"
+            class="social fas fa-book flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <!-- <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div> -->
+  <div>
+
+      &copy; 2019 love421
+      <span>  |  </span>
+
+      <!-- </div> -->
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date(); 
+        function createtime() { 
+            var grt= new Date("06/18/2019 17:38:00");//在此处修改你的建站时间
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 "; 
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        } 
+    setInterval("createtime()",250);
+    </script>
+    <span>  |  </span>
+    <i class="fas fa-chart-area"></i>
+    <span class="post-count">字数统计：2.9k</span>
+    <span>  |  </span>
+    <!-- 本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题 -->
+    
+      <!-- ， -->
+      <i class="fas fa-street-view"></i>
+      访问人数为 
+      <span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      人
+      <span>|</span>
+      <i class="fas fa-eye"></i>
+      总访问量为
+      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+      次
+    
+    <!-- 。 -->
+  </div>
+  <!-- <div class="footer-left"> -->
+  
+    <!-- 血小板 -->
+  <div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="560" height="500" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+  </div>
+</footer>
+<script>setLoadingBarProgress(80);</script>
+
+<!-- live2d 血小板 -->
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = 'https://haremu.com/'
+</script>
+<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/live2d/model/xiaoban/model.json");
+</script>
+
+
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1de4ba52s1l29qakmtcneeijsa.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1de4ba52s1l29qakmtcneeijsa.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "5HWR27qFV7yMiriS8LgIEjnh-gzGzoHsz",
+    appKey: "rStwDfntgBJjqxu2A4lEMrwj",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
+
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>

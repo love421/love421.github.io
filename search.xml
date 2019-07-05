@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>去掉登录SSH时候提示&quot;The remote SSH server rejected X11 forwarding request&quot;警告</title>
+      <link href="/2019/07/04/%E5%8E%BB%E6%8E%89%E7%99%BB%E5%BD%95SSH%E8%AD%A6%E5%91%8A/"/>
+      <url>/2019/07/04/%E5%8E%BB%E6%8E%89%E7%99%BB%E5%BD%95SSH%E8%AD%A6%E5%91%8A/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 登录SSH的时候，我们总是会看到一个警告，具体如下：</p><p><img src="https://static.dy208.cn/o_1deu2a1m819v81mns10st1f7c92ka.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 在隧道设置中将<code>转发X11连接到(X)</code>的勾选去掉，然后确定保存即可解决。</p><p><strong>操作步骤如下图：</strong></p><p><img src="https://static.dy208.cn/o_1deu2ij5p1ddvp1h16br9av1vd6a.png" alt></p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1deu2nnun11c21rs7198tn69105ca.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 黑群晖 </tag>
+            
+            <tag> SSH </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决黑群晖DSM5.2系统SSH连接自动断开问题</title>
+      <link href="/2019/07/03/%E8%A7%A3%E5%86%B3DSM5.2%E7%9A%84SSH%E7%99%BB%E5%BD%95%E4%B8%8D%E4%B8%8A%E5%8E%BB/"/>
+      <url>/2019/07/03/%E8%A7%A3%E5%86%B3DSM5.2%E7%9A%84SSH%E7%99%BB%E5%BD%95%E4%B8%8D%E4%B8%8A%E5%8E%BB/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 新装的群辉<code>DSM5.2</code>刚打开<code>SSH</code>功能，刚连上去就自动断开了，报错如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Connecting to 192.168.0.81:22...</span><br><span class="line">Connection established.</span><br><span class="line">To escape to local shell, press &apos;Ctrl+Alt+]&apos;.</span><br><span class="line">Your account has expired; please contact your system administrator</span><br><span class="line">Connection closing...Socket close.</span><br><span class="line"></span><br><span class="line">Connection closed by foreign host.</span><br><span class="line"></span><br><span class="line">Disconnected from remote host(work_NAS) at 16:03:17.</span><br><span class="line"></span><br><span class="line">Type `help&apos; to learn how to use Xshell prompt.</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> 登录群辉桌面，然后将<code>admin</code>账号启用，通过<code>admin</code>账号登录<code>SSH</code>就不会有问题了！</p><p><strong>操作步骤如下图：</strong></p><p><img src="https://static.dy208.cn/o_1deu20bf719rc11n913of12jk1jdca.png" alt></p><p><strong>最终效果如下：</strong> </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Connecting to 192.168.0.81:22...</span><br><span class="line">Connection established.</span><br><span class="line">To escape to local shell, press &apos;Ctrl+Alt+]&apos;.</span><br><span class="line"></span><br><span class="line">WARNING! The remote SSH server rejected X11 forwarding request.</span><br><span class="line">Could not chdir to home directory /var/services/homes/admin: No such file or directory</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">BusyBox v1.16.1 (2016-04-26 17:25:22 CST) built-in shell (ash)</span><br><span class="line">Enter &apos;help&apos; for a list of built-in commands.</span><br><span class="line"></span><br><span class="line">love421_NAS&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 黑群晖 </tag>
+            
+            <tag> SSH </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PVE虚拟机下安装黑群晖</title>
+      <link href="/2019/07/02/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8B%E5%AE%89%E8%A3%85%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+      <url>/2019/07/02/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8B%E5%AE%89%E8%A3%85%E9%BB%91%E7%BE%A4%E6%99%96/</url>
+      
+        <content type="html"><![CDATA[<p><strong>星际蜗牛PVE虚拟机下安装黑群晖系统DSM_DS3615xs_5.2</strong></p><a id="more"></a><!-- **PVE虚拟机下安装黑群晖大致分为iso引导和img引导两种方式** --><h2 id="一、PVE创建虚拟机"><a href="#一、PVE创建虚拟机" class="headerlink" title="一、PVE创建虚拟机"></a>一、PVE创建虚拟机</h2><h3 id="1-浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面"><a href="#1-浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面" class="headerlink" title="1.浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面"></a>1.浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面</h3><p><img src="https://static.dy208.cn/o_1der4tig01mqnc4k12v829b1pg6a.png" alt></p><h3 id="2-点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传"><a href="#2-点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传" class="headerlink" title="2.点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传"></a>2.点击左侧边栏<code>local</code>，选择<code>上传</code>，将iso后缀名的引导文件选中<code>上传</code></h3><p><img src="https://static.dy208.cn/o_1der5p5b9uefudn1kefb001ndua.png" alt></p><h3 id="3-点击右上角创建虚拟机，弹出创建虚拟机对话框"><a href="#3-点击右上角创建虚拟机，弹出创建虚拟机对话框" class="headerlink" title="3.点击右上角创建虚拟机，弹出创建虚拟机对话框"></a>3.点击右上角<code>创建虚拟机</code>，弹出创建虚拟机对话框</h3><p><img src="https://static.dy208.cn/o_1der58pfeumh10ak29j1u13kfa.png" alt></p><h3 id="4-记住VM-ID，并输入虚拟机名称，点击下一步"><a href="#4-记住VM-ID，并输入虚拟机名称，点击下一步" class="headerlink" title="4.记住VM ID，并输入虚拟机名称，点击下一步"></a>4.记住<code>VM ID</code>，并输入虚拟机名称，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der5fpivsg11fjh1rhh1j7e1ge6a.png" alt></p><h3 id="5-选择ISO映像文件，点击下一步"><a href="#5-选择ISO映像文件，点击下一步" class="headerlink" title="5.选择ISO映像文件，点击下一步"></a>5.选择ISO映像文件，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der5sq29138h6ffuappi1lhha.png" alt></p><h3 id="6-设置磁盘大小，点击下一步"><a href="#6-设置磁盘大小，点击下一步" class="headerlink" title="6.设置磁盘大小，点击下一步"></a>6.设置磁盘大小，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der62ujpkqf1pl41k631p3012pka.png" alt></p><h3 id="7-设置CPU核心数，点击下一步"><a href="#7-设置CPU核心数，点击下一步" class="headerlink" title="7.设置CPU核心数，点击下一步"></a>7.设置CPU核心数，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der66b6j6q41s211fls1nthhk7a.png" alt></p><h3 id="8-设置虚拟机运行内存，点击下一步"><a href="#8-设置虚拟机运行内存，点击下一步" class="headerlink" title="8.设置虚拟机运行内存，点击下一步"></a>8.设置虚拟机运行内存，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der68iig1qm6kl5kp21hqn1ptua.png" alt></p><h3 id="9-设置虚拟机网口模型Intel-E1000，点击下一步"><a href="#9-设置虚拟机网口模型Intel-E1000，点击下一步" class="headerlink" title="9.设置虚拟机网口模型Intel E1000，点击下一步,"></a>9.设置虚拟机网口模型<code>Intel E1000</code>，点击<code>下一步</code>,</h3><p><img src="https://static.dy208.cn/o_1der6mf681r8k3v51p8g7h119eha.png" alt></p><h3 id="10-点击完成，可以看到右边侧栏多了一个虚拟机"><a href="#10-点击完成，可以看到右边侧栏多了一个虚拟机" class="headerlink" title="10.点击完成，可以看到右边侧栏多了一个虚拟机"></a>10.点击<code>完成</code>，可以看到右边侧栏多了一个虚拟机</h3><h2 id="二、安装黑群晖"><a href="#二、安装黑群晖" class="headerlink" title="二、安装黑群晖"></a>二、安装黑群晖</h2><h3 id="1-选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是-引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动"><a href="#1-选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是-引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动" class="headerlink" title="1.选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是,引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动"></a>1.选中刚刚创建的虚拟机，然后点击<code>选项</code>，将开机自启动修改成<code>是</code>,引导顺序修改成<code>CD-ROM</code>为第一个，KVM硬件虚拟化修改成<code>否</code>，最后电机右上角<code>启动</code></h3><p><img src="https://static.dy208.cn/o_1der70mi1eba1a6e1imhsdi1sa1a.png" alt></p><h3 id="2-点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置"><a href="#2-点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置" class="headerlink" title="2.点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置"></a>2.点击<code>控制台</code>查看启动信息，第一次启动<code>IP</code>一般是不对的，然后我们点击右上角<code>关机</code>旁边向下的三角，选择<code>重置</code></h3><h3 id="3-等待第二次引导完成，可以看到正确的IP地址"><a href="#3-等待第二次引导完成，可以看到正确的IP地址" class="headerlink" title="3.等待第二次引导完成，可以看到正确的IP地址"></a>3.等待第二次引导完成，可以看到正确的<code>IP</code>地址</h3><p><img src="https://static.dy208.cn/o_1der78s2cilp1g02nl616bj4fia.png" alt></p><h3 id="4-浏览器输入192-168-0-81-5000-可以看到如下图画面"><a href="#4-浏览器输入192-168-0-81-5000-可以看到如下图画面" class="headerlink" title="4.浏览器输入192.168.0.81:5000,可以看到如下图画面"></a>4.浏览器输入<code>192.168.0.81:5000</code>,可以看到如下图画面</h3><p><img src="https://static.dy208.cn/o_1der7dbvf1o9163m1eq21m2fjp5a.png" alt></p><h3 id="5-点击安装，出现如下图画面"><a href="#5-点击安装，出现如下图画面" class="headerlink" title="5.点击安装，出现如下图画面"></a>5.点击<code>安装</code>，出现如下图画面</h3><p><img src="https://static.dy208.cn/o_1der7fc2sa4m13931cnjbf1ehqa.png" alt></p><h3 id="6-将后缀名为-pat文件中，点击立即安装-会提示如下画面"><a href="#6-将后缀名为-pat文件中，点击立即安装-会提示如下画面" class="headerlink" title="6.将后缀名为.pat文件中，点击立即安装,会提示如下画面"></a>6.将后缀名为<code>.pat</code>文件中，点击<code>立即安装</code>,会提示如下画面</h3><p><img src="https://static.dy208.cn/o_1der7ojn51g6vmge1nf9r1p1p43a.png" alt></p><h3 id="7-勾选，然后点击确定，出现如下画面，静静等待安装完成"><a href="#7-勾选，然后点击确定，出现如下画面，静静等待安装完成" class="headerlink" title="7.勾选，然后点击确定，出现如下画面，静静等待安装完成"></a>7.勾选，然后点击<code>确定</code>，出现如下画面，静静等待安装完成</h3><p><img src="https://static.dy208.cn/o_1der7p55cr823goc1pa7q7b7a.jpg" alt></p><h3 id="8-等待安装完成之后，再次输入192-168-0-51，可以看到如下画面"><a href="#8-等待安装完成之后，再次输入192-168-0-51，可以看到如下画面" class="headerlink" title="8.等待安装完成之后，再次输入192.168.0.51，可以看到如下画面"></a>8.等待安装完成之后，再次输入<code>192.168.0.51</code>，可以看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der7udsa12irjfq1783vnv17v6a.png" alt></p><h3 id="9-输入账号admin，看到如下画面"><a href="#9-输入账号admin，看到如下画面" class="headerlink" title="9.输入账号admin，看到如下画面"></a>9.输入账号<code>admin</code>，看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der80se5ola1lh51j9kja41hq4a.png" alt></p><h3 id="10-点击下一步，看到如下画面"><a href="#10-点击下一步，看到如下画面" class="headerlink" title="10.点击下一步，看到如下画面"></a>10.点击<code>下一步</code>，看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der82i55ki12cja041uj2mfaa.png" alt></p><h3 id="11-设置服务器名称、用户名和密码点击下一步"><a href="#11-设置服务器名称、用户名和密码点击下一步" class="headerlink" title="11.设置服务器名称、用户名和密码点击下一步"></a>11.设置<code>服务器名称</code>、<code>用户名</code>和<code>密码</code>点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der88eag1ss2v67g1s127v62ba.png" alt></p><h3 id="12-点击跳过此步骤，出现对话框点击是-即可看到群辉桌面"><a href="#12-点击跳过此步骤，出现对话框点击是-即可看到群辉桌面" class="headerlink" title="12.点击跳过此步骤，出现对话框点击是,即可看到群辉桌面"></a>12.点击<code>跳过此步骤</code>，出现对话框点击<code>是</code>,即可看到群辉桌面</h3><p><img src="https://static.dy208.cn/o_1der8geqf1flk143d1m8j7vb1a3na.png" alt></p><p><font color="blue" size="5">至此，我们已经完成了在PVE虚拟机下安装黑群晖系统</font></p><hr><p><strong>最后附上安装文件：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>百度云分享链接：</strong><a href="https://pan.baidu.com/s/1GJUaJTma_Ra8BOyx9M9GAw" target="_blank" rel="noopener">https://pan.baidu.com/s/1GJUaJTma_Ra8BOyx9M9GAw</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>提取码：</strong><code>m3c6</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PVE虚拟机 </tag>
+            
+            <tag> 黑群晖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自用frp服务器分享及客户端配置连接教程</title>
+      <link href="/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <url>/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="What-is-frp"><a href="#What-is-frp" class="headerlink" title="What is frp?"></a>What is frp?</h1><p><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。</p><a id="more"></a><h2 id="一、免费的FRP服务器信息"><a href="#一、免费的FRP服务器信息" class="headerlink" title="一、免费的FRP服务器信息"></a>一、免费的FRP服务器信息</h2><p>FRP版本号：0.26.0 </p><p>连接地址为：<strong><a href="http://www.makedreamsirfrp.xyz:7000" target="_blank" rel="noopener">www.makedreamsirfrp.xyz:7000</a></strong></p><p>特权认证密码为：<strong>love421forever</strong></p><p>状态查询：<strong><a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></strong></p><p>查询帐号：<strong>love421</strong></p><p>查询帐号：<strong>love421</strong></p><p><font color="blue" size="5">默认http/https端口：<font color="red" size="6"><strong>80</strong></font>和<font color="red" size="6"><strong>433</strong></font></font></p><p>支持<strong>subdomain</strong>和<strong>custom_domains</strong></p><p><font color="blue" size="5">开放端口：<font color="red" size="6"><strong>全端口</strong></font></font></p><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deor57mchnd4ksp5t1hvcgeha.png" alt></p><h2 id="二、客户端配置详细步骤"><a href="#二、客户端配置详细步骤" class="headerlink" title="二、客户端配置详细步骤"></a>二、客户端配置详细步骤</h2><h3 id="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："><a href="#1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如：" class="headerlink" title="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："></a>1、<code>SSH</code>连接上内网主机后，使用<code>wget</code>指令下载对应服务器版本的frp<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">可执行文件</a>，例如：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.26.0/frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><h3 id="2、解压刚刚下载的可执行文件"><a href="#2、解压刚刚下载的可执行文件" class="headerlink" title="2、解压刚刚下载的可执行文件"></a>2、解压刚刚下载的可执行文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><h3 id="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"><a href="#3、刷新一下，cd到刚刚解压之后出现的文件夹目录下" class="headerlink" title="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"></a>3、刷新一下，<code>cd</code>到刚刚解压之后出现的文件夹目录下</h3><h3 id="4、打开frpc-ini文件，具体修改配置如下："><a href="#4、打开frpc-ini文件，具体修改配置如下：" class="headerlink" title="4、打开frpc.ini文件，具体修改配置如下："></a>4、打开<code>frpc.ini</code>文件，具体修改配置如下：</h3><p>最上面这一部分是必要的，无需任何改动，这部分主要是配置连接frp的服务器信息。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = www.makedreamsirfrp.xyz</span><br><span class="line">server_port = 7000</span><br><span class="line">token = love421forever</span><br></pre></td></tr></table></figure><p>下面举例说明常用的tcp、http、https映射：</p><h4 id="1-tcp映射举例说明："><a href="#1-tcp映射举例说明：" class="headerlink" title="(1)tcp映射举例说明："></a>(1)<code>tcp</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_SSH]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6666</span><br></pre></td></tr></table></figure><p>第一行：中括号中内容为映射名称，用以快速寻找区分众多的映射服务，每一个映射都要取一个名字，只支持英文，推荐命名形式：姓名简称_设备_服务，比如：<code>MDS_NAS_SSH</code>；</p><p>第二行：类型，因为你映射的是<code>ssh</code>端口，所以选择<code>tcp</code>，如果你要映射http服务或者<code>http</code>服务，那就填写对应的http或者https；</p><p>第三行：为你映射局域网内设备的<code>IP</code>地址，<code>127.0.0.1</code>代表的是本设备的内网ip地址；</p><p>第四行：本地端口号，例子中22端口为我<code>nas</code>的<code>ssh</code>端口号；</p><p>第五行：远端端口号，也就是映射成功之后你所用的端口号，可以自定义，开房的端口号是0到65535；</p><p>映射之后访问地址是<code>server_addr</code>固定不变的即：<code>www.makedreamsirfrp.xyz</code>，端口号是你刚刚自己填写的<code>local_port</code>即：<code>6666</code>。</p><h4 id="2-HTTP映射举例说明："><a href="#2-HTTP映射举例说明：" class="headerlink" title="(2)HTTP映射举例说明："></a>(2)<code>HTTP</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_5000]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 192.168.6.241</span><br><span class="line">local_port = 5000</span><br><span class="line">subdomain = nas 或者 custom_domains = 你自己的域名</span><br></pre></td></tr></table></figure><p>第一、二、三、四行类比tcp映射中所述；</p><p>第五行：如果你没有域名，那么你可以配置subdomain，你的访问地址将会是 <a href="http://nas.makedreamsirfrp.xyz" target="_blank" rel="noopener">http://nas.makedreamsirfrp.xyz</a>，如果你自己有域名，那么你可以配置<code>custom_domains</code>来绑定你自己的域名，你的访问地址将会是 <a href="http://你自己的域名" target="_blank" rel="noopener">http://你自己的域名</a>（你自己的域名需要添加一条CNAME解析记录解析到<code>www.makedreamsirfrp.xyz</code>）</p><h4 id="3-HTTPS映射跟http映射一样，例子如下："><a href="#3-HTTPS映射跟http映射一样，例子如下：" class="headerlink" title="(3)HTTPS映射跟http映射一样，例子如下："></a>(3)<code>HTTPS</code>映射跟<code>http</code>映射一样，例子如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_PVE]</span><br><span class="line">type = https</span><br><span class="line">local_ip = 192.168.6.179</span><br><span class="line">local_port = 8006</span><br><span class="line">subdomain = pve</span><br></pre></td></tr></table></figure><p>映射成功后访问的域名地址就是：<a href="https://pve.makedreamsirfrp.xyz" target="_blank" rel="noopener">https://pve.makedreamsirfrp.xyz</a></p><h3 id="5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。"><a href="#5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。" class="headerlink" title="5、修改之后保存，输入./frpc -c ./frpc.ini，如果看见此时在服务端会看到start proxy sucess字样，即连接成功。"></a>5、修改之后保存，输入<code>./frpc -c ./frpc.ini</code>，如果看见此时在服务端会看到<code>start proxy sucess</code>字样，即连接成功。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqj7suqlg1f3a1pqr4vo1jqna.png" alt></p><h3 id="6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。"><a href="#6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。" class="headerlink" title="6、接着按下ctrl+c结束任务，然后输入nohup ./frpc -c ./frpc.ini &amp;让任务在后台一直运行，看到nohub.out字样，就代表真成功了，然后按下ctrl+c。"></a>6、接着按下<code>ctrl+c</code>结束任务，然后输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让任务在后台一直运行，看到<code>nohub.out</code>字样，就代表真成功了，然后按下<code>ctrl+c</code>。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqmrpl130d1h5m1dj7km01mioa.png" alt></p><h3 id="7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"><a href="#7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息" class="headerlink" title="7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"></a>7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqpbfuvqh1l6816rvk7gha0a.png" alt></p><h3 id="8、这个时候我们登录frp服务器的dashboard查看我们的映射："><a href="#8、这个时候我们登录frp服务器的dashboard查看我们的映射：" class="headerlink" title="8、这个时候我们登录frp服务器的dashboard查看我们的映射："></a>8、这个时候我们登录frp服务器的dashboard查看我们的映射：</h3><p>地址：<a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></p><p>账号：love421</p><p>密码：love421</p><p><font color="red" size="5">注意事项：</font></p><p>1.如果当前frp已经在后台运行，而此时你想修改它，可以先修改配置保存，然后输入<code>ps -aux|grep frp| grep -v grep</code>查看进程号，如下图是<code>2739</code>，接着输入<code>kill -9 2739</code>杀掉正在运行的frp进程，最后再输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让修改之后的任务再后台运行。<br><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deosqou292fbj01hckb7o100da.png" alt><br>2.如果连接服务器失败的话，大多数原因是服务器和客户端版本不一致、token错误、端口被占用、泛域名也就是sudomain重复、映射名称被占用等，所以映射的时候命名最前面可以加个名字拼音首字母简称，不至于重复率太高。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> frp内网穿透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> frp </tag>
+            
+            <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>STM32两轮自平衡小车</title>
+      <link href="/2018/08/15/STM32%E4%B8%A4%E8%BD%AE%E8%87%AA%E5%B9%B3%E8%A1%A1%E5%B0%8F%E8%BD%A6/"/>
+      <url>/2018/08/15/STM32%E4%B8%A4%E8%BD%AE%E8%87%AA%E5%B9%B3%E8%A1%A1%E5%B0%8F%E8%BD%A6/</url>
+      
+        <content type="html"><![CDATA[<p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p><a id="more"></a><h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p><h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p><p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p><p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p><p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p><p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p><p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p><p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p></font><hr><p><strong>最后附上安装文件：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电子DIY </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> STM32 </tag>
+            
+            <tag> 平衡车 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
