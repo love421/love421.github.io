@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
+      <link href="/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/"/>
+      <url>/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SSL </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
       <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Tag: SSH | love421博客</title>
+  <title>解决github page自定义域名后实现https访问却不显示黑锁问题 | love421博客</title>
   
   
 
@@ -49,7 +49,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>love421</h1>
@@ -316,31 +316,12 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      
-<div class='l_main'>
+      <div class='l_main'>
   
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
+
   
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -349,11 +330,13 @@
     <div class="meta" id="header-meta">
       
         
-  <h2 class="title">
-    <a href="/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/">
-      解决Debian系统下普通用户无法访问root文件夹问题
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/2019/07/09/解决https开启不显示黑锁 /">
+        解决github page自定义域名后实现https访问却不显示黑锁问题
+      </a>
+    </h1>
+  
 
 
       
@@ -379,7 +362,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-05</p>
+    <p>2019-07-09</p>
   </a>
 </div>
 
@@ -389,9 +372,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/Debian/' rel="nofollow">
+    <a href='/categories/hexo/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Debian</p>
+      <p>hexo</p>
     </a>
   </div>
 
@@ -400,6 +383,19 @@
         
           
             
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
 
           
         
@@ -416,370 +412,184 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p>
-<p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p>
-      
-        <div class="readmore">
-          <a href="/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p>
+<p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p>
+<a id="more"></a>
+
+<p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p>
+<p><strong>最终效果如下：</strong> </p>
+<p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p>
+<p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>
+
         </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/SSH/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>SSH</a>
-        
-          <a href="/tags/debian/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>debian</a>
-        
-          <a href="/tags/Xftp/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>Xftp</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2019/07/05/解决权限未更改回去引起的问题/">
-      解决Permissions 0777 for '/root/.ssh/id_rsa' are too open问题
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
         
           
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://www.makedreamsir.xyz" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>love421</p>
-    </a>
-  </div>
 
 
-          
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
         
-          
-            <div class="new-meta-item date">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-10T15:27:56+08:00">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-05</p>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>最后更新于 Jul 10, 2019</p>
   </a>
 </div>
 
-          
+        
+      
         
           
-            
   
-  <div class='new-meta-item category'>
-    <a href='/categories/Debian/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Debian</p>
-    </a>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SSL/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>SSL</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/hexo/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>hexo</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁 /&title=解决github page自定义域名后实现https访问却不显示黑锁问题 | love421博客&summary=问题描述： 博客部署到github上并开启强制https访问之后，地址栏却没有看到熟悉的黑锁，点开可以看见描述您与此网站之间建立的连接并非完全安全，具体现象如下：
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁 /&title=解决github page自定义域名后实现https访问却不显示黑锁问题 | love421博客&summary=问题描述： 博客部署到github上并开启强制https访问之后，地址栏却没有看到熟悉的黑锁，点开可以看见描述您与此网站之间建立的连接并非完全安全，具体现象如下：
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvElEQVR42u3aQW7DMAwEwPz/0y3QU4HU1pKUUh/GpyCJbY0PorzU6xUfXz/H78/v31TPfT/ez8rvMjrw8PDwWkO/v+XV7ZPr5IO7+v/V1ZLHhIeHh3eOl9+s95/L28elpToePDw8vCfw7oeYg/O735cKPDw8vOfz9gYWk8KDh4eH9wReEiUkAUQSVezKXTdnLXh4eHgxr9cA+9/Px/t7eHh4eK0puDdBV8OLZFncHCEeHh7eAV51sZvErNXFd3UJXt6UgIeHh3eMN/l1smFrb+Txx/d4eHh4B3h5kUiC1Op0X12mJ9dv1kA8PDy8mJc3lvIW12SKr7a7Fq8EeHh4eFt5+Sv9ZFncG+jkOnh4eHjneL1wtho0TEpLvujHw8PD+zyvGiVUGXkc3Bvb4jp4eHh4m3jzG1cX2ZMtAtXmHB4eHt4J3q422HxLQfJr9Sw8PDy8E7y8TZVPwcmw8ibcZNsBHh4e3md4eYZRvX01/J0UoVe1LOLh4eG1ePN2VDXknRSD6DUADw8P7wBvEpv22l29slHNZi/7e3h4eHhjXvn1vtXIr4YX+Uauxa94eHh4B3h5dNsrGwk4jx5yGB4eHt45Xu8SeZOs18TKo5BF5oCHh4d3gJdP4ru2T00ihjwUjtb1eHh4eGNePrkXJuVWPNF7oKMuHx4eHl6Rd2IWnce11XbahiYgHh4eXjyeXgMsX+bmWwR6Zy3AeHh4eB/h9djVs/KFcnXmx8PDwzvH2zWhz5tevfKz2I6Ah4eHd4A3iRLyFloeKPS2ZG1oueHh4eEVedViUN2G1Qsg8oeFh4eH91+8fMqeLIjzRfm2LQt4eHh4D+BVl8vzjVZ5iIyHh4f3NF4Vkz+UvITcN94W/T08PDy8rbzqRJxHrtWpv7pBYVRt8PDw8Abd8966tFdIksLQC3abbDw8PLyU9w14duQp0bbhhgAAAABJRU5ErkJggg=='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁 /&title=解决github page自定义域名后实现https访问却不显示黑锁问题 | love421博客&summary=问题描述： 博客部署到github上并开启强制https访问之后，地址栏却没有看到熟悉的黑锁，点开可以看见描述您与此网站之间建立的连接并非完全安全，具体现象如下：
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvElEQVR42u3aQW7DMAwEwPz/0y3QU4HU1pKUUh/GpyCJbY0PorzU6xUfXz/H78/v31TPfT/ez8rvMjrw8PDwWkO/v+XV7ZPr5IO7+v/V1ZLHhIeHh3eOl9+s95/L28elpToePDw8vCfw7oeYg/O735cKPDw8vOfz9gYWk8KDh4eH9wReEiUkAUQSVezKXTdnLXh4eHgxr9cA+9/Px/t7eHh4eK0puDdBV8OLZFncHCEeHh7eAV51sZvErNXFd3UJXt6UgIeHh3eMN/l1smFrb+Txx/d4eHh4B3h5kUiC1Op0X12mJ9dv1kA8PDy8mJc3lvIW12SKr7a7Fq8EeHh4eFt5+Sv9ZFncG+jkOnh4eHjneL1wtho0TEpLvujHw8PD+zyvGiVUGXkc3Bvb4jp4eHh4m3jzG1cX2ZMtAtXmHB4eHt4J3q422HxLQfJr9Sw8PDy8E7y8TZVPwcmw8ibcZNsBHh4e3md4eYZRvX01/J0UoVe1LOLh4eG1ePN2VDXknRSD6DUADw8P7wBvEpv22l29slHNZi/7e3h4eHhjXvn1vtXIr4YX+Uauxa94eHh4B3h5dNsrGwk4jx5yGB4eHt45Xu8SeZOs18TKo5BF5oCHh4d3gJdP4ru2T00ihjwUjtb1eHh4eGNePrkXJuVWPNF7oKMuHx4eHl6Rd2IWnce11XbahiYgHh4eXjyeXgMsX+bmWwR6Zy3AeHh4eB/h9djVs/KFcnXmx8PDwzvH2zWhz5tevfKz2I6Ah4eHd4A3iRLyFloeKPS2ZG1oueHh4eEVedViUN2G1Qsg8oeFh4eH91+8fMqeLIjzRfm2LQt4eHh4D+BVl8vzjVZ5iIyHh4f3NF4Vkz+UvITcN94W/T08PDy8rbzqRJxHrtWpv7pBYVRt8PDw8Abd8966tFdIksLQC3abbDw8PLyU9w14duQp0bbhhgAAAABJRU5ErkJggg=='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+        
+        </a>
+      
+    
   </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure>
-      
-        <div class="readmore">
-          <a href="/2019/07/05/解决权限未更改回去引起的问题/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/SSH/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>SSH</a>
-        
-          <a href="/tags/Debian/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>Debian</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2019/07/04/去掉登录SSH警告/">
-      去掉登录SSH时候提示"The remote SSH server rejected X11 forwarding request"警告
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://www.makedreamsir.xyz" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>love421</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-04</p>
-  </a>
 </div>
 
-          
+
+
         
-          
-            
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/" rel="prev" title="解决Debian系统下普通用户无法访问root文件夹问题">
+                                    
+                                        解决Debian系统下普通用户无法访问root文件夹问题
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/SSH/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>SSH</a> <a class="tag" href="/tags/debian/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>debian</a> <a class="tag" href="/tags/Xftp/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>Xftp</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
   
-  <div class='new-meta-item category'>
-    <a href='/categories/黑群晖/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>黑群晖</p>
-    </a>
-  </div>
+
+  
+    <!-- 显示推荐文章和评论 -->
 
 
-          
-        
-          
-            
 
-          
-        
-          
-            
-
-          
-        
-      </div>
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
-        <hr>
       
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><strong>问题描述：</strong> 登录SSH的时候，我们总是会看到一个警告，具体如下：</p>
-<p><img src="https://static.dy208.cn/o_1deu2a1m819v81mns10st1f7c92ka.png" alt></p>
       
-        <div class="readmore">
-          <a href="/2019/07/04/去掉登录SSH警告/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
       
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/黑群晖/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>黑群晖</a>
-        
-          <a href="/tags/SSH/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>SSH</a>
-        
-      </div>
-    
-  </section>
-</article>
-
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
           </div>
-        
+        </section>
       
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
+    </section>
+  </article>
 
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2019/07/03/解决DSM5.2的SSH登录不上去/">
-      解决黑群晖DSM5.2系统SSH连接自动断开问题
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://www.makedreamsir.xyz" rel="nofollow">
-      
-        <i class="fas fa-user" aria-hidden="true"></i>
-      
-      <p>love421</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-07-03</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/黑群晖/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>黑群晖</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <p><strong>问题描述：</strong> 新装的群辉<code>DSM5.2</code>刚打开<code>SSH</code>功能，刚连上去就自动断开了，报错如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Connecting to 192.168.0.81:22...</span><br><span class="line">Connection established.</span><br><span class="line">To escape to local shell, press &apos;Ctrl+Alt+]&apos;.</span><br><span class="line">Your account has expired; please contact your system administrator</span><br><span class="line">Connection closing...Socket close.</span><br><span class="line"></span><br><span class="line">Connection closed by foreign host.</span><br><span class="line"></span><br><span class="line">Disconnected from remote host(work_NAS) at 16:03:17.</span><br><span class="line"></span><br><span class="line">Type `help&apos; to learn how to use Xshell prompt.</span><br></pre></td></tr></table></figure>
-      
-        <div class="readmore">
-          <a href="/2019/07/03/解决DSM5.2的SSH登录不上去/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/黑群晖/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>黑群晖</a>
-        
-          <a href="/tags/SSH/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>SSH</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
 
   
 
 
-    
-  
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '解决github page自定义域名后实现https访问却不显示黑锁问题',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -1339,6 +1149,36 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "5HWR27qFV7yMiriS8LgIEjnh-gzGzoHsz",
+    appKey: "rStwDfntgBJjqxu2A4lEMrwj",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
 
 
 

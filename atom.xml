@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-05T08:31:01.179Z</updated>
+  <updated>2019-07-10T07:27:56.986Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁 /</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-10T07:27:56.986Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 博客部署到&lt;code&gt;github&lt;/code&gt;上并开启强制&lt;code&gt;https&lt;/code&gt;访问之后，地址栏却没有看到熟悉的&lt;code&gt;黑锁&lt;/code&gt;，点开可以看见描述&lt;code&gt;您与此网站之间建立的连接并非完全安全&lt;/code&gt;，具体现象如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+    
+    
+      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
