@@ -4,9 +4,36 @@
   
     
     <entry>
+      <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+      <link href="/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> RocketDock </tag>
+            
+            <tag> 实用软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-      <link href="/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/"/>
-      <url>/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/</url>
+      <link href="/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+      <url>/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/</url>
       
         <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
       
@@ -78,7 +105,7 @@
             
             <tag> SSH </tag>
             
-            <tag> Debian </tag>
+            <tag> debian </tag>
             
         </tags>
       
@@ -199,7 +226,7 @@
       <link href="/2018/08/15/STM32%E4%B8%A4%E8%BD%AE%E8%87%AA%E5%B9%B3%E8%A1%A1%E5%B0%8F%E8%BD%A6/"/>
       <url>/2018/08/15/STM32%E4%B8%A4%E8%BD%AE%E8%87%AA%E5%B9%B3%E8%A1%A1%E5%B0%8F%E8%BD%A6/</url>
       
-        <content type="html"><![CDATA[<p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p><a id="more"></a><h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p><h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p><p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p><p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p><p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p><p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p><p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p><p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p></font><hr><p><strong>最后附上安装文件：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p><a id="more"></a><h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p><h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p><p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p><p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p><p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p><p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p><p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p><p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p></font><hr><p><strong>最后附上资源链接：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>]]></content>
       
       
       <categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-10T07:27:56.986Z</updated>
+  <updated>2019-07-11T07:48:15.546Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -17,9 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T07:48:15.546Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81%20/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁 /</id>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁/</id>
     <published>2019-07-08T16:00:00.000Z</published>
     <updated>2019-07-10T07:27:56.986Z</updated>
     
@@ -73,7 +97,7 @@
     <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
     <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-05T08:31:18.976Z</updated>
+    <updated>2019-07-11T06:44:52.721Z</updated>
     
     <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
     
@@ -89,7 +113,7 @@
     
       <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/tags/Debian/"/>
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
   </entry>
   
@@ -198,7 +222,7 @@
     <published>2018-08-14T16:00:00.000Z</published>
     <updated>2019-07-02T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p><a id="more"></a><h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p><h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p><p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p><p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p><p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p><p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p><p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p><p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p></font><hr><p><strong>最后附上安装文件：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>毕设分享：STM32两轮自平衡小车系统设计与控制 含源码、原理图及PCB文件</strong></p><a id="more"></a><h2 id="一、硬件介绍"><a href="#一、硬件介绍" class="headerlink" title="一、硬件介绍"></a>一、硬件介绍</h2><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主控芯片用的是100脚的STM32F103VET6，陀螺仪用的是MPU6050，电机驱动用的是TB6612，蓝牙是汇承的HC05邮票孔封装的，WIFI用的是济南有人科技的USR-WIFI232-S，小车底盘用的是平衡小车之家的某一款带编码器的（不是我买的，同学的），电池用的是一节7.2的镍镉电池，液晶用的是中景园电子1.3寸IIC接口的OLED，开关用的是三脚纽子开关，电池接口用的是T插，电阻电容这些用的基本上是0603封装，编码器5V降压用的是ASM1117-5.0，3.3V降压用的是SP6203，拨码开关用的是4P贴片式2.54mm角距的，按键是两脚贴片，microusb接口用的是5针 7.2四脚插板牛角母座，超声波是某宝上几块钱烂大街的那种，蜂鸣器是有源的，编码器是小车底盘自带的，电池电压检测是电阻分压之后通过电压跟随器接入MCU内部AD测量的。<h2 id="二、主控板资源介绍"><a href="#二、主控板资源介绍" class="headerlink" title="二、主控板资源介绍"></a>二、主控板资源介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STM32F103VET6主控芯片；两个microusb口，第一个是MCU的串口1，可作为普通的串口收发数据，通过调节板上BOOT选项，也可将其作为ISP下载程序接口；第二个是SWD硬件仿真接口；蓝牙模块，与MCU的串口2连接；WIFI模块，与MCU的串口3相连；一块1.3寸IIC协议的液晶接口；超声波接口；双电机驱动；六轴陀螺仪；电池电压检测；4个用于调试的LED；4个独立式按键；一组4P的拨码开关；有源蜂鸣器；两个6P带AB相编码器的电机接口。</p><h2 id="三、软件介绍"><a href="#三、软件介绍" class="headerlink" title="三、软件介绍"></a>三、软件介绍</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这份配套的软件，也算是我一点一点黏贴拼凑实测出来的，模块分的很清楚。再来说一下个人的感觉吧，网上资料一大堆，但是大多都是只有程序，没有对应的较为完整电路原理图。很少见到软硬件全部开源并且能够对应的资料。所以就带来这样一个后果，我们用别人的程序，我们自己画的电路。举个例子，某宝上卖这个的程序我看过，个人觉得，如果不搭配他的硬件，想用自己的硬件而直接把他的软件工程拿过来修改的话，很烦很乱基本上是扯淡。因为里面东西牵涉太多，你第一次做并不知道哪些是无关紧要哪些是必不可少的，比如蓝牙的遥控部分，超声波部分啊等等这些在他完整版的工程里面都是写好的，再者我们肯定是先调直立环，然后在调试速度环和方向环，所以你把他完整版的工程拿过来用，你告诉我怎么删减或者怎么注释掉速度环、方向环和一些锦上添花的功能模块呢？还有很多地方都是寄存器直接配置，我完全看不懂不知道怎么修改，一头雾水。所以最好的办法就是，参照别人的程序，一点一点自己粘贴然后修改底层搭建自己的工程。或者你也可以把自己的电路画的跟别人的一样，避免修改别人的底层，这样你粘贴过来甚至都不用改就能用了。</p><p><font color="blue" size="5">最后简单展示一下分享的资源，至于源文件全部在最后。</font></p><p>这是电路原理图：<br> <img src="https://static.dy208.cn/o_1dercdk5318af1nfk1vt35og1ep1a.png" alt></p><p>这是PCB图：<br> <img src="https://static.dy208.cn/o_1dercfm3m9im1b0d1qe010n4qpua.png" alt></p><p>这是打样好的PCB：<br> <img src="https://static.dy208.cn/o_1derchcn11mtk8r71a54fe74pka.png" alt></p><p>这是程序框架图：<br> <img src="https://static.dy208.cn/o_1derck2saqmq1ohrjtv18nr6kua.png" alt></p><p>这是最后搭建好的实物图：<br> <img src="https://static.dy208.cn/o_1derckjnm112c1iun154j1dul1drfa.png" alt></p></font><hr><p><strong>最后附上资源链接：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>源程序：</strong><a href="https://www.lanzous.com/i4tmbja" target="_blank" rel="noopener">https://www.lanzous.com/i4tmbja</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>原理图和PCB：</strong><a href="https://www.lanzous.com/i4tmach" target="_blank" rel="noopener">https://www.lanzous.com/i4tmach</a></p>]]></content>
     
     <summary type="html">
     
