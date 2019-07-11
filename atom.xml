@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-11T07:48:15.546Z</updated>
+  <updated>2019-07-11T09:10:30.439Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+    
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
@@ -34,9 +60,9 @@
       <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
-    
       <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
     
   </entry>
   
@@ -231,6 +257,8 @@
     </summary>
     
       <category term="电子DIY" scheme="https://www.makedreamsir.xyz/categories/%E7%94%B5%E5%AD%90DIY/"/>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
     
     
       <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
