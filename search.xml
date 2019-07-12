@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Hexo博客页脚添加备案号</title>
+      <link href="/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
+      <url>/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/</url>
+      
+        <content type="html"><![CDATA[<p><strong>本文以<code>Material-X</code>主题为例说明为hexo博客添加备案号。</strong> </p><p><img src="https://static.dy208.cn/o_1dfilun72152bbjb1je34ci19upa.png" alt></p><a id="more"></a><p><strong>打开<code>hexo/themes/material-x/layout/_partial</code>路径下的<code>footer.ejs</code>文件，在合适的未知插入如下代码：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png&quot;&gt;</span><br><span class="line">&lt;a href=&quot;http://www.beian.miit.gov.cn/&quot;  style=&quot;color:#f72b07&quot; target=&quot;_blank&quot;&gt;你自己的备案号&lt;/a&gt;</span><br></pre></td></tr></table></figure><p><strong>添加后效果图：</strong><br><img src="https://static.dy208.cn/o_1dfimgdrb19u4an41joph8jo2sa.png" alt="o_1dfimgdrb19u4an41joph8jo2sa.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 备案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
       <link href="/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
       <url>/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/</url>
@@ -101,9 +128,9 @@
       
         <tags>
             
-            <tag> SSL </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> SSL </tag>
             
         </tags>
       

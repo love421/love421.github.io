@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-11T07:48:15.546Z</updated>
+  <updated>2019-07-12T09:00:07.154Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客页脚添加备案号</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/12/博客页脚添加备案号/</id>
+    <published>2019-07-11T16:00:00.000Z</published>
+    <updated>2019-07-12T09:00:07.154Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>本文以<code>Material-X</code>主题为例说明为hexo博客添加备案号。</strong> </p><p><img src="https://static.dy208.cn/o_1dfilun72152bbjb1je34ci19upa.png" alt></p><a id="more"></a><p><strong>打开<code>hexo/themes/material-x/layout/_partial</code>路径下的<code>footer.ejs</code>文件，在合适的未知插入如下代码：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png&quot;&gt;</span><br><span class="line">&lt;a href=&quot;http://www.beian.miit.gov.cn/&quot;  style=&quot;color:#f72b07&quot; target=&quot;_blank&quot;&gt;你自己的备案号&lt;/a&gt;</span><br></pre></td></tr></table></figure><p><strong>添加后效果图：</strong><br><img src="https://static.dy208.cn/o_1dfimgdrb19u4an41joph8jo2sa.png" alt="o_1dfimgdrb19u4an41joph8jo2sa.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;本文以&lt;code&gt;Material-X&lt;/code&gt;主题为例说明为hexo博客添加备案号。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfilun72152bbjb1je34ci19upa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+    
+      <category term="备案" scheme="https://www.makedreamsir.xyz/tags/%E5%A4%87%E6%A1%88/"/>
+    
+  </entry>
   
   <entry>
     <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
@@ -107,9 +132,9 @@
       <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
-    
       <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+    
+      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
     
   </entry>
   

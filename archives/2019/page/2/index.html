@@ -14,7 +14,7 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>自用frp服务器分享及客户端配置连接教程 | love421博客</title>
+  <title>Archives: 2019 | love421博客</title>
   
   <meta name="keywords" content="造梦Sir love421">
   
@@ -61,7 +61,7 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   
   
   <div class="cover-wrapper">
-    <cover class='cover post half'>
+    <cover class='cover  half'>
       
         
   <h1 class='title'>love421</h1>
@@ -329,11 +329,16 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   <div class="l_body">
     <div class='body-wrapper'>
       <div class='l_main'>
-  
-
-  
-    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+	
+		
+  <section class="post-list">
+    
+    
       
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
 
 
   <section class='meta'>
@@ -342,13 +347,11 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
     <div class="meta" id="header-meta">
       
         
-  
-    <h1 class="title">
-      <a href="/2019/06/03/frp内网穿透/">
-        自用frp服务器分享及客户端配置连接教程
-      </a>
-    </h1>
-  
+  <h2 class="title">
+    <a href="/2019/06/03/frp内网穿透/">
+      自用frp服务器分享及客户端配置连接教程
+    </a>
+  </h2>
 
 
       
@@ -395,19 +398,6 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
         
           
             
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv">
-            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
-          </span>
-        </p>
-      </a>
-    </div>
-  
-
 
           
         
@@ -424,235 +414,63 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          <h1 id="What-is-frp"><a href="#What-is-frp" class="headerlink" title="What is frp?"></a>What is frp?</h1><p><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。</p>
-<a id="more"></a>
-<h2 id="一、免费的FRP服务器信息"><a href="#一、免费的FRP服务器信息" class="headerlink" title="一、免费的FRP服务器信息"></a>一、免费的FRP服务器信息</h2><p>FRP版本号：0.26.0 </p>
-<p>连接地址为：<strong><a href="http://www.makedreamsirfrp.xyz:7000" target="_blank" rel="noopener">www.makedreamsirfrp.xyz:7000</a></strong></p>
-<p>特权认证密码为：<strong>love421forever</strong></p>
-<p>状态查询：<strong><a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></strong></p>
-<p>查询帐号：<strong>love421</strong></p>
-<p>查询帐号：<strong>love421</strong></p>
-<p><font color="blue" size="5">默认http/https端口：<font color="red" size="6"><strong>80</strong></font>和<font color="red" size="6"><strong>433</strong></font></font></p>
-<p>支持<strong>subdomain</strong>和<strong>custom_domains</strong></p>
-<p><font color="blue" size="5">开放端口：<font color="red" size="6"><strong>全端口</strong></font></font></p>
-<p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deor57mchnd4ksp5t1hvcgeha.png" alt></p>
-<h2 id="二、客户端配置详细步骤"><a href="#二、客户端配置详细步骤" class="headerlink" title="二、客户端配置详细步骤"></a>二、客户端配置详细步骤</h2><h3 id="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："><a href="#1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如：" class="headerlink" title="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："></a>1、<code>SSH</code>连接上内网主机后，使用<code>wget</code>指令下载对应服务器版本的frp<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">可执行文件</a>，例如：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.26.0/frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、解压刚刚下载的可执行文件"><a href="#2、解压刚刚下载的可执行文件" class="headerlink" title="2、解压刚刚下载的可执行文件"></a>2、解压刚刚下载的可执行文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"><a href="#3、刷新一下，cd到刚刚解压之后出现的文件夹目录下" class="headerlink" title="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"></a>3、刷新一下，<code>cd</code>到刚刚解压之后出现的文件夹目录下</h3><h3 id="4、打开frpc-ini文件，具体修改配置如下："><a href="#4、打开frpc-ini文件，具体修改配置如下：" class="headerlink" title="4、打开frpc.ini文件，具体修改配置如下："></a>4、打开<code>frpc.ini</code>文件，具体修改配置如下：</h3><p>最上面这一部分是必要的，无需任何改动，这部分主要是配置连接frp的服务器信息。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = www.makedreamsirfrp.xyz</span><br><span class="line">server_port = 7000</span><br><span class="line">token = love421forever</span><br></pre></td></tr></table></figure>
-
-<p>下面举例说明常用的tcp、http、https映射：</p>
-<h4 id="1-tcp映射举例说明："><a href="#1-tcp映射举例说明：" class="headerlink" title="(1)tcp映射举例说明："></a>(1)<code>tcp</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_SSH]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6666</span><br></pre></td></tr></table></figure>
-
-<p>第一行：中括号中内容为映射名称，用以快速寻找区分众多的映射服务，每一个映射都要取一个名字，只支持英文，推荐命名形式：姓名简称_设备_服务，比如：<code>MDS_NAS_SSH</code>；</p>
-<p>第二行：类型，因为你映射的是<code>ssh</code>端口，所以选择<code>tcp</code>，如果你要映射http服务或者<code>http</code>服务，那就填写对应的http或者https；</p>
-<p>第三行：为你映射局域网内设备的<code>IP</code>地址，<code>127.0.0.1</code>代表的是本设备的内网ip地址；</p>
-<p>第四行：本地端口号，例子中22端口为我<code>nas</code>的<code>ssh</code>端口号；</p>
-<p>第五行：远端端口号，也就是映射成功之后你所用的端口号，可以自定义，开房的端口号是0到65535；</p>
-<p>映射之后访问地址是<code>server_addr</code>固定不变的即：<code>www.makedreamsirfrp.xyz</code>，端口号是你刚刚自己填写的<code>local_port</code>即：<code>6666</code>。</p>
-<h4 id="2-HTTP映射举例说明："><a href="#2-HTTP映射举例说明：" class="headerlink" title="(2)HTTP映射举例说明："></a>(2)<code>HTTP</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_5000]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 192.168.6.241</span><br><span class="line">local_port = 5000</span><br><span class="line">subdomain = nas 或者 custom_domains = 你自己的域名</span><br></pre></td></tr></table></figure>
-
-<p>第一、二、三、四行类比tcp映射中所述；</p>
-<p>第五行：如果你没有域名，那么你可以配置subdomain，你的访问地址将会是 <a href="http://nas.makedreamsirfrp.xyz" target="_blank" rel="noopener">http://nas.makedreamsirfrp.xyz</a>，如果你自己有域名，那么你可以配置<code>custom_domains</code>来绑定你自己的域名，你的访问地址将会是 <a href="http://你自己的域名" target="_blank" rel="noopener">http://你自己的域名</a>（你自己的域名需要添加一条CNAME解析记录解析到<code>www.makedreamsirfrp.xyz</code>）</p>
-<h4 id="3-HTTPS映射跟http映射一样，例子如下："><a href="#3-HTTPS映射跟http映射一样，例子如下：" class="headerlink" title="(3)HTTPS映射跟http映射一样，例子如下："></a>(3)<code>HTTPS</code>映射跟<code>http</code>映射一样，例子如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_PVE]</span><br><span class="line">type = https</span><br><span class="line">local_ip = 192.168.6.179</span><br><span class="line">local_port = 8006</span><br><span class="line">subdomain = pve</span><br></pre></td></tr></table></figure>
-
-<p>映射成功后访问的域名地址就是：<a href="https://pve.makedreamsirfrp.xyz" target="_blank" rel="noopener">https://pve.makedreamsirfrp.xyz</a></p>
-<h3 id="5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。"><a href="#5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。" class="headerlink" title="5、修改之后保存，输入./frpc -c ./frpc.ini，如果看见此时在服务端会看到start proxy sucess字样，即连接成功。"></a>5、修改之后保存，输入<code>./frpc -c ./frpc.ini</code>，如果看见此时在服务端会看到<code>start proxy sucess</code>字样，即连接成功。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqj7suqlg1f3a1pqr4vo1jqna.png" alt></p>
-<h3 id="6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。"><a href="#6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。" class="headerlink" title="6、接着按下ctrl+c结束任务，然后输入nohup ./frpc -c ./frpc.ini &amp;让任务在后台一直运行，看到nohub.out字样，就代表真成功了，然后按下ctrl+c。"></a>6、接着按下<code>ctrl+c</code>结束任务，然后输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让任务在后台一直运行，看到<code>nohub.out</code>字样，就代表真成功了，然后按下<code>ctrl+c</code>。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqmrpl130d1h5m1dj7km01mioa.png" alt></p>
-<h3 id="7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"><a href="#7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息" class="headerlink" title="7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"></a>7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqpbfuvqh1l6816rvk7gha0a.png" alt></p>
-<h3 id="8、这个时候我们登录frp服务器的dashboard查看我们的映射："><a href="#8、这个时候我们登录frp服务器的dashboard查看我们的映射：" class="headerlink" title="8、这个时候我们登录frp服务器的dashboard查看我们的映射："></a>8、这个时候我们登录frp服务器的dashboard查看我们的映射：</h3><p>地址：<a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></p>
-<p>账号：love421</p>
-<p>密码：love421</p>
-<p><font color="red" size="5">注意事项：</font></p>
-<p>1.如果当前frp已经在后台运行，而此时你想修改它，可以先修改配置保存，然后输入<code>ps -aux|grep frp| grep -v grep</code>查看进程号，如下图是<code>2739</code>，接着输入<code>kill -9 2739</code>杀掉正在运行的frp进程，最后再输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让修改之后的任务再后台运行。<br><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deosqou292fbj01hckb7o100da.png" alt><br>2.如果连接服务器失败的话，大多数原因是服务器和客户端版本不一致、token错误、端口被占用、泛域名也就是sudomain重复、映射名称被占用等，所以映射的时候命名最前面可以加个名字拼音首字母简称，不至于重复率太高。</p>
-
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="What-is-frp"><a href="#What-is-frp" class="headerlink" title="What is frp?"></a>What is frp?</h1><p><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。</p>
+      
+        <div class="readmore">
+          <a href="/2019/06/03/frp内网穿透/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
         </div>
-        
-          
-
-
-  <section class='meta' id="footer-meta">
-    <hr>
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-02T00:00:00+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 Jul 2, 2019</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/frp/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>frp</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/内网穿透/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>内网穿透</p></a></div>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
-          
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.makedreamsir.xyz/2019/06/03/frp内网穿透/&title=自用frp服务器分享及客户端配置连接教程 | love421博客&summary=What is frp?frp是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
-          
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.makedreamsir.xyz/2019/06/03/frp内网穿透/&title=自用frp服务器分享及客户端配置连接教程 | love421博客&summary=What is frp?frp是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwUlEQVR42u3awW6kMBAE0Pz/T2elPUVKgCq3PTOHxwkhwvgRyTbV/fUVH9//j5/nv6/c3/nz+u87769cPWHbgYeHh7c09KvjinQPy69cjeSel4wZDw8P7zQvWQwSUo5vYcnT8PDw8D6Nl0zEyfVicMEmHg8PD+/zecn3fjK5z5+Mh4eH915evoVtw4LJYpP/7oasBQ8PDy/mrRXA3nt+vL6Hh4eHt1RVb4PUdnOcBxaL48TDw8M7wFtrk0o2r/kmey3aKOJdPDw8vAO8tYl+b1jQxgr3MQceHh7eaV7+8T8vR+WBQrsAPKTUeHh4eJt4edPA3ox0V8PBw4vAw8PDO8BL4oNJ3LA3kG1bE/Dw8PBO8PKYoN0ETzbW8233ZX0PDw8Pbysvn3CTKXtS4toVCuPh4eGd4+Ub6/Y8fzV5u0BRisPDw8M7xmun6XmJq40w1l4NHh4e3jle/nnftk9NmgDastxDTwQeHh7eJl4bQKwV79smrbUl4eF/iIeHh7eJlwDyYtVae1bROBVv6P/IWvDw8PC28uZTebsW5dHtZHHCw8PDO8Gb//z9gPLotm29KiISPDw8vJfzcnbeXNWS8ldZlMHw8PDwlnh5E1VRsC+n8rV7oleJh4eHd4C3dnyXR96MtVZ420DCw8PDi3mTclRbPFtbQtqw449vBTw8PLytvMnGdNI0kAe1SUGuWP3w8PDwxry2cNUGr/lU3m6+o7/Fw8PDO8BLKuyTBWNSvppswfHw8PDO8dYC2fydrQUZbSSBh4eH90peW/RKhtjGDXlTwoasBQ8PD28TLy/87ypK5U/OAwg8PDy81/PyEtTaMpA/uV3BHu7Hw8PD+zBeW5RKSlaLC8AVFQ8PD++tvLa03xb+88CiCIXx8PDwjvHaMCIv9rfPbzfcD+PEw8PDO8CbFMDm4LVtd3snHh4e3ibeP6ayac4DzjSEAAAAAElFTkSuQmCC'>
-        
-          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
-        
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
-          
-          href="http://service.weibo.com/share/share.php?url=https://www.makedreamsir.xyz/2019/06/03/frp内网穿透/&title=自用frp服务器分享及客户端配置连接教程 | love421博客&summary=What is frp?frp是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。"
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
-          
-        </a>
-      
-    
-      
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACwUlEQVR42u3awW6kMBAE0Pz/T2elPUVKgCq3PTOHxwkhwvgRyTbV/fUVH9//j5/nv6/c3/nz+u87769cPWHbgYeHh7c09KvjinQPy69cjeSel4wZDw8P7zQvWQwSUo5vYcnT8PDw8D6Nl0zEyfVicMEmHg8PD+/zecn3fjK5z5+Mh4eH915evoVtw4LJYpP/7oasBQ8PDy/mrRXA3nt+vL6Hh4eHt1RVb4PUdnOcBxaL48TDw8M7wFtrk0o2r/kmey3aKOJdPDw8vAO8tYl+b1jQxgr3MQceHh7eaV7+8T8vR+WBQrsAPKTUeHh4eJt4edPA3ox0V8PBw4vAw8PDO8BL4oNJ3LA3kG1bE/Dw8PBO8PKYoN0ETzbW8233ZX0PDw8Pbysvn3CTKXtS4toVCuPh4eGd4+Ub6/Y8fzV5u0BRisPDw8M7xmun6XmJq40w1l4NHh4e3jle/nnftk9NmgDastxDTwQeHh7eJl4bQKwV79smrbUl4eF/iIeHh7eJlwDyYtVae1bROBVv6P/IWvDw8PC28uZTebsW5dHtZHHCw8PDO8Gb//z9gPLotm29KiISPDw8vJfzcnbeXNWS8ldZlMHw8PDwlnh5E1VRsC+n8rV7oleJh4eHd4C3dnyXR96MtVZ420DCw8PDi3mTclRbPFtbQtqw449vBTw8PLytvMnGdNI0kAe1SUGuWP3w8PDwxry2cNUGr/lU3m6+o7/Fw8PDO8BLKuyTBWNSvppswfHw8PDO8dYC2fydrQUZbSSBh4eH90peW/RKhtjGDXlTwoasBQ8PD28TLy/87ypK5U/OAwg8PDy81/PyEtTaMpA/uV3BHu7Hw8PD+zBeW5RKSlaLC8AVFQ8PD++tvLa03xb+88CiCIXx8PDwjvHaMCIv9rfPbzfcD+PEw8PDO8CbFMDm4LVtd3snHh4e3ibeP6ayac4DzjSEAAAAAElFTkSuQmCC'>
-        
-          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
-        
-        </a>
-      
-    
-  </div>
-</div>
-
-
-
-        
       
     </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/frp/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>frp</a>
+        
+          <a href="/tags/内网穿透/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>内网穿透</a>
+        
+      </div>
+    
   </section>
+</article>
 
-
-        
-        
-            <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/2019/07/02/PVE虚拟机下安装黑群晖/" rel="prev" title="PVE虚拟机下安装黑群晖">
-                                  
-                                      PVE虚拟机下安装黑群晖
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/PVE虚拟机/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>PVE虚拟机</a> <a class="tag" href="/tags/黑群晖/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>黑群晖</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-                
-                    <section class="next">
-                        <span class="art-item-right" aria-hidden="true">
-                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                            <h4>
-                                <a href="/2018/08/15/STM32两轮自平衡小车/" rel="prev" title="STM32两轮自平衡小车">
-                                    
-                                        STM32两轮自平衡小车
-                                    
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/STM32/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>STM32</a> <a class="tag" href="/tags/平衡车/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>平衡车</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
-                
-            </div>
-        
-      </section>
-    </article>
-  
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
-      
-      
-      
-      
-        <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
           </div>
-        </section>
+        
       
-    </section>
-  </article>
+    
+  </section>
+  
+    
+      <br>
+      <div class="prev-next">
+        <div class="prev-next">
+          
+            <a class="prev" rel="prev" href="/archives/2019/">
+              <section class="post prev" >
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              </section>
+            </a>
+          
+          <p class="current">
+            2 / 2
+          </p>
+          
+        </div>
+      </div>
 
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
   
 
 
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: '自用frp服务器分享及客户端配置连接教程',
-      tools: true
-    }
-  </script>
-
-
+	
 </div>
 <aside class='l_side'>
   
@@ -766,20 +584,6 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
           
           
             
-  <section class='widget toc-wrapper'>
-    
-<header class='material'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
-  
-    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
-  
-</header>
-
-    <div class='content material'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-frp"><span class="toc-text">What is frp?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、免费的FRP服务器信息"><span class="toc-text">一、免费的FRP服务器信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、客户端配置详细步骤"><span class="toc-text">二、客户端配置详细步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："><span class="toc-text">1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、解压刚刚下载的可执行文件"><span class="toc-text">2、解压刚刚下载的可执行文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"><span class="toc-text">3、刷新一下，cd到刚刚解压之后出现的文件夹目录下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、打开frpc-ini文件，具体修改配置如下："><span class="toc-text">4、打开frpc.ini文件，具体修改配置如下：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-tcp映射举例说明："><span class="toc-text">(1)tcp映射举例说明：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-HTTP映射举例说明："><span class="toc-text">(2)HTTP映射举例说明：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-HTTPS映射跟http映射一样，例子如下："><span class="toc-text">(3)HTTPS映射跟http映射一样，例子如下：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。"><span class="toc-text">5、修改之后保存，输入./frpc -c ./frpc.ini，如果看见此时在服务端会看到start proxy sucess字样，即连接成功。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。"><span class="toc-text">6、接着按下ctrl+c结束任务，然后输入nohup ./frpc -c ./frpc.ini &amp;让任务在后台一直运行，看到nohub.out字样，就代表真成功了，然后按下ctrl+c。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"><span class="toc-text">7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、这个时候我们登录frp服务器的dashboard查看我们的映射："><span class="toc-text">8、这个时候我们登录frp服务器的dashboard查看我们的映射：</span></a></li></ol></li></ol></li></ol>
-    </div>
-  </section>
-
 
           
         
@@ -1209,6 +1013,14 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
 
 
 
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
+
+
       <script>setLoadingBarProgress(60);</script>
     </div>
     <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
@@ -1295,36 +1107,6 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js"></script>
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: notify,
-    verify: verify,
-    guest_info: guest_info,
-    
-    appId: "5HWR27qFV7yMiriS8LgIEjnh-gzGzoHsz",
-    appKey: "rStwDfntgBJjqxu2A4lEMrwj",
-    placeholder: "有问题可以在下面留言，邮箱地址正确填写可以及时收到回复提醒！",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    highlight:'true'
-  })
-  </script>
 
 
 
