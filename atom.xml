@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-12T09:00:07.154Z</updated>
+  <updated>2019-07-17T04:54:02.462Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/17/PVE下NAS启动不了/</id>
+    <published>2019-07-16T16:00:00.000Z</published>
+    <updated>2019-07-17T04:54:02.462Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;PVE&lt;/code&gt;虚拟机下电机NAS启动按钮之后启动不了并报如下错误：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/07/17/ZqTHFf.png&quot; alt=&quot;ZqTHFf.png&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+    
+    
+      <category term="PVE虚拟机" scheme="https://www.makedreamsir.xyz/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客页脚添加备案号</title>
@@ -68,6 +93,30 @@
   </entry>
   
   <entry>
+    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T07:48:15.546Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>录屏软件破解版分享——ApowerREC</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/录屏软件/</id>
@@ -86,53 +135,6 @@
     
     
       <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T07:48:15.546Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
-    <published>2019-07-08T16:00:00.000Z</published>
-    <updated>2019-07-12T09:48:37.253Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -162,27 +164,25 @@
   </entry>
   
   <entry>
-    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-11T06:44:52.721Z</updated>
+    <title>Hexo博客美化之——IP签名图一网打尽</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-12T09:48:37.253Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -210,6 +210,31 @@
       <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
       <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-11T06:44:52.721Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+    
+    
+      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
   </entry>
   
