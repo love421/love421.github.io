@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+      <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+      <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
+      
+        <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 星际蜗牛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
       <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
       <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
@@ -58,25 +85,21 @@
     
     
     <entry>
-      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
+      <title>录屏软件破解版分享——ApowerREC</title>
+      <link href="/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
+      <url>/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/</url>
       
-        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
       
       
       <categories>
           
           <category> 实用软件分享 </category>
           
-          <category> STM32 </category>
-          
       </categories>
       
       
         <tags>
-            
-            <tag> STM32 </tag>
             
             <tag> 实用软件 </tag>
             
@@ -103,9 +126,9 @@
       
         <tags>
             
-            <tag> RocketDock </tag>
-            
             <tag> 实用软件 </tag>
+            
+            <tag> RocketDock </tag>
             
         </tags>
       
@@ -114,21 +137,25 @@
     
     
     <entry>
-      <title>录屏软件破解版分享——ApowerREC</title>
-      <link href="/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
-      <url>/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/</url>
+      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
       
-        <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
       
       
       <categories>
           
           <category> 实用软件分享 </category>
           
+          <category> STM32 </category>
+          
       </categories>
       
       
         <tags>
+            
+            <tag> STM32 </tag>
             
             <tag> 实用软件 </tag>
             
