@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>DMZ和端口转发区别、优缺点和适用场景</title>
-      <link href="/2019/07/25/DMZ/"/>
-      <url>/2019/07/25/DMZ/</url>
+      <title>Debian安装花生壳实现内网穿透</title>
+      <link href="/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <url>/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
       
-        <content type="html"><![CDATA[<p>DMZ和端口转发帮助我们可以在外网环境下访问家中内网的服务应用，两者有共相似点也有不同点，合理使用两者可以更好地帮助我们搭建内网应用。</p><a id="more"></a><h2 id="一、区别"><a href="#一、区别" class="headerlink" title="一、区别"></a>一、区别</h2><p><a href="https://baike.baidu.com/item/DMZ/631225?fr=aladdin" target="_blank" rel="noopener">DMZ</a>让您得以将一部计算机公开显露在互联网上，也就是将一台内往机器所有端口全部映射出去。<br>而<a href="https://baike.baidu.com/item/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/8327845?fr=aladdin" target="_blank" rel="noopener">端口转发</a>允许远程计算机在一个私人的内部网络内连接至一个具体的计算机或服务，也就是让一台内网机器的某一个端口映射出去。</p><h2 id="二、优缺点"><a href="#二、优缺点" class="headerlink" title="二、优缺点"></a>二、优缺点</h2><p><strong>DMZ优点：</strong> 操作简单，只需要一步即可将所有端口全部映射</p><p><strong>DMZ缺点：</strong> 大部分路由器只允许设置一台</p><p><strong>端口转发优点：</strong> 可以映射内网中任意一台计算机的任意一个服务</p><p><strong>端口转发缺点：</strong> 一般路由器有映射数量限制，且操作繁琐</p><h2 id="三、适用场景"><a href="#三、适用场景" class="headerlink" title="三、适用场景"></a>三、适用场景</h2><p><strong>DMZ：</strong> 你要映射的服务端口全部在一台内网机器上，且数量较多的时候</p><p><strong>端口转发：</strong> 你要映射的服务端口分散在几个机器上，且数量不多的时候</p>]]></content>
+        <content type="html"><![CDATA[<p>前言：虽然博主通过<a href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp实现内网穿透</a>，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！</p><a id="more"></a><p><strong>1.登录Debian，输入如下指令和密码切换到root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUWzq.png" alt="enUWzq.png"></p><p><strong>2.新建一个文件夹，并cd到刚刚新建的文件夹</strong><br><img src="https://s2.ax1x.com/2019/07/26/enl5L9.png" alt="enl5L9.png"></p><p><strong>3.通过运行<code>wget</code>指令下载安装包</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUbFJ.png" alt="enUbFJ.png"></p><p><strong>4.安装刚下载的安装包，得到SN和密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/ena3pn.png" alt="ena3pn.png"></p><p><strong>5.浏览器输入如下网址打开<a href="http://b.oray.com" target="_blank" rel="noopener">花生壳管理界面</a>，输入上一步的SN和密码登录</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://b.oray.com</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enag0O.png" alt="enag0O.png"></p><p><strong>6.之后输入密码激活设备</strong><br><img src="https://s2.ax1x.com/2019/07/26/eny6TP.png" alt="eny6TP.png"></p><p><strong>7.浏览器打开花生壳<a href="https://login.oray.com/login/?tplname=qrcode&s_url=https%3A%2F%2Fhsk.oray.com%2Fconsole%2Fmanage%2F" target="_blank" rel="noopener">控制台</a>,输入账号密码登陆进去</strong><br><img src="https://s2.ax1x.com/2019/07/26/enyLfU.png" alt="enyLfU.png"></p><p><strong>8.选择右上角添加设备输入SN码，绑定到自己账号上去</strong><br><img src="https://s2.ax1x.com/2019/07/26/en6U7q.png" alt="en6U7q.png"></p><p><strong>9.点击刚刚绑定的设备进入设备的管理界面</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engYoq.png" alt="engYoq.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/engFQe.png" alt="engFQe.png"></p><p><strong>10.点击右上角的账号选择切换账号</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engywR.png" alt="engywR.png"></p><p><strong>11.选择左边的账号登录，输入账号密码电机登录即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engomd.png" alt="engomd.png"></p><p><strong>12.点击<code>+</code>号，填写配置信息最后点击<code>确定</code>即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2VcF.png" alt="en2VcF.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/en2cuQ.png" alt="en2cuQ.png"></p><p><strong>13.最后诊断一下，没有问题enjoy</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2bDJ.png" alt="en2bDJ.png"></p>]]></content>
       
       
       <categories>
           
-          <category> frp内网穿透 </category>
+          <category> 内网穿透 </category>
           
       </categories>
       
@@ -22,7 +22,36 @@
             
             <tag> 内网穿透 </tag>
             
+            <tag> debian </tag>
+            
+            <tag> 花生壳 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DMZ和端口转发区别、优缺点和适用场景</title>
+      <link href="/2019/07/25/DMZ/"/>
+      <url>/2019/07/25/DMZ/</url>
+      
+        <content type="html"><![CDATA[<p>DMZ和端口转发帮助我们可以在外网环境下访问家中内网的服务应用，两者有共相似点也有不同点，合理使用两者可以更好地帮助我们搭建内网应用。</p><a id="more"></a><h2 id="一、区别"><a href="#一、区别" class="headerlink" title="一、区别"></a>一、区别</h2><p><a href="https://baike.baidu.com/item/DMZ/631225?fr=aladdin" target="_blank" rel="noopener">DMZ</a>让您得以将一部计算机公开显露在互联网上，也就是将一台内往机器所有端口全部映射出去。<br><a href="https://baike.baidu.com/item/%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/8327845?fr=aladdin" target="_blank" rel="noopener">端口转发</a>允许远程计算机在一个私人的内部网络内连接至一个具体的计算机或服务，也就是让一台内网机器的某一个端口映射出去。</p><h2 id="二、优缺点"><a href="#二、优缺点" class="headerlink" title="二、优缺点"></a>二、优缺点</h2><p><strong>DMZ优点：</strong> 操作简单，只需要一步即可将所有端口全部映射</p><p><strong>DMZ缺点：</strong> 大部分路由器只允许设置一台</p><p><strong>端口转发优点：</strong> 可以映射内网中任意一台计算机的任意一个服务</p><p><strong>端口转发缺点：</strong> 一般路由器有映射数量限制，且操作繁琐</p><h2 id="三、适用场景"><a href="#三、适用场景" class="headerlink" title="三、适用场景"></a>三、适用场景</h2><p><strong>DMZ：</strong> 你要映射的服务端口全部在一台内网机器上，且数量较多的时候</p><p><strong>端口转发：</strong> 你要映射的服务端口分散在几个机器上，且数量不多的时候</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 内网穿透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> DMZ </tag>
+            
+            <tag> 内网穿透 </tag>
             
         </tags>
       
@@ -48,33 +77,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
-      <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-      <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
-      
-        <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 星际蜗牛 </tag>
             
         </tags>
       
@@ -110,6 +112,33 @@
     
     
     <entry>
+      <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+      <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+      <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
+      
+        <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 星际蜗牛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客页脚添加备案号</title>
       <link href="/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
       <url>/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/</url>
@@ -129,6 +158,33 @@
             <tag> hexo </tag>
             
             <tag> 备案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+      <link href="/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 实用软件 </tag>
+            
+            <tag> RocketDock </tag>
             
         </tags>
       
@@ -191,25 +247,23 @@
     
     
     <entry>
-      <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
-      <link href="/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
-      <url>/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/</url>
+      <title>Hexo博客美化之——IP签名图一网打尽</title>
+      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
       
-        <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
       
       
       <categories>
           
-          <category> 实用软件分享 </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 实用软件 </tag>
-            
-            <tag> RocketDock </tag>
+            <tag> hexo </tag>
             
         </tags>
       
@@ -237,31 +291,6 @@
             <tag> hexo </tag>
             
             <tag> SSL </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo博客美化之——IP签名图一网打尽</title>
-      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
-      
-        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
             
         </tags>
       
@@ -416,16 +445,16 @@
       
       <categories>
           
-          <category> frp内网穿透 </category>
+          <category> 内网穿透 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> frp </tag>
-            
             <tag> 内网穿透 </tag>
+            
+            <tag> frp </tag>
             
         </tags>
       
