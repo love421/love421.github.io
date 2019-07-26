@@ -8,7 +8,7 @@
       <link href="/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
       <url>/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
       
-        <content type="html"><![CDATA[<p>前言：虽然博主通过<a href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp实现内网穿透</a>，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！</p><a id="more"></a><p><strong>1.登录Debian，输入如下指令和密码切换到root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUWzq.png" alt="enUWzq.png"></p><p><strong>2.新建一个文件夹，并cd到刚刚新建的文件夹</strong><br><img src="https://s2.ax1x.com/2019/07/26/enl5L9.png" alt="enl5L9.png"></p><p><strong>3.通过运行<code>wget</code>指令下载安装包</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUbFJ.png" alt="enUbFJ.png"></p><p><strong>4.安装刚下载的安装包，得到SN和密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/ena3pn.png" alt="ena3pn.png"></p><p><strong>5.浏览器输入如下网址打开<a href="http://b.oray.com" target="_blank" rel="noopener">花生壳管理界面</a>，输入上一步的SN和密码登录</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://b.oray.com</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enag0O.png" alt="enag0O.png"></p><p><strong>6.之后输入密码激活设备</strong><br><img src="https://s2.ax1x.com/2019/07/26/eny6TP.png" alt="eny6TP.png"></p><p><strong>7.浏览器打开花生壳<a href="https://login.oray.com/login/?tplname=qrcode&s_url=https%3A%2F%2Fhsk.oray.com%2Fconsole%2Fmanage%2F" target="_blank" rel="noopener">控制台</a>,输入账号密码登陆进去</strong><br><img src="https://s2.ax1x.com/2019/07/26/enyLfU.png" alt="enyLfU.png"></p><p><strong>8.选择右上角添加设备输入SN码，绑定到自己账号上去</strong><br><img src="https://s2.ax1x.com/2019/07/26/en6U7q.png" alt="en6U7q.png"></p><p><strong>9.点击刚刚绑定的设备进入设备的管理界面</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engYoq.png" alt="engYoq.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/engFQe.png" alt="engFQe.png"></p><p><strong>10.点击右上角的账号选择切换账号</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engywR.png" alt="engywR.png"></p><p><strong>11.选择左边的账号登录，输入账号密码电机登录即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engomd.png" alt="engomd.png"></p><p><strong>12.点击<code>+</code>号，填写配置信息最后点击<code>确定</code>即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2VcF.png" alt="en2VcF.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/en2cuQ.png" alt="en2cuQ.png"></p><p><strong>13.最后诊断一下，没有问题enjoy</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2bDJ.png" alt="en2bDJ.png"></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>前言：</strong> 虽然博主通过<a href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp实现内网穿透</a>，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！</p><a id="more"></a><p><strong>1.登录Debian，输入如下指令和密码切换到root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUWzq.png" alt="enUWzq.png"></p><p><strong>2.新建一个文件夹，并cd到刚刚新建的文件夹</strong><br><img src="https://s2.ax1x.com/2019/07/26/enl5L9.png" alt="enl5L9.png"></p><p><strong>3.通过运行<code>wget</code>指令下载安装包</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUbFJ.png" alt="enUbFJ.png"></p><p><strong>4.安装刚下载的安装包，得到SN和密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/ena3pn.png" alt="ena3pn.png"></p><p><strong>5.浏览器输入如下网址打开<a href="http://b.oray.com" target="_blank" rel="noopener">花生壳管理界面</a>，输入上一步的SN和密码登录</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://b.oray.com</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enag0O.png" alt="enag0O.png"></p><p><strong>6.之后输入密码激活设备</strong><br><img src="https://s2.ax1x.com/2019/07/26/eny6TP.png" alt="eny6TP.png"></p><p><strong>7.浏览器打开花生壳<a href="https://login.oray.com/login/?tplname=qrcode&s_url=https%3A%2F%2Fhsk.oray.com%2Fconsole%2Fmanage%2F" target="_blank" rel="noopener">控制台</a>,输入账号密码登陆进去</strong><br><img src="https://s2.ax1x.com/2019/07/26/enyLfU.png" alt="enyLfU.png"></p><p><strong>8.选择右上角添加设备输入SN码，绑定到自己账号上去</strong><br><img src="https://s2.ax1x.com/2019/07/26/en6U7q.png" alt="en6U7q.png"></p><p><strong>9.点击刚刚绑定的设备进入设备的管理界面</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engYoq.png" alt="engYoq.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/engFQe.png" alt="engFQe.png"></p><p><strong>10.点击右上角的账号选择切换账号</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engywR.png" alt="engywR.png"></p><p><strong>11.选择左边的账号登录，输入账号密码电机登录即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engomd.png" alt="engomd.png"></p><p><strong>12.点击<code>+</code>号，填写配置信息最后点击<code>确定</code>即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2VcF.png" alt="en2VcF.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/en2cuQ.png" alt="en2cuQ.png"></p><p><strong>13.最后诊断一下，没有问题enjoy</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2bDJ.png" alt="en2bDJ.png"></p>]]></content>
       
       
       <categories>
@@ -22,9 +22,9 @@
             
             <tag> 内网穿透 </tag>
             
-            <tag> debian </tag>
-            
             <tag> 花生壳 </tag>
+            
+            <tag> debian </tag>
             
         </tags>
       
@@ -85,33 +85,6 @@
     
     
     <entry>
-      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
-      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
-      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 黑群晖 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> PVE虚拟机 </tag>
-            
-            <tag> 黑群晖 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
       <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
       <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
@@ -131,6 +104,33 @@
             <tag> hexo </tag>
             
             <tag> 星际蜗牛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
+      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PVE虚拟机 </tag>
+            
+            <tag> 黑群晖 </tag>
             
         </tags>
       
@@ -193,6 +193,31 @@
     
     
     <entry>
+      <title>录屏软件破解版分享——ApowerREC</title>
+      <link href="/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
+      <url>/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 实用软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
       <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
       <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
@@ -222,23 +247,25 @@
     
     
     <entry>
-      <title>录屏软件破解版分享——ApowerREC</title>
-      <link href="/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
-      <url>/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/</url>
+      <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
+      <link href="/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+      <url>/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/</url>
       
-        <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
       
       
       <categories>
           
-          <category> 实用软件分享 </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 实用软件 </tag>
+            <tag> hexo </tag>
+            
+            <tag> SSL </tag>
             
         </tags>
       
@@ -264,33 +291,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-      <link href="/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
-      <url>/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> SSL </tag>
             
         </tags>
       
