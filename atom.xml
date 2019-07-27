@@ -164,6 +164,32 @@
   </entry>
   
   <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
@@ -210,28 +236,25 @@
   </entry>
   
   <entry>
-    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:10:30.439Z</updated>
+    <title>Hexo博客美化之——IP签名图一网打尽</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-12T09:48:37.253Z</updated>
     
-    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -261,25 +284,27 @@
   </entry>
   
   <entry>
-    <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
-    <published>2019-07-08T16:00:00.000Z</published>
-    <updated>2019-07-12T09:48:37.253Z</updated>
+    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-11T06:44:52.721Z</updated>
     
-    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
   </entry>
   
@@ -307,31 +332,6 @@
       <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
       <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-11T06:44:52.721Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
-    
-    
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
   </entry>
   
@@ -456,6 +456,28 @@
       <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
     
       <category term="平衡车" scheme="https://www.makedreamsir.xyz/tags/%E5%B9%B3%E8%A1%A1%E8%BD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三角洲并联臂3D打印机入门了解</title>
+    <link href="https://www.makedreamsir.xyz/2017/11/04/3D%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
+    <id>https://www.makedreamsir.xyz/2017/11/04/3D打印机/</id>
+    <published>2017-11-03T16:00:00.000Z</published>
+    <updated>2019-07-26T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文以自己在大学期间为实验室购买的一台三角洲并联比3D打印机为例简要介绍3D打印机。</p><a id="more"></a><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;&emsp;首先这里不得不说的一点就是，这款 3d 打印机我买的特别不赶巧。</p><p>&emsp;&emsp;起初什么都不懂在网上随便查阅。后来在百度贴吧看到一片名为<a href="http://tieba.baidu.com/p/2944800373" target="_blank" rel="noopener">《800 元组装一台 3d 打印机全教程流程》</a>的帖子，我被里面说的深深地吸引到了。看完之后就对并联臂结构的打印机特别着迷，觉得这个结构的超级好看，那个时候虽然对打印机是一无所知，但是却着了魔似的觉得这种样子的打印机比较好看。后来加了那篇帖子里所涉及的两个群，也找到了传说中的太子，但是那个帖子的众筹已经结束了，所以已经没法团购了，然后就去淘宝上搜了一下，结果看到了这种结构的便宜的也就一千块左右，也想过照着太子给的清单自己配一套，但是那个时候很害怕，我怕组装不起来，然后钱还没少花，所以最后跟张庆商量好，我就决定去淘宝上买套件回来组。事实证明，当初的决定没有错，因为就算自己配然后回来组钱不但不会少还会多，而且那样买的东西四分五散还没法开发票。</p><p>&emsp;&emsp;然后来说说为什么说我买的特别不赶巧，因为当时看这淘宝上眼花缭乱的，那么多种，价格也是五花八门的。因为这 3d 打印机的水有多深我也不知道我身边也没人知道，所以我决定一定要买一个牌子的，售后服务要好的，这样我遇到问题可以好解决，所以在淘宝上看到纵维立方体科技的那个三角洲口碑还不错，其自称是 3d 打印界的小米。他们家三角洲当时有几个套餐，然后我为了省钱，就选择了滑车版+热床=899，当时我很想买那个 1499 的线轨版 PLUS+热床。但是想想多出那么多就放弃了。重点来了，没过多久实验室发下来 1 万+，起初我以为顶多能下来五千多，所以我才会那么省，我要是知道会发 1 万+我一定买那个 1499 的。然后买这个 899 的买就买了吧，结果也就过了 20 多天，他们家就出新款了，新款有个巨大特点，可以自动调平。这让我觉得我买的特别伤，稍稍买迟一点可以买到 1499+自动调平。哇，雪崩！不过据说不久就会出升级套件，到时候可以单独去买自动调平套件。</p><h2 id="3D-打印机硬件入门了解"><a href="#3D-打印机硬件入门了解" class="headerlink" title="3D 打印机硬件入门了解"></a>3D 打印机硬件入门了解</h2><p>&emsp;&emsp;在这之前可以先去百度的 arduino 吧看看这篇帖子<a href="http://tieba.baidu.com/p/2944800373" target="_blank" rel="noopener">《800 元组装一台 3d<br>打印机全教程流程》</a></p><p>&emsp;&emsp;接着我们来了解一下桌面级 3D 打印机根据所使用的原理大体共分为三种：FDM、DLP、SLA。其基本原理如下：</p><p><font color="red">（1）FDM：全称叫“熔融沉积”技术。</font>基本原理就是字面意思是通过加热装置将 ABS、PLA 等丝材加热融化，然后通过挤出头像挤牙膏一样挤出来，一层一层堆积上去，最后成形。</p><p><font color="red">（2）SLA：全称叫“立体光固化成型”。</font>基本原理是激光束在液态树脂表面勾画出物体的第一层形状，然后制作平台下降一定的（0.05-0.025mm 之间），再让固化层浸入液态树脂中，如此反复。使用的树脂是光敏树脂，激光束照射后会形成固态。</p><p><font color="red">（3）DLP：全称叫“数字光投影”技术。</font>使用的耗材和 SLA 一样，都是光固化树脂。那和 SLA 有什么区别呢？为什么叫数字光投影呢？其实在机械结构方面，DLP 与 SLA 最大的不同在于，DLP 用的是投影仪的数字光源（没用用过投影仪？买一个试试，哈哈），SLA 用的是激光头。正因为如此，DLP 一扫就是一片，SLA 成形只能靠一个激光点。一些 DLP 机器还可以打多种材料，例如 DLP200 台面可以打印多种材料，树脂 ABS 亚克力。</p><p><strong>打印尺寸：</strong></p><p>&emsp;&emsp;FDM 的机器，在架构上灵活多样，有 XYZ 框架结构的，有三角州结构的，有机械手臂的，因此成形尺寸可以做得很小，也可以做得很大。但是问题也来了，大尺寸的 FDM 机器，往往会存在稳定性不好，打印速度慢的问题。而 SLA 和 DLP 在成形原理上的限制，暂时就无法做出大型的机器，当然，未来会有更好的，另当别论。SLA 理论上和 FDM 一样可以做的无限大的尺寸，只不过速度会慢，SLA 也是通过光轴移动来打印的。而 DLP 呢？如果做大的话，会牺牲精度，而 SLA 和 FDM 不会。</p><p><strong>成形精度：</strong></p><p>&emsp;&emsp;3D 打印机有 XYZ 三个轴来控制精度，Z 轴是步进电机精度，就是咱们说的层厚 ，这个精度 FDM、DLP、SLA 没什么区别，因为买的都是市面上的步进电机，理论上最小可以到 0.01MM。差别主要是在 X、Y 轴精度上。现目前，理论情况下DLP 光斑精度最小只有 0.1MM，SLA 是 0.2MM，FDM0.3MM。但在实际中，SLA &gt;DLP。那么为什么 DLP 精度没有 SLA 高呢，是因为 DLP 出来的光是扇形光，是有散射的，SLA 是激光是近似一条直线，所以在精度上会优于 DLP。</p><p><strong>机器价格：</strong></p><p>&emsp;&emsp;普遍的，FDM 比 SLA、DLP 便宜，大多在 2000 千至 2 万，当然，进口的FDM 机器也很贵，像 Ultimaker，Makerbot 大多在 2 万以上。而 SLA、DLP，因为精度高，可以广泛用于工业用途，特别是珠宝商。比 FDM 机器贵得多。比如 FORM1，在 3 万左右，雪豹的 DLP 机器，官方报价是 9800。乔克兄弟的 DLP机器，算是准工业级了，官方报价是 8 万 6，市面上其他厂商的 DLP 机器普遍4 万以上。</p><p><strong>耗材价格：</strong></p><p>&emsp;&emsp;FDM 机器现在比较普及，耗材相对便宜，一公斤 ABS 耗材在 50 至 200 元之间（取决于品质）。SLA 和 DLP 的耗材比较贵，大概在一公斤光固化树脂在 400元至 3000 元之间。</p><p><font color="red">综上所述，桌面级的 3D 打印机：</font></p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;成形尺寸：FDM &gt; SLA ≈ DLP</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;成形精度：SLA &gt; DLP &gt; FDM</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;机器价格：SLA &gt; DLP &gt; FDM</p><p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;耗材价格：SLA ≈ DLP &gt; FDM</p><p>&emsp;&emsp;如果看完原理介绍不是很能直观的明白其区别，自己可以去优酷上搜一下相关打印机的演示视屏，看完了我相信最起码可以明白 FDM 和 SLA 之间的区别。然后着重介绍一下 FDM 打印机。FDM 按照结构来分也就那么几种，i3、并联臂、UM、MB 等类型。在这里，我只简单介绍一下 i3 和并联臂的区别：</p><p><img src="https://s2.ax1x.com/2019/07/27/eMFBGj.png" alt="eMFBGj.png"></p><p>&emsp;&emsp;<font color="red">左边的为并联臂结构，右边的为 i3 结构，</font>下面我简要介绍一下两者的优缺点：</p><p><strong>i3 结构优点：</strong></p><p>1、框架相对比较简单，简单的龙门架，比较节省材料，所以相对而言价格也比较便宜，适合初级入门。</p><p>2、近程送丝，可以打印柔体耗材—TPU。</p><p><strong>i3 结构缺点：</strong></p><p>1、Y 方向为平台移动，由于平台重量比较大，打印时惯性自然就大，增加了步进电机和同步带的负荷，会加快同步带磨损；同时打印较快时，无法保证打印精度。</p><p>2、Z 方向双丝杆带动挤出头上下移动，由于丝杆的精度无法做到完全一致，长时间打印后，就会出现两边不齐平的情况，影响打印效果。</p><p>3、机器占地面积大，平台是 Y 轴方向移动，所以需要的面积比较大。</p><p>4、喷头模块使用的是单风道，只能吹到打印模型的一侧，另一侧无法及时冷却，<br>非常影响打印质量。</p><p><strong>并联臂优点：</strong></p><p>1、占地面积小。</p><p>2、并联臂结构，框架简单，使用铝型材 DIY 时，框架大小方便定制。</p><p>3、它的喷头移动灵活，打印时设置回抽抬升喷头可有效减少拉丝。其它结构无法做到灵活地抬升喷头。</p><p>4、远程送丝，使用 E3D 喷头，重量轻，打印速度比较快。</p><p>5、E3D 的挤出头，散热性能好，不易堵头。</p><p><strong>并联臂缺点：</strong></p><p>1、前面说了占地面积小，但是它的打印机内部空间利用率很低。机器越高，空间利用率越低。</p><p>2、并联臂最大的缺点就是调平困难，由于它的平台是固定的，如果没有自动调平，那么调平只能通过软件或者手动调整 XYZ 三个方向的偏置参数来调平，特别麻烦。</p><p>3、远程送丝，如果打印时频繁回抽，气动接头容易损坏。接着说 FDM 的并联臂打印机，市面上一般有两种，一种是滑车款，一种是线轨版，线轨版相比较滑车款精度高，磨损小，但是价格贵一点。最后总结一下，421 这台就是 FDM 的滑车款并联臂 3d 打印机。</p><h2 id="3D-打印机软件入门了解"><a href="#3D-打印机软件入门了解" class="headerlink" title="3D 打印机软件入门了解"></a>3D 打印机软件入门了解</h2><p>&emsp;&emsp;对于一个刚接触 3d 打印机的人最苦恼于满天铺底的资料，完全不知道怎么下手，最想知道的就是我会用到什么软件。在这里我先给出一套解决方案，要完成一件作品的从无到有大概需要：</p><p><font color="red">（1）调试软件 Printrun：</font>在机器调平、换料等时候会用到，不是必须的。因为切片软件是必须的，而我们所用的切片软件集成了这部分功能，所以可以替代，但是这个软件更专业，个人用习惯了。</p><p><font color="red">（2）建模软件 3ds Max：</font>在建模、修改模型等时候会用到。对于如果需要自己建模的人来说，这个是必须的。但是对于不需要自己建模的人来说，这个可有可无。</p><p><font color="red">（3）切片软件 Cura：</font>在模型切片获得 G 代码的时候会用到，这个对于任何人来说，都是必须的。当然前面也说过它也可以用来调试机器用。这里顺便说一下，我们实际打印所花费的时间大概是 Cura 切片计算的时间的百分之六十三。举个例子假设有一个模型我们用 Cura 切片完成后计算的时间需要花费十一个小时，而实际上我们打印这个东西大约只需要 7 个小时。</p><p><font color="red">（4）添加支撑软件 Meshmixer 和 Simplify3d：</font>在为模型添加支撑的时候会用到，这两个可以说是必须的，因为在我们使用的过程中，难免会遇到一些需要加支撑的模型。有人会问，为什么要两个，一个不就可以了吗？这里说一下两个区别：Meshmixer 隶属于建模软件大类，但是它侧重于模型的修改，尤其可以为模型自动或手动的添加树状支撑。而 Simplify3d 隶属于切片软件，但是它可以手动添加线性支撑。其实大多数的切片软件都可以选择性的为模型添加支撑，但是我们所用的 Cura 无法手动为模型添加支撑，而且其自动添加的支撑全部是线性支撑。</p><p><font color="red">（5）刷固件 Arduino：</font>在为机器刷固件、调平等时候会用到，也是必须的。</p><h2 id="3D-打印机使用步骤"><a href="#3D-打印机使用步骤" class="headerlink" title="3D 打印机使用步骤"></a>3D 打印机使用步骤</h2><p>&emsp;&emsp;我们要将脑海中的一件作品打印出来，实现从无到有一般会需要以下几个步骤：</p><p><font color="red">第一步我将它称之为准备工作。</font>将打印机摆放到一个平整地方，摆放好后可以用手轻轻晃动，一定要确保打印机不会乱晃，否则很影响打印机的打印精度。此外一定要确保在打印期间内电源不会断电，因为这款打印机没有断电续打的功能。如果一旦出现中间断电，那么只能前功尽弃，重头再来。最后还有一点，最好将打印机放到不会轻易被东西碰到的地方，因为在打印过程中如果有东西撞击到打印机或者某一轴的滑车等导致皮带跟步进电机没有同步，就会导致模型错位。</p><p><font color="red">第二步我们需要将打印机调平。</font>这是最重要的，也是最头疼的，对于新手小白来说简直是噩梦。首先说一下为什么要调平，我们要保证打印机的喷嘴正好可以从打印平台的高度开始打印，不多不少刚刚好。而且还要保证打印平台是水平的，不会造成打印头在这个点刚刚好在另外的地方高度太高亦或是太低等现象。如果太高吐出的材料无法和打印平台粘附，造成材料悬空，打印失败，如果太低，打印机的喷嘴会怼到打印平台上，轻则损坏喷嘴、打印平台，重则损坏步进电机等。按照给的资料包里面那个调平教程来，记住一个原则就是宁可太高不可低一点点，高了我们还可以继续调，如果低了很容易损坏打印机。</p><p><font color="red">第三步我们需要建模，这就要用到 3d 建模类的软件。</font>3d 建模软件眼花缭乱诸如 3ds Max、123D、SolidWorks、AutoCAD、3D Builder、Blender 等，这里不多说每个区别。在资料包里我放了一个 3ds Max2014 安装包，至于怎么使用可以去打开下面这个链接自学。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://www.51zxw.net/list.aspx?cid=531</span><br></pre></td></tr></table></figure><p><font color="red">第四步我们需要针对模型选择性的为模型添加支撑，这就需要用到加支撑的软件。</font> 我们常用的就是为模型添加树状支撑的 Meshmixer 和为模型添加线性支撑的 Simplify3d，这两个安装包我也放在了资料包里面，至于最后一个疑问（什么时候选择添加线性支撑什么时候选择添加树状支撑以及怎么样使用他们为模型添加支撑），只需要在优酷上观看小不点开放实验室的一个教学视屏。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://v.youku.com/v_show/id_XMTM3NjYzMzc3Ng==.html?spm=a2h0k.8191407.0.0&amp;from=s1.8-1-1.2</span><br></pre></td></tr></table></figure><p>最后强调一下，这步不是必须的，因为不是每一个模型都需要添加支撑的，只要你看了上面小不点开放实验室的讲解我相信你就不会再有这个疑问了。</p><p><font color="red">第五步我们需要将刚刚建好的模型变成 G 代码供打印机使用，这就需要一个切片软件。</font> 在这里就顺便解释一下什么是切片软件，是干嘛用的。也是字面上的意思，就是负责把我们建好的模型分层切割，把建好的模型按照设置好的参数在 Z 轴方向分层，并得到 G 代码，供打印机使用。我再说得白话一点就是根据一个模型得到无数个点的坐标值，然后 3d 打印机有顺序的按照这个坐标值分别执行将打印头准确的打到对应坐标的地方。切片软件也是众多，例如Simplify3d、Cura、犀牛等。在资料包里有一个 Cura 的安装包，至于使用可以去看这个自学。</p><pre><code>http://www.360doc.com/content/17/0331/15/51704_641714089.shtml</code></pre><p><font color="red">第六步我们将模型的 G 代码保存在 SD 卡，然后插到打印机中便可以脱机印。</font> 在这里顺便说一下为什么不推荐联机打印。因为打印机正常都需要工作很久，联机打印受电脑影响，在这么长的时间内，很难保证不会误操作、电脑没电等诸多原因将切片软件停止工作。而且有些时候联机打印会出现一些很莫名其妙的问题，我自己也不能解释，网上也查过说法不一。除非是很短时间内就可以打完的，否则极力不推荐联机打印，脱机打印才是王道。</p><h2 id="3D-打印机使用经验"><a href="#3D-打印机使用经验" class="headerlink" title="3D 打印机使用经验"></a>3D 打印机使用经验</h2><p>1.调平牢记一个原则，宁可很高不可低一点。至于打印头到打印平台多高，真的只能靠经验。对于新手只需要按照步骤一步一步来，用多了感觉就出来了。</p><p>2.最常用的材料是 PLA 和 ABS，pla 一般比 abs 稍贵一点，abs 材料容易翘边，需要热床，而且打印温度要比 pla 高，所以我买的都是 pla。</p><p><font color="red">3.换料的方法：先将打印头温度加热到 210 度（材料是 pla），接着让挤出机吐丝，然后在打印头确定有丝吐出之后可以迅速将材料抽出，最后换上新的材料，直到打印头吐出新丝为止。</font></p><p>4.打印平台是一块直径 200mm 的玻璃板，有一面我贴了磨砂贴纸，为的是打印模型可以与平台很好的接触固定，避免在打印过程中，模型滑动导致打印失败。但是这也带来一个很严重的问题，在打印接触面积比较大或者由于打印机调平不是很准确的模型的时候，很难将模型取下来。所以在打印跟打印平台接触面积较大的模型时候可以选择在玻璃面打印，但是要在打印之前在玻璃面上图上一层白乳胶，这样可以减少模型移动的可能性。这样带来一个好处就是在打印完取件的时候可以直接把玻璃板拿去用水泡，白乳胶一泡就软了，只需要轻轻一掰模型就可以完好无损的取下来。<font color="red">综上所述，当打印的模型底面跟打印平台接触面积较小的时候我们选择在贴有砂纸的那面打印，当打印的模型底面跟打印平台接触面积较大的时候我们选择在涂有白乳胶的玻璃面打印。</font></p><p>5.什么时候需要加热床？在打印 abs 材料的时候需要用，在模型很难取件的时候可以用热床加热然后用刀片翘。</p><p>6.模型错位有几个原因:</p><p>&emsp;&emsp;（1）滑车是不是太紧或者太松了</p><p>&emsp;&emsp;（2）皮带是不是太松或者太紧了</p><p>&emsp;&emsp;（3）模型是不是相对打印平台移动了</p><p>7.打印模型最容易失败的时间段就是打印头刚刚下料的时候，也就是打印机刚刚开始打印的时候。这个时间段存在很多导致打印失败的原因：</p><p>&emsp;&emsp;（1）因为热胀冷缩的原因，尽管这个时间内挤出机没有开始工作，但是效应器喉管内的材料会在打印头预热期间膨胀，导致打印头开始吐丝，而这部分丝会一直在打印头下面悬挂着，在打印头刚下料的时候这部分丝得去向是不可预料的。</p><p>&emsp;&emsp;（2）由于调平要求没达标，或高或低。如果太高打印头开始下料的时候吐出的料无法粘附在打印平台上导致打印失败。如果太低打印头无法正常吐丝导致挤出机疙瘩疙瘩的响，甚至打印头直接撞击打印平台，长时间这样打印头肯定堵料。<font color="red">综上所述，在打印模型的时候前期下料很重要，一定要确保模型底面跟打印平台很好的粘附再离开。</font></p><p>9.在打印头加热期间一定要确保喷嘴和打印平台有一定距离，如果喷嘴距离打印平台太近的话，喷嘴温度过高很容易灼伤磨砂贴纸造成坑坑洼洼的。</p><p>10.如果在刷固件的时候提示上传失败，百分之九十九都是你端口被占用的原因。</p><p>11.如果打印模型底面跟打印平台接触面积很小，可以在 Cura 中选择在模型底部添加添加粘附，至于具体方法请看上面那个 Cura 使用图解。</p><p><font color="red">12.3D 打印材料容易受潮，如果是已经开封的务必存放在干燥的地方，最好用塑料包扎起来存放。一但受潮的话，会出现在 3D 打印机打印过程中线材断裂和打印扭曲变形等多种打印故障。</font></p><p>13.挤出机分为近程和远程，i3 是近程，而我们的并联臂用的是 V5 远程，如果今后需要更换挤出机，购买的时候一定要注意是 V5 远程，买到 V5 近程还好说，但是千万不要买成 V6 的近程。</p><p>14.如果堵头了，请把效应器抬高，然后单独将打印头加热到 240 度，用手往前送料，知道有料吐出为止。如果上面这个方法没有用，那就只能拆开喉管和喷嘴，然后把余料透出来，再重新装上试一下看是否可以正常吐丝。如果喉管或者喷嘴等拆不下来，只能换新的。</p><p><font color="red">15.脱机打印的时候，一定是将模型以.gcode 格式保存在 SD 卡中，且文件名不能是中文。</font></p><p><font color="red">16.每次输入指令前一定要将打印机归为之后在操作，即先输入 G28 以后等待打印机归为之后再输入你想操作的指令。</font></p><p><font color="red">17.这个<a href="https://www.thingiverse.com/" target="_blank" rel="noopener">模型分享网站</a>，在你搜索你想要的模型的时候必须用英文，中文是无法成功搜索到自己想要的。</font></p><p>18.切片软件的层厚参数设置，直接关系到打印模型的细腻程度，通常可以选择0.2mm。如果对于这个模型要求较高或者在打印的模型有些地方坡度趋近水平的时候，可以将它设置为 0.1mm，甚至 0.05mm，但是这样也会大大增加打印时间。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文以自己在大学期间为实验室购买的一台三角洲并联比3D打印机为例简要介绍3D打印机。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="电子DIY" scheme="https://www.makedreamsir.xyz/categories/%E7%94%B5%E5%AD%90DIY/"/>
+    
+    
+      <category term="3D打印机" scheme="https://www.makedreamsir.xyz/tags/3D%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
     
   </entry>
   
