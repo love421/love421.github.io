@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>解决Error listen EADDRINUSE问题</title>
+      <link href="/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 运行<code>hexo s</code>报如下错误：<br><img src="https://s2.ax1x.com/2019/07/29/e3Huse.png" alt="e3Huse.png"></p><a id="more"></a><p><strong>问题分析：</strong> 端口占用问题，意思也就是这个端口号被我们服务器后台其他任务占用了，所以我们只需要找到这个后台服务，将这个进程给关掉在运行即可。</p><p><strong>具体操作：</strong> </p><p>1.运行<code>ps -aux|grep hexo| grep -v grep</code>查看后台进程号<br><fancybox><br><img src="https://s2.ax1x.com/2019/07/29/e3bpfP.png" alt="e3bpfP.png"><br></fancybox></p><p>2.运行<code>kill -9</code>进程号杀掉后台进程<br><fancybox><br><img src="https://s2.ax1x.com/2019/07/29/e3bekn.png" alt="e3bekn.png"><br></fancybox></p><p>3.再次运行<code>ps -aux|grep hexo| grep -v grep</code>查看进程是否被杀掉，可以看到我们后台并没有任何的<br><fancybox><br><img src="https://s2.ax1x.com/2019/07/29/e3b3m4.png" alt="e3b3m4.png"><br></fancybox></p><p>4.最后再次运行<code>hexo s</code>即可<br><fancybox><br><img src="https://s2.ax1x.com/2019/07/29/e3btt1.png" alt="e3btt1.png"><br></fancybox></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+          <category> Debian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> debian </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>markdown常用语法记录</title>
       <link href="/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
       <url>/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/</url>
@@ -110,33 +141,6 @@
     
     
     <entry>
-      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
-      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
-      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 黑群晖 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> PVE虚拟机 </tag>
-            
-            <tag> 黑群晖 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
       <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
       <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
@@ -156,6 +160,33 @@
             <tag> hexo </tag>
             
             <tag> 星际蜗牛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
+      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PVE虚拟机 </tag>
+            
+            <tag> 黑群晖 </tag>
             
         </tags>
       
@@ -252,9 +283,9 @@
       
       <categories>
           
-          <category> STM32 </category>
-          
           <category> 实用软件分享 </category>
+          
+          <category> STM32 </category>
           
       </categories>
       
@@ -324,6 +355,33 @@
     
     
     <entry>
+      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Debian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SSH </tag>
+            
+            <tag> debian </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
       <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
@@ -345,33 +403,6 @@
             <tag> debian </tag>
             
             <tag> Xftp </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Debian </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> SSH </tag>
-            
-            <tag> debian </tag>
             
         </tags>
       
