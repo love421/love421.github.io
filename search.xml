@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>Debian安装ZeroTier实现内网穿透</title>
+      <link href="/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <url>/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
+      
+        <content type="html"><![CDATA[<p><strong><code>Debian</code>系统下安装<code>ZeroTier</code>组件异地局域网，实现内网穿透！</strong></p><a id="more"></a><p><strong>1.登录Debian系统，切换root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><strong>2.安装ZeroTier</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s https://install.zerotier.com/ | bash</span><br></pre></td></tr></table></figure><p>如果看见<code>Successful</code>就ok了！</p><p><strong>3.填写网络ID，加入异地虚拟网络</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zerotier-cli join (网络ID)</span><br></pre></td></tr></table></figure><p>如果看见<code>200 join OK</code>字样就说明成功加入异地虚拟局域网了。</p><p><strong>4.登录ZeroTier官网账号，点击<code>Networks</code></strong></p><p><img src="https://s2.ax1x.com/2019/07/30/eJQ2GQ.png" alt="eJQ2GQ.png"></p><p><strong>5.进入虚拟网络控制台，勾选新加入设备最左边的验证按钮</strong></p><p><img src="https://s2.ax1x.com/2019/07/30/eJlSZ6.png" alt="eJlSZ6.png"></p><p><strong>6.最后得到虚拟IP，在另外一台局域网的设备PING这个IP</strong></p><p><img src="https://s2.ax1x.com/2019/07/30/eJ1S6s.png" alt="eJ1S6s.png"></p><p>如果可以ping通，那就成功了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 内网穿透 </category>
+          
+          <category> Debian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内网穿透 </tag>
+            
+            <tag> debian </tag>
+            
+            <tag> ZeroTier </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Error listen EADDRINUSE问题</title>
       <link href="/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/</url>
@@ -22,11 +53,11 @@
       
         <tags>
             
+            <tag> debian </tag>
+            
             <tag> hexo </tag>
             
             <tag> SSH </tag>
-            
-            <tag> debian </tag>
             
         </tags>
       
@@ -78,9 +109,9 @@
             
             <tag> 内网穿透 </tag>
             
-            <tag> 花生壳 </tag>
-            
             <tag> debian </tag>
+            
+            <tag> 花生壳 </tag>
             
         </tags>
       
@@ -141,33 +172,6 @@
     
     
     <entry>
-      <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
-      <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-      <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
-      
-        <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 星际蜗牛 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
       <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
       <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
@@ -187,6 +191,33 @@
             <tag> PVE虚拟机 </tag>
             
             <tag> 黑群晖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+      <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+      <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
+      
+        <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 星际蜗牛 </tag>
             
         </tags>
       
@@ -283,9 +314,9 @@
       
       <categories>
           
-          <category> 实用软件分享 </category>
-          
           <category> STM32 </category>
+          
+          <category> 实用软件分享 </category>
           
       </categories>
       
@@ -295,31 +326,6 @@
             <tag> STM32 </tag>
             
             <tag> 实用软件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo博客美化之——IP签名图一网打尽</title>
-      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
-      
-        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
             
         </tags>
       
@@ -355,6 +361,31 @@
     
     
     <entry>
+      <title>Hexo博客美化之——IP签名图一网打尽</title>
+      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
       <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
@@ -371,9 +402,9 @@
       
         <tags>
             
-            <tag> SSH </tag>
-            
             <tag> debian </tag>
+            
+            <tag> SSH </tag>
             
         </tags>
       
@@ -398,9 +429,9 @@
       
         <tags>
             
-            <tag> SSH </tag>
-            
             <tag> debian </tag>
+            
+            <tag> SSH </tag>
             
             <tag> Xftp </tag>
             

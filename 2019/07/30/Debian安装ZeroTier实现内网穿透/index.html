@@ -14,7 +14,7 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>所有分类 | love421博客</title>
+  <title>Debian安装ZeroTier实现内网穿透 | love421博客</title>
   
   <meta name="keywords" content="造梦Sir love421">
   
@@ -61,7 +61,7 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
   
   
   <div class="cover-wrapper">
-    <cover class='cover category half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>love421</h1>
@@ -339,80 +339,288 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
 
   <div class="l_body">
     <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
       
-<div class='l_main'>
-  
+
+
+  <section class='meta'>
     
-      <section class="post-list">
-        <div class='post-wrapper'>
-          <article id="archive-page" class="post article white-box">
-            <section class="archive">
-              <div class="archive-item archive-year mark">
-                <h2>所有分类</h2>
-                <hr>
-              </div>
-              <div class="archive-item archive-post mark">
-                
-                  
-                    <a class="" href="/categories/Debian/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;Debian</time>
-                      <span class="title">
-                        (4)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/STM32/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;STM32</time>
-                      <span class="title">
-                        (2)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/hexo/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;hexo</time>
-                      <span class="title">
-                        (7)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/内网穿透/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;内网穿透</time>
-                      <span class="title">
-                        (4)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/实用软件分享/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;实用软件分享</time>
-                      <span class="title">
-                        (3)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/电子DIY/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;电子DIY</time>
-                      <span class="title">
-                        (2)
-                      </span>
-                    </a>
-                  
-                    <a class="" href="/categories/黑群晖/">
-                      <time><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;黑群晖</time>
-                      <span class="title">
-                        (4)
-                      </span>
-                    </a>
-                  
-                
-              </div>
-              <br>
-              
-            </section>
-          </article>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2019/07/30/Debian安装ZeroTier实现内网穿透/">
+        Debian安装ZeroTier实现内网穿透
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://www.makedreamsir.xyz" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>love421</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-07-30</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Debian/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>内网穿透&nbsp;/&nbsp;Debian</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p><strong><code>Debian</code>系统下安装<code>ZeroTier</code>组件异地局域网，实现内网穿透！</strong></p>
+<a id="more"></a>
+<p><strong>1.登录Debian系统，切换root账号</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.安装ZeroTier</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s https://install.zerotier.com/ | bash</span><br></pre></td></tr></table></figure>
+
+<p>如果看见<code>Successful</code>就ok了！</p>
+<p><strong>3.填写网络ID，加入异地虚拟网络</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zerotier-cli join (网络ID)</span><br></pre></td></tr></table></figure>
+
+<p>如果看见<code>200 join OK</code>字样就说明成功加入异地虚拟局域网了。</p>
+<p><strong>4.登录ZeroTier官网账号，点击<code>Networks</code></strong></p>
+<p><img src="https://s2.ax1x.com/2019/07/30/eJQ2GQ.png" alt="eJQ2GQ.png"></p>
+<p><strong>5.进入虚拟网络控制台，勾选新加入设备最左边的验证按钮</strong></p>
+<p><img src="https://s2.ax1x.com/2019/07/30/eJlSZ6.png" alt="eJlSZ6.png"></p>
+<p><strong>6.最后得到虚拟IP，在另外一台局域网的设备PING这个IP</strong></p>
+<p><img src="https://s2.ax1x.com/2019/07/30/eJ1S6s.png" alt="eJ1S6s.png"></p>
+<p>如果可以ping通，那就成功了。</p>
+
         </div>
-      </section>
-    
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-07-30T17:54:33+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>最后更新于 Jul 30, 2019</p>
+  </a>
+</div>
+
+        
+      
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/内网穿透/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>内网穿透</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/debian/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>debian</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/ZeroTier/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>ZeroTier</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.makedreamsir.xyz/2019/07/30/Debian安装ZeroTier实现内网穿透/&title=Debian安装ZeroTier实现内网穿透 | love421博客&summary=Debian系统下安装ZeroTier组件异地局域网，实现内网穿透！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.makedreamsir.xyz/2019/07/30/Debian安装ZeroTier实现内网穿透/&title=Debian安装ZeroTier实现内网穿透 | love421博客&summary=Debian系统下安装ZeroTier组件异地局域网，实现内网穿透！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADPklEQVR42u3aQW7jMBAEQP//015gT7sI5HQPacCiS6dAUSTV6DBhDx+P+Hj+Pa7OPP85fp75+bdX9399/dVvk/sPD2xsbOybsJ8vj/aRCbUtSv6sxIKNjY19Kvv1Y2YNLGkweSmTwiUWbGxs7G9mJ/jktZLj9fX558HGxsbGzhtGvgiZxUl5ubGxsbG/k500kryp5O0tL3G+FNmcpWFjY2N/PLuN5j/55zfOt7GxsbE/kv1cPtbvM1uQLD0RGxsb+yB2uwxYCYzauD/ZNtReWWdm2NjY2B/P3hXr7Aqe2o2ebbmxsbGxz2OvhEdJM2tb1GzMPCsuNjY29hns5IWSdtI2oVnba8fJl2+CjY2NfRB71nLyyensynycMBsbYGNjY5/Ezv/dXxkStN+hbWNtHIaNjY19Hns4H47Dphls9kmSMQY2Njb2eexZwJSXqR0ttJ8kX+pcLkWwsbGxb8tug/tZoL/S/Gbj4eLO2NjY2DdnryAf8TGLkGZj3ahA2NjY2Aex8waWlGB9iNtG/8NQCRsbG/sgdttIZg0jL9bs+nyEcJmlYWNjY9+WvQJ+xsfrDT3t8mY2fsbGxsY+m703DGq3aa4PfZemItjY2Ng3Z+dLglkzmEX/22bXVx8AGxsb+yD2rrHuyqIlaVHthp7o3bCxsbEPYrcRf/5CK5t1ZgOAOlTCxsbGvjl7tjx4R1FWwqakof4yD8HGxsa+LXslKspLMBu+5tF/PorAxsbGPo+dxzRtWDNreG0h2nL8txTBxsbGPoKd3LQdCeePzAcJ7VPy+AkbGxv77uyVB7RBz2wMvLJJ6JelCDY2NvYR7DyUbwe07bbLvE2uvCE2Njb2eezk1m1T2dt42hFFVG5sbGzsg9i7Ivh8C05+h+Kl41L+0r2xsbGxb8h+xxJi15m2iRYFwsbGxj6I3TaDdiibF7Et92zoi42NjX0qOx+yJq/eLl1WmmLCixI1bGxs7CPY7dh1V+SUL5PykkWFw8bGxsaO//WfRVR5O5wtWrCxsbG/k71SgrYVtalYUprH7MHY2NjYN2HnodJssZEPepPz+SfZlqVhY2NjfzB7NuhdCZvyQH9Xo90238bGxsb+LPYfdizzhw/rJIoAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://www.makedreamsir.xyz/2019/07/30/Debian安装ZeroTier实现内网穿透/&title=Debian安装ZeroTier实现内网穿透 | love421博客&summary=Debian系统下安装ZeroTier组件异地局域网，实现内网穿透！"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADPklEQVR42u3aQW7jMBAEQP//015gT7sI5HQPacCiS6dAUSTV6DBhDx+P+Hj+Pa7OPP85fp75+bdX9399/dVvk/sPD2xsbOybsJ8vj/aRCbUtSv6sxIKNjY19Kvv1Y2YNLGkweSmTwiUWbGxs7G9mJ/jktZLj9fX558HGxsbGzhtGvgiZxUl5ubGxsbG/k500kryp5O0tL3G+FNmcpWFjY2N/PLuN5j/55zfOt7GxsbE/kv1cPtbvM1uQLD0RGxsb+yB2uwxYCYzauD/ZNtReWWdm2NjY2B/P3hXr7Aqe2o2ebbmxsbGxz2OvhEdJM2tb1GzMPCsuNjY29hns5IWSdtI2oVnba8fJl2+CjY2NfRB71nLyyensynycMBsbYGNjY5/Ezv/dXxkStN+hbWNtHIaNjY19Hns4H47Dphls9kmSMQY2Njb2eexZwJSXqR0ttJ8kX+pcLkWwsbGxb8tug/tZoL/S/Gbj4eLO2NjY2DdnryAf8TGLkGZj3ahA2NjY2Aex8waWlGB9iNtG/8NQCRsbG/sgdttIZg0jL9bs+nyEcJmlYWNjY9+WvQJ+xsfrDT3t8mY2fsbGxsY+m703DGq3aa4PfZemItjY2Ng3Z+dLglkzmEX/22bXVx8AGxsb+yD2rrHuyqIlaVHthp7o3bCxsbEPYrcRf/5CK5t1ZgOAOlTCxsbGvjl7tjx4R1FWwqakof4yD8HGxsa+LXslKspLMBu+5tF/PorAxsbGPo+dxzRtWDNreG0h2nL8txTBxsbGPoKd3LQdCeePzAcJ7VPy+AkbGxv77uyVB7RBz2wMvLJJ6JelCDY2NvYR7DyUbwe07bbLvE2uvCE2Njb2eezk1m1T2dt42hFFVG5sbGzsg9i7Ivh8C05+h+Kl41L+0r2xsbGxb8h+xxJi15m2iRYFwsbGxj6I3TaDdiibF7Et92zoi42NjX0qOx+yJq/eLl1WmmLCixI1bGxs7CPY7dh1V+SUL5PykkWFw8bGxsaO//WfRVR5O5wtWrCxsbG/k71SgrYVtalYUprH7MHY2NjYN2HnodJssZEPepPz+SfZlqVhY2NjfzB7NuhdCZvyQH9Xo90238bGxsb+LPYfdizzhw/rJIoAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+        
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/07/29/解决Error listen EADDRINUSE问题/" rel="prev" title="解决Error listen EADDRINUSE问题">
+                                    
+                                        解决Error listen EADDRINUSE问题
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/debian/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>debian</a> <a class="tag" href="/tags/hexo/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>hexo</a> <a class="tag" href="/tags/SSH/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>SSH</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Debian安装ZeroTier实现内网穿透',
+      tools: true
+    }
+  </script>
+
 
 </div>
 <aside class='l_side'>
@@ -1042,6 +1250,36 @@ $$$$$$$$\  $$$$$$  |   \$  /   $$$$$$$$\       $$ |$$$$$$$$\ $$$$$$\     \$$$$$$
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: notify,
+    verify: verify,
+    guest_info: guest_info,
+    
+    appId: "5HWR27qFV7yMiriS8LgIEjnh-gzGzoHsz",
+    appKey: "rStwDfntgBJjqxu2A4lEMrwj",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
 
 
 
