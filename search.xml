@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>ESP8266擦除flash最简单的方法</title>
+      <link href="/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
+      <url>/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/</url>
+      
+        <content type="html"><![CDATA[<p><strong>ESP8266通过刷官方提供的固件即可擦除flash，无需安装python和pip等，很简单，很强大，很nice！</strong></p><a id="more"></a><p><strong>前言：</strong> 博主的nodemcu刷了IOT固件之后，已经配置成STA模式，但是现在我把它拿到另外一个网络环境下(WIFI不是当时配置STA时候输入的名称和密码)，所以连不上WIFI，也不能通过路由器查看当前IP。可气的是，我重新刷入其他固件也都无法变成AP模式，所以要把模块的flash进行擦除再重新刷入固件就可以上电变成AP模式。于是我去CSDN找ESP8266擦除flash的方法，本来觉得应该很简单，找个小工具就可以擦除之类的，没想到的是一搜出来都是要装什么Python和pip，然后那个麻烦的呀，我就不想往下看了，接着就去<a href="https://wiki.ai-thinker.com" target="_blank" rel="noopener">安信可</a>官网试着找了一下。嗯!收获不错，找到个方法，很给力，很简单，很nice！<br><fancybox><br><img src="https://s2.ax1x.com/2019/08/03/erXKoQ.png" alt="erXKoQ.png"><br></fancybox></p><p><strong>方法：</strong> 下载<a href="https://wiki.ai-thinker.com/_media/tools/erase_flash_bins.7z" target="_blank" rel="noopener">固件</a>，然后根据你flash大小选择对应bin文件，并将此bin文件烧写到esp8266中即可完全擦除flash，再次刷入IOT固件时候，模块就变成了AP模式！<br><fancybox><br><img src="https://s2.ax1x.com/2019/08/03/erjwB8.png" alt="erjwB8.png"><br></fancybox></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> ESP8266 </category>
+          
+          <category> 电子DIY </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> esp8266 </tag>
+            
+            <tag> flash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Debian安装ZeroTier实现内网穿透</title>
       <link href="/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
       <url>/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>
@@ -280,6 +309,35 @@
     
     
     <entry>
+      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用软件分享 </category>
+          
+          <category> STM32 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> STM32 </tag>
+            
+            <tag> 实用软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>录屏软件破解版分享——ApowerREC</title>
       <link href="/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
       <url>/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/</url>
@@ -305,27 +363,23 @@
     
     
     <entry>
-      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
+      <title>Hexo博客美化之——IP签名图一网打尽</title>
+      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
       
-        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
       
       
       <categories>
           
-          <category> STM32 </category>
-          
-          <category> 实用软件分享 </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> STM32 </tag>
-            
-            <tag> 实用软件 </tag>
+            <tag> hexo </tag>
             
         </tags>
       
@@ -361,23 +415,27 @@
     
     
     <entry>
-      <title>Hexo博客美化之——IP签名图一网打尽</title>
-      <link href="/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-      <url>/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/</url>
+      <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
+      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
       
       
       <categories>
           
-          <category> hexo </category>
+          <category> Debian </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> debian </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> Xftp </tag>
             
         </tags>
       
@@ -405,35 +463,6 @@
             <tag> debian </tag>
             
             <tag> SSH </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
-      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Debian </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> debian </tag>
-            
-            <tag> SSH </tag>
-            
-            <tag> Xftp </tag>
             
         </tags>
       

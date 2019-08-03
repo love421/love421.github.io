@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-07-30T09:54:33.852Z</updated>
+  <updated>2019-08-03T13:33:24.801Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ESP8266擦除flash最简单的方法</title>
+    <link href="https://www.makedreamsir.xyz/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
+    <id>https://www.makedreamsir.xyz/2019/08/03/ESP8266擦除flash/</id>
+    <published>2019-08-02T16:00:00.000Z</published>
+    <updated>2019-08-03T13:33:24.801Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>ESP8266通过刷官方提供的固件即可擦除flash，无需安装python和pip等，很简单，很强大，很nice！</strong></p><a id="more"></a><p><strong>前言：</strong> 博主的nodemcu刷了IOT固件之后，已经配置成STA模式，但是现在我把它拿到另外一个网络环境下(WIFI不是当时配置STA时候输入的名称和密码)，所以连不上WIFI，也不能通过路由器查看当前IP。可气的是，我重新刷入其他固件也都无法变成AP模式，所以要把模块的flash进行擦除再重新刷入固件就可以上电变成AP模式。于是我去CSDN找ESP8266擦除flash的方法，本来觉得应该很简单，找个小工具就可以擦除之类的，没想到的是一搜出来都是要装什么Python和pip，然后那个麻烦的呀，我就不想往下看了，接着就去<a href="https://wiki.ai-thinker.com" target="_blank" rel="noopener">安信可</a>官网试着找了一下。嗯!收获不错，找到个方法，很给力，很简单，很nice！<br><fancybox><br><img src="https://s2.ax1x.com/2019/08/03/erXKoQ.png" alt="erXKoQ.png"><br></fancybox></p><p><strong>方法：</strong> 下载<a href="https://wiki.ai-thinker.com/_media/tools/erase_flash_bins.7z" target="_blank" rel="noopener">固件</a>，然后根据你flash大小选择对应bin文件，并将此bin文件烧写到esp8266中即可完全擦除flash，再次刷入IOT固件时候，模块就变成了AP模式！<br><fancybox><br><img src="https://s2.ax1x.com/2019/08/03/erjwB8.png" alt="erjwB8.png"><br></fancybox></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;ESP8266通过刷官方提供的固件即可擦除flash，无需安装python和pip等，很简单，很强大，很nice！&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ESP8266" scheme="https://www.makedreamsir.xyz/categories/ESP8266/"/>
+    
+      <category term="电子DIY" scheme="https://www.makedreamsir.xyz/categories/%E7%94%B5%E5%AD%90DIY/"/>
+    
+    
+      <category term="esp8266" scheme="https://www.makedreamsir.xyz/tags/esp8266/"/>
+    
+      <category term="flash" scheme="https://www.makedreamsir.xyz/tags/flash/"/>
+    
+  </entry>
   
   <entry>
     <title>Debian安装ZeroTier实现内网穿透</title>
@@ -266,6 +292,32 @@
   </entry>
   
   <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+    
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>录屏软件破解版分享——ApowerREC</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/录屏软件/</id>
@@ -288,28 +340,25 @@
   </entry>
   
   <entry>
-    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:10:30.439Z</updated>
+    <title>Hexo博客美化之——IP签名图一网打尽</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-12T09:48:37.253Z</updated>
     
-    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -339,25 +388,29 @@
   </entry>
   
   <entry>
-    <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
-    <published>2019-07-08T16:00:00.000Z</published>
-    <updated>2019-07-12T09:48:37.253Z</updated>
+    <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-05T08:31:01.179Z</updated>
     
-    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;Debian9&lt;/code&gt;系统默认无法通过&lt;code&gt;root&lt;/code&gt;身份直接登录&lt;code&gt;Xftp&lt;/code&gt;，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+    
+      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+      <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
     
   </entry>
   
@@ -383,33 +436,6 @@
       <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
       <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-05T08:31:01.179Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;Debian9&lt;/code&gt;系统默认无法通过&lt;code&gt;root&lt;/code&gt;身份直接登录&lt;code&gt;Xftp&lt;/code&gt;，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
-    
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
-    
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-      <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
     
   </entry>
   
@@ -484,30 +510,6 @@
       <category term="PVE虚拟机" scheme="https://www.makedreamsir.xyz/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
       <category term="黑群晖" scheme="https://www.makedreamsir.xyz/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自用frp服务器分享及客户端配置连接教程</title>
-    <link href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    <id>https://www.makedreamsir.xyz/2019/06/03/frp内网穿透/</id>
-    <published>2019-06-02T16:00:00.000Z</published>
-    <updated>2019-07-24T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="What-is-frp"><a href="#What-is-frp" class="headerlink" title="What is frp?"></a>What is frp?</h1><p><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">frp</a>是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。</p><a id="more"></a><h2 id="一、免费的FRP服务器信息"><a href="#一、免费的FRP服务器信息" class="headerlink" title="一、免费的FRP服务器信息"></a>一、免费的FRP服务器信息</h2><p>FRP版本号：0.26.0 </p><p>连接地址为：<strong><a href="http://www.makedreamsirfrp.xyz:7000" target="_blank" rel="noopener">www.makedreamsirfrp.xyz:7000</a></strong></p><p>特权认证密码为：<strong>love421forever</strong></p><p>状态查询：<strong><a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></strong></p><p>查询帐号：<strong>love421</strong></p><p>查询帐号：<strong>love421</strong></p><p><font color="blue" size="5">默认http/https端口：<font color="red" size="6"><strong>88</strong></font>和<font color="red" size="6"><strong>4343</strong></font></font></p><p>支持<strong>subdomain</strong>和<strong>custom_domains</strong></p><p><font color="blue" size="5">开放端口：<font color="red" size="6"><strong>全端口</strong></font></font></p><p><img src="https://static.dy208.cn/o_1dgjd0sm71g3jgkq1u6osjv10i1a.png" alt></p><h2 id="二、客户端配置详细步骤"><a href="#二、客户端配置详细步骤" class="headerlink" title="二、客户端配置详细步骤"></a>二、客户端配置详细步骤</h2><h3 id="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："><a href="#1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如：" class="headerlink" title="1、SSH连接上内网主机后，使用wget指令下载对应服务器版本的frp可执行文件，例如："></a>1、<code>SSH</code>连接上内网主机后，使用<code>wget</code>指令下载对应服务器版本的frp<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">可执行文件</a>，例如：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.26.0/frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><h3 id="2、解压刚刚下载的可执行文件"><a href="#2、解压刚刚下载的可执行文件" class="headerlink" title="2、解压刚刚下载的可执行文件"></a>2、解压刚刚下载的可执行文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf frp_0.26.0_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure><h3 id="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"><a href="#3、刷新一下，cd到刚刚解压之后出现的文件夹目录下" class="headerlink" title="3、刷新一下，cd到刚刚解压之后出现的文件夹目录下"></a>3、刷新一下，<code>cd</code>到刚刚解压之后出现的文件夹目录下</h3><h3 id="4、打开frpc-ini文件，具体修改配置如下："><a href="#4、打开frpc-ini文件，具体修改配置如下：" class="headerlink" title="4、打开frpc.ini文件，具体修改配置如下："></a>4、打开<code>frpc.ini</code>文件，具体修改配置如下：</h3><p>最上面这一部分是必要的，无需任何改动，这部分主要是配置连接frp的服务器信息。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[common]</span><br><span class="line">server_addr = www.makedreamsirfrp.xyz</span><br><span class="line">server_port = 7000</span><br><span class="line">token = love421forever</span><br></pre></td></tr></table></figure><p>下面举例说明常用的tcp、http、https映射：</p><h4 id="1-tcp映射举例说明："><a href="#1-tcp映射举例说明：" class="headerlink" title="(1)tcp映射举例说明："></a>(1)<code>tcp</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_SSH]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6666</span><br></pre></td></tr></table></figure><p>第一行：中括号中内容为映射名称，用以快速寻找区分众多的映射服务，每一个映射都要取一个名字，只支持英文，推荐命名形式：姓名简称_设备_服务，比如：<code>MDS_NAS_SSH</code>；</p><p>第二行：类型，因为你映射的是<code>ssh</code>端口，所以选择<code>tcp</code>，如果你要映射http服务或者<code>http</code>服务，那就填写对应的http或者https；</p><p>第三行：为你映射局域网内设备的<code>IP</code>地址，<code>127.0.0.1</code>代表的是本设备的内网ip地址；</p><p>第四行：本地端口号，例子中22端口为我<code>nas</code>的<code>ssh</code>端口号；</p><p>第五行：远端端口号，也就是映射成功之后你所用的端口号，可以自定义，开房的端口号是0到65535；</p><p>映射之后访问地址是<code>server_addr</code>固定不变的即：<code>www.makedreamsirfrp.xyz</code>，端口号是你刚刚自己填写的<code>local_port</code>即：<code>6666</code>。</p><h4 id="2-HTTP映射举例说明："><a href="#2-HTTP映射举例说明：" class="headerlink" title="(2)HTTP映射举例说明："></a>(2)<code>HTTP</code>映射举例说明：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_NAS_5000]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 192.168.6.241</span><br><span class="line">local_port = 5000</span><br><span class="line">subdomain = nas 或者 custom_domains = 你自己的域名</span><br></pre></td></tr></table></figure><p>第一、二、三、四行类比tcp映射中所述；</p><p>第五行：如果你没有域名，那么你可以配置subdomain，你的访问地址将会是 <a href="http://nas.makedreamsirfrp.xyz" target="_blank" rel="noopener">http://nas.makedreamsirfrp.xyz</a>，如果你自己有域名，那么你可以配置<code>custom_domains</code>来绑定你自己的域名，你的访问地址将会是 <a href="http://你自己的域名" target="_blank" rel="noopener">http://你自己的域名</a>（你自己的域名需要添加一条CNAME解析记录解析到<code>www.makedreamsirfrp.xyz</code>）</p><h4 id="3-HTTPS映射跟http映射一样，例子如下："><a href="#3-HTTPS映射跟http映射一样，例子如下：" class="headerlink" title="(3)HTTPS映射跟http映射一样，例子如下："></a>(3)<code>HTTPS</code>映射跟<code>http</code>映射一样，例子如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[MDS_PVE]</span><br><span class="line">type = https</span><br><span class="line">local_ip = 192.168.6.179</span><br><span class="line">local_port = 8006</span><br><span class="line">subdomain = pve</span><br></pre></td></tr></table></figure><p>映射成功后访问的域名地址就是：<a href="https://pve.makedreamsirfrp.xyz" target="_blank" rel="noopener">https://pve.makedreamsirfrp.xyz</a></p><h3 id="5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。"><a href="#5、修改之后保存，输入-frpc-c-frpc-ini，如果看见此时在服务端会看到start-proxy-sucess字样，即连接成功。" class="headerlink" title="5、修改之后保存，输入./frpc -c ./frpc.ini，如果看见此时在服务端会看到start proxy sucess字样，即连接成功。"></a>5、修改之后保存，输入<code>./frpc -c ./frpc.ini</code>，如果看见此时在服务端会看到<code>start proxy sucess</code>字样，即连接成功。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqj7suqlg1f3a1pqr4vo1jqna.png" alt></p><h3 id="6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。"><a href="#6、接着按下ctrl-c结束任务，然后输入nohup-frpc-c-frpc-ini-amp-让任务在后台一直运行，看到nohub-out字样，就代表真成功了，然后按下ctrl-c。" class="headerlink" title="6、接着按下ctrl+c结束任务，然后输入nohup ./frpc -c ./frpc.ini &amp;让任务在后台一直运行，看到nohub.out字样，就代表真成功了，然后按下ctrl+c。"></a>6、接着按下<code>ctrl+c</code>结束任务，然后输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让任务在后台一直运行，看到<code>nohub.out</code>字样，就代表真成功了，然后按下<code>ctrl+c</code>。</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqmrpl130d1h5m1dj7km01mioa.png" alt></p><h3 id="7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"><a href="#7、输入ps-aux-grep-frp-grep-v-grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息" class="headerlink" title="7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息"></a>7、输入ps -aux|grep frp| grep -v grep查看当前系统后台进程，正常的话是可以看到用户名，进程号，运行时间等等信息</h3><p><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deoqpbfuvqh1l6816rvk7gha0a.png" alt></p><h3 id="8、这个时候我们登录frp服务器的dashboard查看我们的映射："><a href="#8、这个时候我们登录frp服务器的dashboard查看我们的映射：" class="headerlink" title="8、这个时候我们登录frp服务器的dashboard查看我们的映射："></a>8、这个时候我们登录frp服务器的dashboard查看我们的映射：</h3><p>地址：<a href="http://www.makedreamsirfrp.xyz:7500" target="_blank" rel="noopener">http://www.makedreamsirfrp.xyz:7500</a></p><p>账号：love421</p><p>密码：love421</p><p><font color="red" size="5">注意事项：</font></p><p>1.如果当前frp已经在后台运行，而此时你想修改它，可以先修改配置保存，然后输入<code>ps -aux|grep frp| grep -v grep</code>查看进程号，如下图是<code>2739</code>，接着输入<code>kill -9 2739</code>杀掉正在运行的frp进程，最后再输入<code>nohup ./frpc -c ./frpc.ini &amp;</code>让修改之后的任务再后台运行。<br><img src="https://zcjun.oss-cn-shenzhen.aliyuncs.com/o_1deosqou292fbj01hckb7o100da.png" alt><br>2.如果连接服务器失败的话，大多数原因是服务器和客户端版本不一致、token错误、端口被占用、泛域名也就是sudomain重复、映射名称被占用等，所以映射的时候命名最前面可以加个名字拼音首字母简称，不至于重复率太高。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;What-is-frp&quot;&gt;&lt;a href=&quot;#What-is-frp&quot; class=&quot;headerlink&quot; title=&quot;What is frp?&quot;&gt;&lt;/a&gt;What is frp?&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/fatedier/frp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;frp&lt;/a&gt;是一个快速反向代理，可帮助您将NAT或防火墙后面的本地服务器暴露给Internet。 截至目前，它支持tcp＆udp以及http和https协议，其中请求可以通过域名转发到内部服务。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-    
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-      <category term="frp" scheme="https://www.makedreamsir.xyz/tags/frp/"/>
     
   </entry>
   
