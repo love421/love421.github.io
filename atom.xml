@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.makedreamsir.xyz/"/>
-  <updated>2019-08-03T13:33:24.801Z</updated>
+  <updated>2019-08-14T16:00:00.000Z</updated>
   <id>https://www.makedreamsir.xyz/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录Altium Designer使用中实用的功能</title>
+    <link href="https://www.makedreamsir.xyz/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
+    <id>https://www.makedreamsir.xyz/2019/08/15/Altium Designer使用技巧记录/</id>
+    <published>2019-08-14T16:00:00.000Z</published>
+    <updated>2019-08-14T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>记录Altium Designer使用过程中实用的小功能！不定时更新……</strong></p><a id="more"></a><h2 id="1-软件汉化"><a href="#1-软件汉化" class="headerlink" title="1.软件汉化"></a>1.软件汉化</h2><p>点击左上角的<code>DXP</code>,选择<code>preferences</code>，选择<code>System</code>下<code>General</code>，然后选择<code>use localized resources</code>，最后重启<code>AD</code>即可。</p><p><img src="https://s2.ax1x.com/2019/08/15/mAzGM8.png" alt="mAzGM8.png"></p><h2 id="2-设置快捷键"><a href="#2-设置快捷键" class="headerlink" title="2.设置快捷键"></a>2.设置快捷键</h2><p>按住ctrl键再点击你想设定快捷键功能的选项，然后弹出一个<code>Edit Command</code>弹窗，在右下角<code>Alternative</code>选项填选你想设置的快捷键。</p><p><img src="https://s2.ax1x.com/2019/08/15/mAx6UA.png" alt="mAx6UA.png"></p><h2 id="3-快速定位元器件"><a href="#3-快速定位元器件" class="headerlink" title="3.快速定位元器件"></a>3.快速定位元器件</h2><p>快捷键<code>T+C</code>，鼠标变成一个十字光标，勾选你想定位的元器件即可。</p><p><img src="https://s2.ax1x.com/2019/08/15/mESlTJ.png" alt="mESlTJ.png"></p><h2 id="4-隐藏敷铜层"><a href="#4-隐藏敷铜层" class="headerlink" title="4.隐藏敷铜层"></a>4.隐藏敷铜层</h2><p>按下<code>Ctrl+D</code>，将多边形勾选为隐藏的即可。</p><p><img src="https://s2.ax1x.com/2019/08/15/mAxJE9.png" alt="mAxJE9.png"></p><h2 id="5-将丝印变小放到器件中间"><a href="#5-将丝印变小放到器件中间" class="headerlink" title="5.将丝印变小放到器件中间"></a>5.将丝印变小放到器件中间</h2><p>按下<code>A</code>，选择第二项<code>定位器件文本</code>，然后选择中间位置即可。</p><fancybox><p><img src="https://static.dy208.cn/o_1dia4q4p518e3152p1l541k7h77gc.gif" alt></p></fancybox><h2 id="6-显示隐藏飞线"><a href="#6-显示隐藏飞线" class="headerlink" title="6.显示隐藏飞线"></a>6.显示隐藏飞线</h2><p>按下<code>N</code>即可选择显示或隐藏飞线。</p><fancybox><p><img src="https://s2.ax1x.com/2019/08/16/mZPN8J.gif" alt="mZPN8J.gif"></p></fancybox><h2 id="7-相同元器件布局布线"><a href="#7-相同元器件布局布线" class="headerlink" title="7.相同元器件布局布线"></a>7.相同元器件布局布线</h2><fancybox><p><img src="https://static.dy208.cn/o_1dic2ur504cd1j2h1sl3h06dina.gif" alt></p></fancybox>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;记录Altium Designer使用过程中实用的小功能！不定时更新……&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Altium Designer" scheme="https://www.makedreamsir.xyz/categories/Altium-Designer/"/>
+    
+    
+      <category term="Altium Designer" scheme="https://www.makedreamsir.xyz/tags/Altium-Designer/"/>
+    
+  </entry>
   
   <entry>
     <title>ESP8266擦除flash最简单的方法</title>
@@ -268,30 +290,6 @@
   </entry>
   
   <entry>
-    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T07:48:15.546Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
-    
-  </entry>
-  
-  <entry>
     <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
@@ -318,6 +316,30 @@
   </entry>
   
   <entry>
+    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T07:48:15.546Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
+    
+  </entry>
+  
+  <entry>
     <title>录屏软件破解版分享——ApowerREC</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/录屏软件/</id>
@@ -336,29 +358,6 @@
     
     
       <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
-    <published>2019-07-08T16:00:00.000Z</published>
-    <updated>2019-07-12T09:48:37.253Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -388,29 +387,25 @@
   </entry>
   
   <entry>
-    <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-05T08:31:01.179Z</updated>
+    <title>Hexo博客美化之——IP签名图一网打尽</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-12T09:48:37.253Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
+    <content type="html"><![CDATA[<p><strong><a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">IP签名图</a>可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。</strong> </p><p><img src="https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg" alt="o_1dfina53uk6jddef1kn7r27va.jpg"></p><a id="more"></a><p><strong>使用方法：将下面生成的链接插入到合适的位置即可。</strong><br><img src="https://static.dy208.cn/o_1dfio9j2up8n9s513828q5kvea.png" alt="o_1dfio9j2up8n9s513828q5kvea.png"></p><p><strong>项目原地址：<a href="https://github.com/xhboke/IP" target="_blank" rel="noopener">点我打开</a></strong> </p><p><strong>原作者博客地址：<a href="https://www.xhboke.com/" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>制作工具下载地址：<a href="https://www.lanzous.com/i4ya9ob" target="_blank" rel="noopener">点我打开</a></strong></p><p><strong>在线制作地址：</strong></p><p>1.小航：<a href="https://apa.me/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：原作者在线制作地址，https链接地址，有温度和天气显示，可以自定义签名；</p><p>缺点：但是背景图比较单调，浏览器识别是内核。</p><p>2.子成君：<a href="http://web.zcjun.com/IPqmd/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图有多种选择，可以自定义签名；</p><p>缺点：生成的链接是http地址，浏览器识别是内核。。</p><p>3.iYa.App：<a href="https://ip.ntrqq.net/" target="_blank" rel="noopener">点我打开</a></p><p>优点：背景图更加丰富多彩，可以自定义签名；</p><p>缺点：字体个人感觉太小。</p><p>4.风信子：<a href="https://fengxinzi.me/api/ip/zhizuo/" target="_blank" rel="noopener">点我打开</a></p><p>优点：浏览器识别可以显示QQ和微信和版本号以及Safari等，设备识别也可以识别Iphone和；</p><p>缺点：个性签名没法自定义，且带有走着个性签名。</p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;Debian9&lt;/code&gt;系统默认无法通过&lt;code&gt;root&lt;/code&gt;身份直接登录&lt;code&gt;Xftp&lt;/code&gt;，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/xhboke/IP&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IP签名图&lt;/a&gt;可以实时显示来访者的坐标，IP地址，操作系统，浏览器等等。&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfina53uk6jddef1kn7r27va.jpg&quot; alt=&quot;o_1dfina53uk6jddef1kn7r27va.jpg&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
-    
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-      <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
   </entry>
   
@@ -436,6 +431,33 @@
       <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
     
       <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-05T08:31:01.179Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;Debian9&lt;/code&gt;系统默认无法通过&lt;code&gt;root&lt;/code&gt;身份直接登录&lt;code&gt;Xftp&lt;/code&gt;，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+    
+    
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+    
+      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+      <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
     
   </entry>
   
@@ -486,30 +508,6 @@
       <category term="黑群晖" scheme="https://www.makedreamsir.xyz/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
       <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PVE虚拟机下安装黑群晖</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/02/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%8B%E5%AE%89%E8%A3%85%E9%BB%91%E7%BE%A4%E6%99%96/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/02/PVE虚拟机下安装黑群晖/</id>
-    <published>2019-07-01T16:00:00.000Z</published>
-    <updated>2019-07-02T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>星际蜗牛PVE虚拟机下安装黑群晖系统DSM_DS3615xs_5.2</strong></p><a id="more"></a><!-- **PVE虚拟机下安装黑群晖大致分为iso引导和img引导两种方式** --><h2 id="一、PVE创建虚拟机"><a href="#一、PVE创建虚拟机" class="headerlink" title="一、PVE创建虚拟机"></a>一、PVE创建虚拟机</h2><h3 id="1-浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面"><a href="#1-浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面" class="headerlink" title="1.浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面"></a>1.浏览器输入PVE地址并输入用户名和密码打开PVE后台管理界面</h3><p><img src="https://static.dy208.cn/o_1der4tig01mqnc4k12v829b1pg6a.png" alt></p><h3 id="2-点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传"><a href="#2-点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传" class="headerlink" title="2.点击左侧边栏local，选择上传，将iso后缀名的引导文件选中上传"></a>2.点击左侧边栏<code>local</code>，选择<code>上传</code>，将iso后缀名的引导文件选中<code>上传</code></h3><p><img src="https://static.dy208.cn/o_1der5p5b9uefudn1kefb001ndua.png" alt></p><h3 id="3-点击右上角创建虚拟机，弹出创建虚拟机对话框"><a href="#3-点击右上角创建虚拟机，弹出创建虚拟机对话框" class="headerlink" title="3.点击右上角创建虚拟机，弹出创建虚拟机对话框"></a>3.点击右上角<code>创建虚拟机</code>，弹出创建虚拟机对话框</h3><p><img src="https://static.dy208.cn/o_1der58pfeumh10ak29j1u13kfa.png" alt></p><h3 id="4-记住VM-ID，并输入虚拟机名称，点击下一步"><a href="#4-记住VM-ID，并输入虚拟机名称，点击下一步" class="headerlink" title="4.记住VM ID，并输入虚拟机名称，点击下一步"></a>4.记住<code>VM ID</code>，并输入虚拟机名称，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der5fpivsg11fjh1rhh1j7e1ge6a.png" alt></p><h3 id="5-选择ISO映像文件，点击下一步"><a href="#5-选择ISO映像文件，点击下一步" class="headerlink" title="5.选择ISO映像文件，点击下一步"></a>5.选择ISO映像文件，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der5sq29138h6ffuappi1lhha.png" alt></p><h3 id="6-设置磁盘大小，点击下一步"><a href="#6-设置磁盘大小，点击下一步" class="headerlink" title="6.设置磁盘大小，点击下一步"></a>6.设置磁盘大小，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der62ujpkqf1pl41k631p3012pka.png" alt></p><h3 id="7-设置CPU核心数，点击下一步"><a href="#7-设置CPU核心数，点击下一步" class="headerlink" title="7.设置CPU核心数，点击下一步"></a>7.设置CPU核心数，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der66b6j6q41s211fls1nthhk7a.png" alt></p><h3 id="8-设置虚拟机运行内存，点击下一步"><a href="#8-设置虚拟机运行内存，点击下一步" class="headerlink" title="8.设置虚拟机运行内存，点击下一步"></a>8.设置虚拟机运行内存，点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der68iig1qm6kl5kp21hqn1ptua.png" alt></p><h3 id="9-设置虚拟机网口模型Intel-E1000，点击下一步"><a href="#9-设置虚拟机网口模型Intel-E1000，点击下一步" class="headerlink" title="9.设置虚拟机网口模型Intel E1000，点击下一步,"></a>9.设置虚拟机网口模型<code>Intel E1000</code>，点击<code>下一步</code>,</h3><p><img src="https://static.dy208.cn/o_1der6mf681r8k3v51p8g7h119eha.png" alt></p><h3 id="10-点击完成，可以看到右边侧栏多了一个虚拟机"><a href="#10-点击完成，可以看到右边侧栏多了一个虚拟机" class="headerlink" title="10.点击完成，可以看到右边侧栏多了一个虚拟机"></a>10.点击<code>完成</code>，可以看到右边侧栏多了一个虚拟机</h3><h2 id="二、安装黑群晖"><a href="#二、安装黑群晖" class="headerlink" title="二、安装黑群晖"></a>二、安装黑群晖</h2><h3 id="1-选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是-引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动"><a href="#1-选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是-引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动" class="headerlink" title="1.选中刚刚创建的虚拟机，然后点击选项，将开机自启动修改成是,引导顺序修改成CD-ROM为第一个，KVM硬件虚拟化修改成否，最后电机右上角启动"></a>1.选中刚刚创建的虚拟机，然后点击<code>选项</code>，将开机自启动修改成<code>是</code>,引导顺序修改成<code>CD-ROM</code>为第一个，KVM硬件虚拟化修改成<code>否</code>，最后电机右上角<code>启动</code></h3><p><img src="https://static.dy208.cn/o_1der70mi1eba1a6e1imhsdi1sa1a.png" alt></p><h3 id="2-点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置"><a href="#2-点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置" class="headerlink" title="2.点击控制台查看启动信息，第一次启动IP一般是不对的，然后我们点击右上角关机旁边向下的三角，选择重置"></a>2.点击<code>控制台</code>查看启动信息，第一次启动<code>IP</code>一般是不对的，然后我们点击右上角<code>关机</code>旁边向下的三角，选择<code>重置</code></h3><h3 id="3-等待第二次引导完成，可以看到正确的IP地址"><a href="#3-等待第二次引导完成，可以看到正确的IP地址" class="headerlink" title="3.等待第二次引导完成，可以看到正确的IP地址"></a>3.等待第二次引导完成，可以看到正确的<code>IP</code>地址</h3><p><img src="https://static.dy208.cn/o_1der78s2cilp1g02nl616bj4fia.png" alt></p><h3 id="4-浏览器输入192-168-0-81-5000-可以看到如下图画面"><a href="#4-浏览器输入192-168-0-81-5000-可以看到如下图画面" class="headerlink" title="4.浏览器输入192.168.0.81:5000,可以看到如下图画面"></a>4.浏览器输入<code>192.168.0.81:5000</code>,可以看到如下图画面</h3><p><img src="https://static.dy208.cn/o_1der7dbvf1o9163m1eq21m2fjp5a.png" alt></p><h3 id="5-点击安装，出现如下图画面"><a href="#5-点击安装，出现如下图画面" class="headerlink" title="5.点击安装，出现如下图画面"></a>5.点击<code>安装</code>，出现如下图画面</h3><p><img src="https://static.dy208.cn/o_1der7fc2sa4m13931cnjbf1ehqa.png" alt></p><h3 id="6-将后缀名为-pat文件中，点击立即安装-会提示如下画面"><a href="#6-将后缀名为-pat文件中，点击立即安装-会提示如下画面" class="headerlink" title="6.将后缀名为.pat文件中，点击立即安装,会提示如下画面"></a>6.将后缀名为<code>.pat</code>文件中，点击<code>立即安装</code>,会提示如下画面</h3><p><img src="https://static.dy208.cn/o_1der7ojn51g6vmge1nf9r1p1p43a.png" alt></p><h3 id="7-勾选，然后点击确定，出现如下画面，静静等待安装完成"><a href="#7-勾选，然后点击确定，出现如下画面，静静等待安装完成" class="headerlink" title="7.勾选，然后点击确定，出现如下画面，静静等待安装完成"></a>7.勾选，然后点击<code>确定</code>，出现如下画面，静静等待安装完成</h3><p><img src="https://static.dy208.cn/o_1der7p55cr823goc1pa7q7b7a.jpg" alt></p><h3 id="8-等待安装完成之后，再次输入192-168-0-51，可以看到如下画面"><a href="#8-等待安装完成之后，再次输入192-168-0-51，可以看到如下画面" class="headerlink" title="8.等待安装完成之后，再次输入192.168.0.51，可以看到如下画面"></a>8.等待安装完成之后，再次输入<code>192.168.0.51</code>，可以看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der7udsa12irjfq1783vnv17v6a.png" alt></p><h3 id="9-输入账号admin，看到如下画面"><a href="#9-输入账号admin，看到如下画面" class="headerlink" title="9.输入账号admin，看到如下画面"></a>9.输入账号<code>admin</code>，看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der80se5ola1lh51j9kja41hq4a.png" alt></p><h3 id="10-点击下一步，看到如下画面"><a href="#10-点击下一步，看到如下画面" class="headerlink" title="10.点击下一步，看到如下画面"></a>10.点击<code>下一步</code>，看到如下画面</h3><p><img src="https://static.dy208.cn/o_1der82i55ki12cja041uj2mfaa.png" alt></p><h3 id="11-设置服务器名称、用户名和密码点击下一步"><a href="#11-设置服务器名称、用户名和密码点击下一步" class="headerlink" title="11.设置服务器名称、用户名和密码点击下一步"></a>11.设置<code>服务器名称</code>、<code>用户名</code>和<code>密码</code>点击<code>下一步</code></h3><p><img src="https://static.dy208.cn/o_1der88eag1ss2v67g1s127v62ba.png" alt></p><h3 id="12-点击跳过此步骤，出现对话框点击是-即可看到群辉桌面"><a href="#12-点击跳过此步骤，出现对话框点击是-即可看到群辉桌面" class="headerlink" title="12.点击跳过此步骤，出现对话框点击是,即可看到群辉桌面"></a>12.点击<code>跳过此步骤</code>，出现对话框点击<code>是</code>,即可看到群辉桌面</h3><p><img src="https://static.dy208.cn/o_1der8geqf1flk143d1m8j7vb1a3na.png" alt></p><p><font color="blue" size="5">至此，我们已经完成了在PVE虚拟机下安装黑群晖系统</font></p><hr><p><strong>最后附上安装文件：</strong></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>百度云分享链接：</strong><a href="https://pan.baidu.com/s/1GJUaJTma_Ra8BOyx9M9GAw" target="_blank" rel="noopener">https://pan.baidu.com/s/1GJUaJTma_Ra8BOyx9M9GAw</a></p><p>&nbsp;&nbsp; &nbsp; &nbsp; <strong>提取码：</strong><code>m3c6</code></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;星际蜗牛PVE虚拟机下安装黑群晖系统DSM_DS3615xs_5.2&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
-    
-    
-      <category term="PVE虚拟机" scheme="https://www.makedreamsir.xyz/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
   </entry>
   
