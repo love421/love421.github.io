@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>电脑屏幕截取gif动图——ScreenToGif</title>
+      <link href="/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<p><strong><code>ScreenToGif</code>是一款可以将电脑屏幕录制成gif动图的软件。</strong><br><img src="https://s2.ax1x.com/2019/08/16/mZ0Mt0.png" alt="mZ0Mt0.png"></p><a id="more"></a><h2 id="ScreenToGif优势："><a href="#ScreenToGif优势：" class="headerlink" title="ScreenToGif优势："></a>ScreenToGif优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、免安装，打开只有运行，大小只有2M；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、可以任意定义录制屏幕大小；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、中文界面简洁大方，一看就会；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、完全免费；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i5ljpza" target="_blank" rel="noopener">点我下载</a></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gif </tag>
+            
+            <tag> 实用软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记录Altium Designer使用中实用的功能</title>
       <link href="/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
       <url>/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/</url>
@@ -38,9 +65,9 @@
       
       <categories>
           
-          <category> ESP8266 </category>
-          
           <category> 电子DIY </category>
+          
+          <category> ESP8266 </category>
           
       </categories>
       
@@ -316,9 +343,9 @@
       
       <categories>
           
-          <category> 实用软件分享 </category>
-          
           <category> STM32 </category>
+          
+          <category> 实用软件分享 </category>
           
       </categories>
       
@@ -440,33 +467,6 @@
     
     
     <entry>
-      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Debian </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> debian </tag>
-            
-            <tag> SSH </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
       <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
@@ -488,6 +488,33 @@
             <tag> SSH </tag>
             
             <tag> Xftp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Debian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> debian </tag>
+            
+            <tag> SSH </tag>
             
         </tags>
       
