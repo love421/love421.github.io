@@ -259,6 +259,30 @@
   </entry>
   
   <entry>
+    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/17/hexo博客迁移/</id>
+    <published>2019-07-16T16:00:00.000Z</published>
+    <updated>2019-07-17T08:48:32.877Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+    
+      <category term="星际蜗牛" scheme="https://www.makedreamsir.xyz/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
     <link href="https://www.makedreamsir.xyz/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
     <id>https://www.makedreamsir.xyz/2019/07/17/PVE下NAS启动不了/</id>
@@ -284,30 +308,6 @@
   </entry>
   
   <entry>
-    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/17/hexo博客迁移/</id>
-    <published>2019-07-16T16:00:00.000Z</published>
-    <updated>2019-07-17T08:48:32.877Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-      <category term="星际蜗牛" scheme="https://www.makedreamsir.xyz/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo博客页脚添加备案号</title>
     <link href="https://www.makedreamsir.xyz/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
     <id>https://www.makedreamsir.xyz/2019/07/12/博客页脚添加备案号/</id>
@@ -329,32 +329,6 @@
       <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
       <category term="备案" scheme="https://www.makedreamsir.xyz/tags/%E5%A4%87%E6%A1%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:10:30.439Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -399,6 +373,32 @@
     
       <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
     
       <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
@@ -453,6 +453,31 @@
   </entry>
   
   <entry>
+    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-11T06:44:52.721Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+    
+    
+      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+    
+      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
     <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
     <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
     <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
@@ -476,31 +501,6 @@
       <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
     
       <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-11T06:44:52.721Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
-    
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
-    
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
     
   </entry>
   
