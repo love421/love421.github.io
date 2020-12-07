@@ -333,6 +333,32 @@
   </entry>
   
   <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+    
+      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+    
+      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
     <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
     <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
@@ -379,28 +405,27 @@
   </entry>
   
   <entry>
-    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:10:30.439Z</updated>
+    <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
+    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁/</id>
+    <published>2019-07-08T16:00:00.000Z</published>
+    <updated>2019-07-10T07:27:56.986Z</updated>
     
-    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 博客部署到&lt;code&gt;github&lt;/code&gt;上并开启强制&lt;code&gt;https&lt;/code&gt;访问之后，地址栏却没有看到熟悉的&lt;code&gt;黑锁&lt;/code&gt;，点开可以看见描述&lt;code&gt;您与此网站之间建立的连接并非完全安全&lt;/code&gt;，具体现象如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
     
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
     
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
     
   </entry>
   
@@ -424,31 +449,6 @@
     
     
       <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁/</id>
-    <published>2019-07-08T16:00:00.000Z</published>
-    <updated>2019-07-10T07:27:56.986Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 博客部署到<code>github</code>上并开启强制<code>https</code>访问之后，地址栏却没有看到熟悉的<code>黑锁</code>，点开可以看见描述<code>您与此网站之间建立的连接并非完全安全</code>，具体现象如下：</p><p><img src="https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 打开F12可以看见有一个http应用链接，仔细一看是IP签名图引用的，所以把IP签名图的http引用全部注释掉即可。真香……</p><p><strong>最终效果如下：</strong> </p><p><img src="https://static.dy208.cn/o_1dfdbrnmlq6813md1vit1bk31s1ka.png" alt></p><p><strong>吐槽：</strong> 事情起因经过总而言之一句话：说多了都是泪！白瞎我到处折腾<code>Cloudflare</code>。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 博客部署到&lt;code&gt;github&lt;/code&gt;上并开启强制&lt;code&gt;https&lt;/code&gt;访问之后，地址栏却没有看到熟悉的&lt;code&gt;黑锁&lt;/code&gt;，点开可以看见描述&lt;code&gt;您与此网站之间建立的连接并非完全安全&lt;/code&gt;，具体现象如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfdbeeqf1cbf1dpk1gvp121pb6ca.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
     
   </entry>
   
