@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.makedreamsir.xyz/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2019-09-18T05:59:54.896Z</updated>
-  <id>https://www.makedreamsir.xyz/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>love421</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/"/>
-    <id>https://www.makedreamsir.xyz/2019/09/18/STM32定时器重映射/</id>
+    <link href="http://yoursite.com/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/"/>
+    <id>http://yoursite.com/2019/09/18/STM32定时器重映射/</id>
     <published>2019-09-17T16:00:00.000Z</published>
     <updated>2019-09-18T05:59:54.896Z</updated>
     
@@ -37,8 +37,8 @@
   
   <entry>
     <title>电脑屏幕截取gif动图——ScreenToGif</title>
-    <link href="https://www.makedreamsir.xyz/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/08/16/gif截图软件分享/</id>
+    <link href="http://yoursite.com/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    <id>http://yoursite.com/2019/08/16/gif截图软件分享/</id>
     <published>2019-08-15T16:00:00.000Z</published>
     <updated>2019-08-16T03:31:23.635Z</updated>
     
@@ -50,19 +50,19 @@
     
     </summary>
     
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="gif" scheme="https://www.makedreamsir.xyz/tags/gif/"/>
+      <category term="gif" scheme="http://yoursite.com/tags/gif/"/>
     
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>记录Altium Designer使用中实用的功能</title>
-    <link href="https://www.makedreamsir.xyz/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
-    <id>https://www.makedreamsir.xyz/2019/08/15/Altium Designer使用技巧记录/</id>
+    <link href="http://yoursite.com/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/08/15/Altium Designer使用技巧记录/</id>
     <published>2019-08-14T16:00:00.000Z</published>
     <updated>2019-08-14T16:00:00.000Z</updated>
     
@@ -74,17 +74,17 @@
     
     </summary>
     
-      <category term="Altium Designer" scheme="https://www.makedreamsir.xyz/categories/Altium-Designer/"/>
+      <category term="Altium Designer" scheme="http://yoursite.com/categories/Altium-Designer/"/>
     
     
-      <category term="Altium Designer" scheme="https://www.makedreamsir.xyz/tags/Altium-Designer/"/>
+      <category term="Altium Designer" scheme="http://yoursite.com/tags/Altium-Designer/"/>
     
   </entry>
   
   <entry>
     <title>ESP8266擦除flash最简单的方法</title>
-    <link href="https://www.makedreamsir.xyz/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
-    <id>https://www.makedreamsir.xyz/2019/08/03/ESP8266擦除flash/</id>
+    <link href="http://yoursite.com/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
+    <id>http://yoursite.com/2019/08/03/ESP8266擦除flash/</id>
     <published>2019-08-02T16:00:00.000Z</published>
     <updated>2019-08-03T13:33:24.801Z</updated>
     
@@ -96,21 +96,21 @@
     
     </summary>
     
-      <category term="电子DIY" scheme="https://www.makedreamsir.xyz/categories/%E7%94%B5%E5%AD%90DIY/"/>
+      <category term="电子DIY" scheme="http://yoursite.com/categories/%E7%94%B5%E5%AD%90DIY/"/>
     
-      <category term="ESP8266" scheme="https://www.makedreamsir.xyz/categories/ESP8266/"/>
+      <category term="ESP8266" scheme="http://yoursite.com/categories/ESP8266/"/>
     
     
-      <category term="esp8266" scheme="https://www.makedreamsir.xyz/tags/esp8266/"/>
+      <category term="esp8266" scheme="http://yoursite.com/tags/esp8266/"/>
     
-      <category term="flash" scheme="https://www.makedreamsir.xyz/tags/flash/"/>
+      <category term="flash" scheme="http://yoursite.com/tags/flash/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装ZeroTier实现内网穿透</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/30/Debian安装ZeroTier实现内网穿透/</id>
+    <link href="http://yoursite.com/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    <id>http://yoursite.com/2019/07/30/Debian安装ZeroTier实现内网穿透/</id>
     <published>2019-07-29T16:00:00.000Z</published>
     <updated>2019-07-30T09:54:33.852Z</updated>
     
@@ -122,45 +122,23 @@
     
     </summary>
     
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
-    
-    
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
-    
-      <category term="ZeroTier" scheme="https://www.makedreamsir.xyz/tags/ZeroTier/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown常用语法记录</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/29/markdown常用语法记录/</id>
-    <published>2019-07-28T16:00:00.000Z</published>
-    <updated>2019-07-28T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>记录自己在写<a href="https://www.makedreamsir.xyz">博客</a>的过程中所用到的markdown语法！长久更新……</strong></p><a id="more"></a><h2 id="1-字体加粗"><a href="#1-字体加粗" class="headerlink" title="1.字体加粗"></a>1.字体加粗</h2><blockquote>**需要加粗的字体**</blockquote><p>效果如下：     <strong>需要加粗的字体</strong></p><h2 id="2-给字体加入超链接"><a href="#2-给字体加入超链接" class="headerlink" title="2.给字体加入超链接"></a>2.给字体加入超链接</h2><blockquote>[love421博客](hppts://www.makedreamsir.xyz)</blockquote><p>效果如下：     <a href="hppts://www.makedreamsir.xyz">love421博客</a></p><h2 id="3-插入代码块"><a href="#3-插入代码块" class="headerlink" title="3.插入代码块"></a>3.插入代码块</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1XaTJ.png" alt="e1XaTJ.png"></p><p>效果如下： <img src="https://s2.ax1x.com/2019/07/29/e1X0YR.png" alt="e1X0YR.png"></p><h2 id="4-引用长文本"><a href="#4-引用长文本" class="headerlink" title="4.引用长文本"></a>4.引用长文本</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1jAAJ.png" alt="e1jAAJ.png"></p><p>效果如下：     <img src="https://s2.ax1x.com/2019/07/29/e1X7X8.png" alt="e1X7X8.png"></p><h2 id="5-插入图片"><a href="#5-插入图片" class="headerlink" title="5.插入图片"></a>5.插入图片</h2><blockquote>![love421博客](https://upload-images.jianshu.io/upload_images/18278043-081448905723146f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</blockquote><p>效果如下：<img src="https://upload-images.jianshu.io/upload_images/18278043-081448905723146f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="love421博客"></p><h2 id="6-插入标题"><a href="#6-插入标题" class="headerlink" title="6.插入标题"></a>6.插入标题</h2><blockquote># 一级标题## 二级标题### 三级标题#### 四级标题......</blockquote><p>效果如下： </p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h2 id="7-修改字体颜色"><a href="#7-修改字体颜色" class="headerlink" title="7.修改字体颜色"></a>7.修改字体颜色</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1vkKf.png" alt="e1vkKf.png"></p><p>效果如下： <font color="red">love421</font></p><h2 id="8-修改字体大小"><a href="#8-修改字体大小" class="headerlink" title="8.修改字体大小"></a>8.修改字体大小</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1vQx0.png" alt="e1vQx0.png"></p><p>效果如下： <font size="5">love421</font></p><h2 id="9-缩进字符"><a href="#9-缩进字符" class="headerlink" title="9.缩进字符"></a>9.缩进字符</h2><blockquote>一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：<p>一个空格大小的表示：<code>&amp;ensp;</code>或<code>&amp;#8194;</code>，此时只要在相应需要缩进的段落前加上 4个 如上的标记即可，注意要带上分号。</p><p>两个空格的大小表示：<code>&amp;emsp;</code>或<code>&amp;#8195;</code>，同理，使用2个即可缩进2个汉字，推荐使用该方式。</p><p>不换行空格：<code>&amp;nbsp;</code>或<code>&amp;#160;</code>，使用4个<code>&amp;#160;</code>即可。</p></blockquote><h2 id="10-插入链接"><a href="#10-插入链接" class="headerlink" title="10.插入链接"></a>10.插入链接</h2><blockquote><p><code>&lt;https://www.makedreamsir.xyz&gt;</code></p></blockquote><p>效果如下：  <a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p><h2 id="11-插入撇号"><a href="#11-插入撇号" class="headerlink" title="11.插入撇号"></a>11.插入撇号</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1zxVU.png" alt="e1zxVU.png"></p><p>效果如下： </p><p><img src="https://s2.ax1x.com/2019/07/29/e3SS54.png" alt="e3SS54.png"></p><h2 id="12-插入分割线"><a href="#12-插入分割线" class="headerlink" title="12.插入分割线"></a>12.插入分割线</h2><blockquote><p><code>---</code></p><p>love421个人博客地址: <a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p><p><code>---</code></p></blockquote><p>效果如下： </p><hr><p>love421个人博客地址: <a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p><hr><h2 id="13-换行"><a href="#13-换行" class="headerlink" title="13.换行"></a>13.换行</h2><blockquote><p>名称：love421<code>&lt;br&gt;</code>博客地址：<a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p></blockquote><p>效果如下： </p><p>名称：love421<br>博客地址：<a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p><h2 id="14-字体倾斜"><a href="#14-字体倾斜" class="headerlink" title="14.字体倾斜"></a>14.字体倾斜</h2><blockquote><p><code>*斜体文本*</code></p></blockquote><p>效果如下： <em>斜体文本</em></p><h2 id="15-删除文本"><a href="#15-删除文本" class="headerlink" title="15.删除文本"></a>15.删除文本</h2><blockquote><p><code>~~删除文本~~</code></p></blockquote><p>效果如下： <del>删除文本</del></p><h2 id="16-单行文本引用"><a href="#16-单行文本引用" class="headerlink" title="16.单行文本引用"></a>16.单行文本引用</h2><p><code>&gt;love421个人博客：https://www.makedreamsir.xyz</code> </p><p>效果如下： </p><blockquote><p>love421个人博客：<a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p></blockquote><h2 id="17-代码语法高亮"><a href="#17-代码语法高亮" class="headerlink" title="17.代码语法高亮"></a>17.代码语法高亮</h2><p>在三个撇号后面加空格最后加上对应的语言即可</p><h2 id="18-表格"><a href="#18-表格" class="headerlink" title="18.表格"></a>18.表格</h2><blockquote><p>居左：:—-</p><p>居中：:—-:或—–</p><p>居右：—-:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">|标题|标题|标题|</span><br><span class="line">|:---|:---:|---:|</span><br><span class="line">|居左测试文本|居中测试文本|居右测试文本|</span><br><span class="line">|居左测试文本1|居中测试文本2|居右测试文本3|</span><br><span class="line">|居左测试文本11|居中测试文本22|居右测试文本33|</span><br><span class="line">|居左测试文本111|居中测试文本222|居右测试文本333|</span><br></pre></td></tr></table></figure></blockquote><p>效果如下：</p><table><thead><tr><th align="left">标题</th><th align="center">标题</th><th align="right">标题</th></tr></thead><tbody><tr><td align="left">居左测试文本</td><td align="center">居中测试文本</td><td align="right">居右测试文本</td></tr><tr><td align="left">居左测试文本1</td><td align="center">居中测试文本2</td><td align="right">居右测试文本3</td></tr><tr><td align="left">居左测试文本11</td><td align="center">居中测试文本22</td><td align="right">居右测试文本33</td></tr><tr><td align="left">居左测试文本111</td><td align="center">居中测试文本222</td><td align="right">居右测试文本333</td></tr></tbody></table><h2 id="19-脚注"><a href="#19-脚注" class="headerlink" title="19.脚注"></a>19.脚注</h2><blockquote><p>love421博客[^1]<br>[^1]: <a href="https://www.makedreamsir.xyz">https://www.makedreamsir.xyz</a></p></blockquote><p>效果如下： love421博客<a href="https://www.makedreamsir.xyz">^2</a></p><h2 id="20-字体居中"><a href="#20-字体居中" class="headerlink" title="20.字体居中"></a>20.字体居中</h2><blockquote><p><code>&lt;center&gt;love421博客&lt;/center&gt;</code></p></blockquote><p>效果如下： <center>love421博客</center></p><hr><p><font color="red" size="5"><center><strong>2019年7月29日更新……</strong></center></font></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;记录自己在写&lt;a href=&quot;https://www.makedreamsir.xyz&quot;&gt;博客&lt;/a&gt;的过程中所用到的markdown语法！长久更新……&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
     
     
-      <category term="markdown" scheme="https://www.makedreamsir.xyz/tags/markdown/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    
+      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+    
+      <category term="ZeroTier" scheme="http://yoursite.com/tags/ZeroTier/"/>
     
   </entry>
   
   <entry>
     <title>解决Error listen EADDRINUSE问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/29/解决Error listen EADDRINUSE问题/</id>
+    <link href="http://yoursite.com/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/07/29/解决Error listen EADDRINUSE问题/</id>
     <published>2019-07-28T16:00:00.000Z</published>
     <updated>2019-07-29T08:43:00.826Z</updated>
     
@@ -172,49 +150,71 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
     
     
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown常用语法记录</title>
+    <link href="http://yoursite.com/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>http://yoursite.com/2019/07/29/markdown常用语法记录/</id>
+    <published>2019-07-28T16:00:00.000Z</published>
+    <updated>2019-07-28T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>记录自己在写<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">博客</a>的过程中所用到的markdown语法！长久更新……</strong></p><a id="more"></a><h2 id="1-字体加粗"><a href="#1-字体加粗" class="headerlink" title="1.字体加粗"></a>1.字体加粗</h2><blockquote>**需要加粗的字体**</blockquote><p>效果如下：     <strong>需要加粗的字体</strong></p><h2 id="2-给字体加入超链接"><a href="#2-给字体加入超链接" class="headerlink" title="2.给字体加入超链接"></a>2.给字体加入超链接</h2><blockquote>[love421博客](hppts://www.makedreamsir.xyz)</blockquote><p>效果如下：     <a href="hppts://www.makedreamsir.xyz" target="_blank" rel="noopener">love421博客</a></p><h2 id="3-插入代码块"><a href="#3-插入代码块" class="headerlink" title="3.插入代码块"></a>3.插入代码块</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1XaTJ.png" alt="e1XaTJ.png"></p><p>效果如下： <img src="https://s2.ax1x.com/2019/07/29/e1X0YR.png" alt="e1X0YR.png"></p><h2 id="4-引用长文本"><a href="#4-引用长文本" class="headerlink" title="4.引用长文本"></a>4.引用长文本</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1jAAJ.png" alt="e1jAAJ.png"></p><p>效果如下：     <img src="https://s2.ax1x.com/2019/07/29/e1X7X8.png" alt="e1X7X8.png"></p><h2 id="5-插入图片"><a href="#5-插入图片" class="headerlink" title="5.插入图片"></a>5.插入图片</h2><blockquote>![love421博客](https://upload-images.jianshu.io/upload_images/18278043-081448905723146f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)</blockquote><p>效果如下：<img src="https://upload-images.jianshu.io/upload_images/18278043-081448905723146f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="love421博客"></p><h2 id="6-插入标题"><a href="#6-插入标题" class="headerlink" title="6.插入标题"></a>6.插入标题</h2><blockquote># 一级标题## 二级标题### 三级标题#### 四级标题......</blockquote><p>效果如下： </p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h2 id="7-修改字体颜色"><a href="#7-修改字体颜色" class="headerlink" title="7.修改字体颜色"></a>7.修改字体颜色</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1vkKf.png" alt="e1vkKf.png"></p><p>效果如下： <font color="red">love421</font></p><h2 id="8-修改字体大小"><a href="#8-修改字体大小" class="headerlink" title="8.修改字体大小"></a>8.修改字体大小</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1vQx0.png" alt="e1vQx0.png"></p><p>效果如下： <font size="5">love421</font></p><h2 id="9-缩进字符"><a href="#9-缩进字符" class="headerlink" title="9.缩进字符"></a>9.缩进字符</h2><blockquote>一个汉字占两个空格大小，所以使用四个空格就可以达到首行缩进两个汉字的效果。有如下几种方法：<p>一个空格大小的表示：<code>&amp;ensp;</code>或<code>&amp;#8194;</code>，此时只要在相应需要缩进的段落前加上 4个 如上的标记即可，注意要带上分号。</p><p>两个空格的大小表示：<code>&amp;emsp;</code>或<code>&amp;#8195;</code>，同理，使用2个即可缩进2个汉字，推荐使用该方式。</p><p>不换行空格：<code>&amp;nbsp;</code>或<code>&amp;#160;</code>，使用4个<code>&amp;#160;</code>即可。</p></blockquote><h2 id="10-插入链接"><a href="#10-插入链接" class="headerlink" title="10.插入链接"></a>10.插入链接</h2><blockquote><p><code>&lt;https://www.makedreamsir.xyz&gt;</code></p></blockquote><p>效果如下：  <a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p><h2 id="11-插入撇号"><a href="#11-插入撇号" class="headerlink" title="11.插入撇号"></a>11.插入撇号</h2><p><img src="https://s2.ax1x.com/2019/07/29/e1zxVU.png" alt="e1zxVU.png"></p><p>效果如下： </p><p><img src="https://s2.ax1x.com/2019/07/29/e3SS54.png" alt="e3SS54.png"></p><h2 id="12-插入分割线"><a href="#12-插入分割线" class="headerlink" title="12.插入分割线"></a>12.插入分割线</h2><blockquote><p><code>---</code></p><p>love421个人博客地址: <a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p><p><code>---</code></p></blockquote><p>效果如下： </p><hr><p>love421个人博客地址: <a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p><hr><h2 id="13-换行"><a href="#13-换行" class="headerlink" title="13.换行"></a>13.换行</h2><blockquote><p>名称：love421<code>&lt;br&gt;</code>博客地址：<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p></blockquote><p>效果如下： </p><p>名称：love421<br>博客地址：<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p><h2 id="14-字体倾斜"><a href="#14-字体倾斜" class="headerlink" title="14.字体倾斜"></a>14.字体倾斜</h2><blockquote><p><code>*斜体文本*</code></p></blockquote><p>效果如下： <em>斜体文本</em></p><h2 id="15-删除文本"><a href="#15-删除文本" class="headerlink" title="15.删除文本"></a>15.删除文本</h2><blockquote><p><code>~~删除文本~~</code></p></blockquote><p>效果如下： <del>删除文本</del></p><h2 id="16-单行文本引用"><a href="#16-单行文本引用" class="headerlink" title="16.单行文本引用"></a>16.单行文本引用</h2><p><code>&gt;love421个人博客：https://www.makedreamsir.xyz</code> </p><p>效果如下： </p><blockquote><p>love421个人博客：<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p></blockquote><h2 id="17-代码语法高亮"><a href="#17-代码语法高亮" class="headerlink" title="17.代码语法高亮"></a>17.代码语法高亮</h2><p>在三个撇号后面加空格最后加上对应的语言即可</p><h2 id="18-表格"><a href="#18-表格" class="headerlink" title="18.表格"></a>18.表格</h2><blockquote><p>居左：:—-</p><p>居中：:—-:或—–</p><p>居右：—-:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">|标题|标题|标题|</span><br><span class="line">|:---|:---:|---:|</span><br><span class="line">|居左测试文本|居中测试文本|居右测试文本|</span><br><span class="line">|居左测试文本1|居中测试文本2|居右测试文本3|</span><br><span class="line">|居左测试文本11|居中测试文本22|居右测试文本33|</span><br><span class="line">|居左测试文本111|居中测试文本222|居右测试文本333|</span><br></pre></td></tr></table></figure></blockquote><p>效果如下：</p><table><thead><tr><th align="left">标题</th><th align="center">标题</th><th align="right">标题</th></tr></thead><tbody><tr><td align="left">居左测试文本</td><td align="center">居中测试文本</td><td align="right">居右测试文本</td></tr><tr><td align="left">居左测试文本1</td><td align="center">居中测试文本2</td><td align="right">居右测试文本3</td></tr><tr><td align="left">居左测试文本11</td><td align="center">居中测试文本22</td><td align="right">居右测试文本33</td></tr><tr><td align="left">居左测试文本111</td><td align="center">居中测试文本222</td><td align="right">居右测试文本333</td></tr></tbody></table><h2 id="19-脚注"><a href="#19-脚注" class="headerlink" title="19.脚注"></a>19.脚注</h2><blockquote><p>love421博客[^1]<br>[^1]: <a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">https://www.makedreamsir.xyz</a></p></blockquote><p>效果如下： love421博客<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">^2</a></p><h2 id="20-字体居中"><a href="#20-字体居中" class="headerlink" title="20.字体居中"></a>20.字体居中</h2><blockquote><p><code>&lt;center&gt;love421博客&lt;/center&gt;</code></p></blockquote><p>效果如下： <center>love421博客</center></p><hr><p><font color="red" size="5"><center><strong>2019年7月29日更新……</strong></center></font></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;记录自己在写&lt;a href=&quot;https://www.makedreamsir.xyz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;博客&lt;/a&gt;的过程中所用到的markdown语法！长久更新……&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装花生壳实现内网穿透</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/26/花生壳内网穿透/</id>
+    <link href="http://yoursite.com/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    <id>http://yoursite.com/2019/07/26/花生壳内网穿透/</id>
     <published>2019-07-25T16:00:00.000Z</published>
     <updated>2019-07-25T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>前言：</strong> 虽然博主通过<a href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">frp实现内网穿透</a>，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！</p><a id="more"></a><p><strong>1.登录Debian，输入如下指令和密码切换到root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUWzq.png" alt="enUWzq.png"></p><p><strong>2.新建一个文件夹，并cd到刚刚新建的文件夹</strong><br><img src="https://s2.ax1x.com/2019/07/26/enl5L9.png" alt="enl5L9.png"></p><p><strong>3.通过运行<code>wget</code>指令下载安装包</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUbFJ.png" alt="enUbFJ.png"></p><p><strong>4.安装刚下载的安装包，得到SN和密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/ena3pn.png" alt="ena3pn.png"></p><p><strong>5.浏览器输入如下网址打开<a href="http://b.oray.com" target="_blank" rel="noopener">花生壳管理界面</a>，输入上一步的SN和密码登录</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://b.oray.com</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enag0O.png" alt="enag0O.png"></p><p><strong>6.之后输入密码激活设备</strong><br><img src="https://s2.ax1x.com/2019/07/26/eny6TP.png" alt="eny6TP.png"></p><p><strong>7.浏览器打开花生壳<a href="https://login.oray.com/login/?tplname=qrcode&s_url=https%3A%2F%2Fhsk.oray.com%2Fconsole%2Fmanage%2F" target="_blank" rel="noopener">控制台</a>,输入账号密码登陆进去</strong><br><img src="https://s2.ax1x.com/2019/07/26/enyLfU.png" alt="enyLfU.png"></p><p><strong>8.选择右上角添加设备输入SN码，绑定到自己账号上去</strong><br><img src="https://s2.ax1x.com/2019/07/26/en6U7q.png" alt="en6U7q.png"></p><p><strong>9.点击刚刚绑定的设备进入设备的管理界面</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engYoq.png" alt="engYoq.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/engFQe.png" alt="engFQe.png"></p><p><strong>10.点击右上角的账号选择切换账号</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engywR.png" alt="engywR.png"></p><p><strong>11.选择左边的账号登录，输入账号密码电机登录即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engomd.png" alt="engomd.png"></p><p><strong>12.点击<code>+</code>号，填写配置信息最后点击<code>确定</code>即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2VcF.png" alt="en2VcF.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/en2cuQ.png" alt="en2cuQ.png"></p><p><strong>13.最后诊断一下，没有问题enjoy</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2bDJ.png" alt="en2bDJ.png"></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>前言：</strong> 虽然博主通过<a href="https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" target="_blank" rel="noopener">frp实现内网穿透</a>，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！</p><a id="more"></a><p><strong>1.登录Debian，输入如下指令和密码切换到root账号</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUWzq.png" alt="enUWzq.png"></p><p><strong>2.新建一个文件夹，并cd到刚刚新建的文件夹</strong><br><img src="https://s2.ax1x.com/2019/07/26/enl5L9.png" alt="enl5L9.png"></p><p><strong>3.通过运行<code>wget</code>指令下载安装包</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enUbFJ.png" alt="enUbFJ.png"></p><p><strong>4.安装刚下载的安装包，得到SN和密码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i phddns_3.0_x86_64.deb</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/ena3pn.png" alt="ena3pn.png"></p><p><strong>5.浏览器输入如下网址打开<a href="http://b.oray.com" target="_blank" rel="noopener">花生壳管理界面</a>，输入上一步的SN和密码登录</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://b.oray.com</span><br></pre></td></tr></table></figure><p><img src="https://s2.ax1x.com/2019/07/26/enag0O.png" alt="enag0O.png"></p><p><strong>6.之后输入密码激活设备</strong><br><img src="https://s2.ax1x.com/2019/07/26/eny6TP.png" alt="eny6TP.png"></p><p><strong>7.浏览器打开花生壳<a href="https://login.oray.com/login/?tplname=qrcode&s_url=https%3A%2F%2Fhsk.oray.com%2Fconsole%2Fmanage%2F" target="_blank" rel="noopener">控制台</a>,输入账号密码登陆进去</strong><br><img src="https://s2.ax1x.com/2019/07/26/enyLfU.png" alt="enyLfU.png"></p><p><strong>8.选择右上角添加设备输入SN码，绑定到自己账号上去</strong><br><img src="https://s2.ax1x.com/2019/07/26/en6U7q.png" alt="en6U7q.png"></p><p><strong>9.点击刚刚绑定的设备进入设备的管理界面</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engYoq.png" alt="engYoq.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/engFQe.png" alt="engFQe.png"></p><p><strong>10.点击右上角的账号选择切换账号</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engywR.png" alt="engywR.png"></p><p><strong>11.选择左边的账号登录，输入账号密码电机登录即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/engomd.png" alt="engomd.png"></p><p><strong>12.点击<code>+</code>号，填写配置信息最后点击<code>确定</code>即可</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2VcF.png" alt="en2VcF.png"></p><p><img src="https://s2.ax1x.com/2019/07/26/en2cuQ.png" alt="en2cuQ.png"></p><p><strong>13.最后诊断一下，没有问题enjoy</strong></p><p><img src="https://s2.ax1x.com/2019/07/26/en2bDJ.png" alt="en2bDJ.png"></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 虽然博主通过&lt;a href=&quot;https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/&quot;&gt;frp实现内网穿透&lt;/a&gt;，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 虽然博主通过&lt;a href=&quot;https://www.makedreamsir.xyz/2019/06/03/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;frp实现内网穿透&lt;/a&gt;，但是有时候偶尔也需要一个备用的穿透服务作为后手，所以花生壳是个很好地后手选择！&lt;/p&gt;
     
     </summary>
     
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
     
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
     
-      <category term="花生壳" scheme="https://www.makedreamsir.xyz/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
+      <category term="花生壳" scheme="http://yoursite.com/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
     
   </entry>
   
   <entry>
     <title>DMZ和端口转发区别、优缺点和适用场景</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/25/DMZ/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/25/DMZ/</id>
+    <link href="http://yoursite.com/2019/07/25/DMZ/"/>
+    <id>http://yoursite.com/2019/07/25/DMZ/</id>
     <published>2019-07-24T16:00:00.000Z</published>
     <updated>2019-07-24T16:00:00.000Z</updated>
     
@@ -226,19 +226,19 @@
     
     </summary>
     
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
     
-      <category term="DMZ" scheme="https://www.makedreamsir.xyz/tags/DMZ/"/>
+      <category term="DMZ" scheme="http://yoursite.com/tags/DMZ/"/>
     
-      <category term="内网穿透" scheme="https://www.makedreamsir.xyz/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
   <entry>
     <title>解决执行hexo g报错ERROR Local hexo not found in XXX问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/18/%E8%A7%A3%E5%86%B3hexo%20g%E6%8A%A5%E9%94%99/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/18/解决hexo g报错/</id>
+    <link href="http://yoursite.com/2019/07/18/%E8%A7%A3%E5%86%B3hexo%20g%E6%8A%A5%E9%94%99/"/>
+    <id>http://yoursite.com/2019/07/18/解决hexo g报错/</id>
     <published>2019-07-17T16:00:00.000Z</published>
     <updated>2019-07-18T02:52:14.237Z</updated>
     
@@ -251,41 +251,17 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/17/hexo博客迁移/</id>
-    <published>2019-07-16T16:00:00.000Z</published>
-    <updated>2019-07-17T08:48:32.877Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-      <category term="星际蜗牛" scheme="https://www.makedreamsir.xyz/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/17/PVE下NAS启动不了/</id>
+    <link href="http://yoursite.com/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+    <id>http://yoursite.com/2019/07/17/PVE下NAS启动不了/</id>
     <published>2019-07-16T16:00:00.000Z</published>
     <updated>2019-07-17T04:54:02.462Z</updated>
     
@@ -298,19 +274,43 @@
     
     </summary>
     
-      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+      <category term="黑群晖" scheme="http://yoursite.com/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
     
-      <category term="PVE虚拟机" scheme="https://www.makedreamsir.xyz/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+      <category term="PVE虚拟机" scheme="http://yoursite.com/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
-      <category term="黑群晖" scheme="https://www.makedreamsir.xyz/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+      <category term="黑群晖" scheme="http://yoursite.com/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+    <link href="http://yoursite.com/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <id>http://yoursite.com/2019/07/17/hexo博客迁移/</id>
+    <published>2019-07-16T16:00:00.000Z</published>
+    <updated>2019-07-17T08:48:32.877Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="星际蜗牛" scheme="http://yoursite.com/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客页脚添加备案号</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/12/博客页脚添加备案号/</id>
+    <link href="http://yoursite.com/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
+    <id>http://yoursite.com/2019/07/12/博客页脚添加备案号/</id>
     <published>2019-07-11T16:00:00.000Z</published>
     <updated>2019-07-12T09:00:07.154Z</updated>
     
@@ -323,65 +323,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
-      <category term="备案" scheme="https://www.makedreamsir.xyz/tags/%E5%A4%87%E6%A1%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/小鸭子任务栏分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T07:48:15.546Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="RocketDock" scheme="https://www.makedreamsir.xyz/tags/RocketDock/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>录屏软件破解版分享——ApowerREC</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/录屏软件/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:42:01.776Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.apowersoft.cn/record-all-screen&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ApowerREC&lt;/a&gt;能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。&lt;/strong&gt; &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="备案" scheme="http://yoursite.com/tags/%E5%A4%87%E6%A1%88/"/>
     
   </entry>
   
   <entry>
     <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/11/uISP分享/</id>
+    <link href="http://yoursite.com/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>http://yoursite.com/2019/07/11/uISP分享/</id>
     <published>2019-07-10T16:00:00.000Z</published>
     <updated>2019-07-11T09:10:30.439Z</updated>
     
@@ -393,21 +347,67 @@
     
     </summary>
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/categories/STM32/"/>
+      <category term="STM32" scheme="http://yoursite.com/categories/STM32/"/>
     
-      <category term="实用软件分享" scheme="https://www.makedreamsir.xyz/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="STM32" scheme="https://www.makedreamsir.xyz/tags/STM32/"/>
+      <category term="STM32" scheme="http://yoursite.com/tags/STM32/"/>
     
-      <category term="实用软件" scheme="https://www.makedreamsir.xyz/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
+    <link href="http://yoursite.com/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+    <id>http://yoursite.com/2019/07/11/小鸭子任务栏分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T07:48:15.546Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://punklabs.com/" target="_blank" rel="noopener">RocketDock</a>是一款模仿苹果MAC桌面的<code>win</code>下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。</strong> </p><a id="more"></a><h2 id="RocketDock优势："><a href="#RocketDock优势：" class="headerlink" title="RocketDock优势："></a>RocketDock优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、RocketDock可以让用户的电脑更加美观炫酷</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、运用着极少的内存以及CPU资源</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、RocketDock可以自行选用自己喜欢的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、支持使用拖曳的方式来定制要启动的程序</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、给用户个性化的界面和图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>6、RocketDock内建多种面板模式，以及一组的图标</strong></p><p>&#160; &#160; &#160; &#160;<strong>7、让你自己打造一个动感味十足的个人专属快捷工具栏</strong></p><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dffuu19u15mhgdbot414ql1aq0a.png" alt><br><img src="https://static.dy208.cn/o_1dffv0c0ddm51t80r80gskpgoa.png" alt></p><h2 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h2><p>&#160; &#160; &#160; &#160;<strong>跟着安装向导一直往下走就可以了！</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>1、官网下载：<a href="https://punklabs.com/downloads/RocketDock-v1.3.5.exe" target="_blank" rel="noopener">点我下载</a></strong></p><p>&#160; &#160; &#160; &#160;<strong>2、网盘链接：<a href="https://www.lanzous.com/i4xp61e" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://punklabs.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RocketDock&lt;/a&gt;是一款模仿苹果MAC桌面的&lt;code&gt;win&lt;/code&gt;下的桌面美化工具，其操作简单、体积小巧，只占用很少的系统资源就可以为你带来很多实用的功能。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="RocketDock" scheme="http://yoursite.com/tags/RocketDock/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>录屏软件破解版分享——ApowerREC</title>
+    <link href="http://yoursite.com/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/07/11/录屏软件/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:42:01.776Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://www.apowersoft.cn/record-all-screen" target="_blank" rel="noopener">ApowerREC</a>能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。</strong> </p><a id="more"></a><h2 id="效果展示："><a href="#效果展示：" class="headerlink" title="效果展示："></a>效果展示：</h2><p><img src="https://static.dy208.cn/o_1dfg67p7o11f115ddh7l2611eea.png" alt></p><h2 id="破解方法："><a href="#破解方法：" class="headerlink" title="破解方法："></a>破解方法：</h2><p>&#160; &#160; &#160; &#160;<strong>将Crack文件夹里[Apowersoft.CommUtilities.dll]拷贝到软件安装目录下即可破解。</strong></p><h2 id="资源下载："><a href="#资源下载：" class="headerlink" title="资源下载："></a>资源下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xr5ih" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.apowersoft.cn/record-all-screen&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ApowerREC&lt;/a&gt;能够帮你音画同步录制电脑桌面操作、在线会议、娱乐视频等所有活动。它提供全屏录制、区域录制、画中画等多种录制视频模式，让用户轻松搞定聊天视频录像及教学视频。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/解决https开启不显示黑锁/</id>
+    <link href="http://yoursite.com/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+    <id>http://yoursite.com/2019/07/09/解决https开启不显示黑锁/</id>
     <published>2019-07-08T16:00:00.000Z</published>
     <updated>2019-07-10T07:27:56.986Z</updated>
     
@@ -420,19 +420,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
-      <category term="SSL" scheme="https://www.makedreamsir.xyz/tags/SSL/"/>
+      <category term="SSL" scheme="http://yoursite.com/tags/SSL/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/09/IP签名图/</id>
+    <link href="http://yoursite.com/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>http://yoursite.com/2019/07/09/IP签名图/</id>
     <published>2019-07-08T16:00:00.000Z</published>
     <updated>2019-07-12T09:48:37.253Z</updated>
     
@@ -445,42 +445,17 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/categories/hexo/"/>
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://www.makedreamsir.xyz/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决权限未更改回去引起的问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-11T06:44:52.721Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
-    
-    
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
-    
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
-    <link href="https://www.makedreamsir.xyz/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.makedreamsir.xyz/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
+    <link href="http://yoursite.com/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
     <published>2019-07-04T16:00:00.000Z</published>
     <updated>2019-07-05T08:31:01.179Z</updated>
     
@@ -493,14 +468,39 @@
     
     </summary>
     
-      <category term="Debian" scheme="https://www.makedreamsir.xyz/categories/Debian/"/>
+      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
     
     
-      <category term="debian" scheme="https://www.makedreamsir.xyz/tags/debian/"/>
+      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
     
-      <category term="SSH" scheme="https://www.makedreamsir.xyz/tags/SSH/"/>
+      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
     
-      <category term="Xftp" scheme="https://www.makedreamsir.xyz/tags/Xftp/"/>
+      <category term="Xftp" scheme="http://yoursite.com/tags/Xftp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+    <link href="http://yoursite.com/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/07/05/解决权限未更改回去引起的问题/</id>
+    <published>2019-07-04T16:00:00.000Z</published>
+    <updated>2019-07-11T06:44:52.721Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; 输入&lt;code&gt;ssh -T git@github.com&lt;/code&gt;出现如下图警告：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permissions 0777 for &amp;apos;/root/.ssh/id_rsa&amp;apos; are too open.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;It is required that your private key files are NOT accessible by others.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;This private key will be ignored.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Load key &amp;quot;/root/.ssh/id_rsa&amp;quot;: bad permissions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Permission denied (publickey).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
+    
+    
+      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+    
+      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
     
   </entry>
   
