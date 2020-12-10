@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-09-18T05:59:54.896Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://love421.github.io/"/>
+  <updated>2020-12-09T16:00:00.000Z</updated>
+  <id>https://love421.github.io/</id>
   
   <author>
     <name>love421</name>
@@ -17,9 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>示波器分析解码IIC波形</title>
+    <link href="https://love421.github.io/2020/12/10/%E7%A4%BA%E6%B3%A2%E5%99%A8%E5%88%86%E6%9E%90IIC%E6%B3%A2%E5%BD%A2/"/>
+    <id>https://love421.github.io/2020/12/10/示波器分析IIC波形/</id>
+    <published>2020-12-09T16:00:00.000Z</published>
+    <updated>2020-12-09T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>示波器分析解码IIC波形。</p><a id="more"></a><h2 id="测试设备："><a href="#测试设备：" class="headerlink" title="测试设备："></a>测试设备：</h2><p>1.MCU:STM32G0</p><p>2.IIC设备：lis2dh12(ST的三轴加速度计)</p><p>3.示波器：普源RIGOL DS1054Z</p><h2 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h2><p>1.开始信号：SCL在高电平期间，SDA由高变低即为开始信号</p><p>2.停止信号：SCL在高电平期间，SDA由低变高即为停止信号</p><p>3.应答信号ACK： 八位数据位发送完之后，第九个时钟即是ACK，0表示有ack，1表示nack</p><p>4.发送八位数据位的时候，<font size="5" color="red"><strong>电平变化总是发生在低电平期间</strong></font>，SCL为高电平器件不可以变动，只有开始信号和停止信号是在SCL为高器件变动</p><p>5.空闲态：SCL和SDA都为高</p><p>6.<font size="5" color="red"><strong>在切换数据的传输方向时，可以不必先产生停止条件再开始下次传输，而是直接再一次产生开始条件。</strong></font>I2C 总线在已经处于忙的状态下，再一次直接产生起始条件的情况被称为重复起始条件。例如：访问某一具有 I2C总线接口的 E2PROM 存储器时，主机先向存储器输入存储单元的地址信息（发送数据） ，然后再读取其中的存储内容（接收数据）。</p><p>7.启动信号START后紧接着发送一个地址字节，其中7位为被控器件的地址码，一位为读/写控制位R/W，R/W位为0表示由主控向被控器件写数据，R/W为1表示由主控向被控器件读数据；</p><p>8.START信号之后，主机的从设备地址发送出去。当从设备的ACK返回后，一个八位的子地址被发送出去，其低七位表示的是实际的寄存器地址，最高位表示的是是否地址自增。如果高位为1，则之后的寄存器地址自增，可允许多数据读写。</p><h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p><img src="https://img-blog.csdnimg.cn/20201207110146755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>1.黄色：SCL<br>2.蓝色：SDA<br>3.读取器件ID，理论上主控向IMU写数据即先发送器件地址（0x32）（R/W位为0），然后发送寄存器地址（0x0F），接着主控向IMU读数据即发送期间地址（0x33）（R/W位为1），接收IMU返回的值（0x33）。<br>4.示波器解码如下：<br><img src="https://img-blog.csdnimg.cn/20201207095710380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020120816410050.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;示波器分析解码IIC波形。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="电子DIY" scheme="https://love421.github.io/categories/%E7%94%B5%E5%AD%90DIY/"/>
+    
+    
+      <category term="3D打印机" scheme="https://love421.github.io/tags/3D%E6%89%93%E5%8D%B0%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="http://yoursite.com/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/"/>
-    <id>http://yoursite.com/2019/09/18/STM32定时器重映射/</id>
+    <link href="https://love421.github.io/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/"/>
+    <id>https://love421.github.io/2019/09/18/STM32定时器重映射/</id>
     <published>2019-09-17T16:00:00.000Z</published>
     <updated>2019-09-18T05:59:54.896Z</updated>
     
@@ -37,8 +59,8 @@
   
   <entry>
     <title>电脑屏幕截取gif动图——ScreenToGif</title>
-    <link href="http://yoursite.com/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    <id>http://yoursite.com/2019/08/16/gif截图软件分享/</id>
+    <link href="https://love421.github.io/2019/08/16/gif%E6%88%AA%E5%9B%BE%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    <id>https://love421.github.io/2019/08/16/gif截图软件分享/</id>
     <published>2019-08-15T16:00:00.000Z</published>
     <updated>2019-08-16T03:31:23.635Z</updated>
     
@@ -50,19 +72,19 @@
     
     </summary>
     
-      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="实用软件分享" scheme="https://love421.github.io/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="gif" scheme="http://yoursite.com/tags/gif/"/>
+      <category term="gif" scheme="https://love421.github.io/tags/gif/"/>
     
-      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="实用软件" scheme="https://love421.github.io/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>记录Altium Designer使用中实用的功能</title>
-    <link href="http://yoursite.com/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2019/08/15/Altium Designer使用技巧记录/</id>
+    <link href="https://love421.github.io/2019/08/15/Altium%20Designer%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E8%AE%B0%E5%BD%95/"/>
+    <id>https://love421.github.io/2019/08/15/Altium Designer使用技巧记录/</id>
     <published>2019-08-14T16:00:00.000Z</published>
     <updated>2019-08-14T16:00:00.000Z</updated>
     
@@ -74,17 +96,17 @@
     
     </summary>
     
-      <category term="Altium Designer" scheme="http://yoursite.com/categories/Altium-Designer/"/>
+      <category term="Altium Designer" scheme="https://love421.github.io/categories/Altium-Designer/"/>
     
     
-      <category term="Altium Designer" scheme="http://yoursite.com/tags/Altium-Designer/"/>
+      <category term="Altium Designer" scheme="https://love421.github.io/tags/Altium-Designer/"/>
     
   </entry>
   
   <entry>
     <title>ESP8266擦除flash最简单的方法</title>
-    <link href="http://yoursite.com/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
-    <id>http://yoursite.com/2019/08/03/ESP8266擦除flash/</id>
+    <link href="https://love421.github.io/2019/08/03/ESP8266%E6%93%A6%E9%99%A4flash/"/>
+    <id>https://love421.github.io/2019/08/03/ESP8266擦除flash/</id>
     <published>2019-08-02T16:00:00.000Z</published>
     <updated>2019-08-03T13:33:24.801Z</updated>
     
@@ -96,21 +118,21 @@
     
     </summary>
     
-      <category term="电子DIY" scheme="http://yoursite.com/categories/%E7%94%B5%E5%AD%90DIY/"/>
+      <category term="电子DIY" scheme="https://love421.github.io/categories/%E7%94%B5%E5%AD%90DIY/"/>
     
-      <category term="ESP8266" scheme="http://yoursite.com/categories/ESP8266/"/>
+      <category term="ESP8266" scheme="https://love421.github.io/categories/ESP8266/"/>
     
     
-      <category term="esp8266" scheme="http://yoursite.com/tags/esp8266/"/>
+      <category term="esp8266" scheme="https://love421.github.io/tags/esp8266/"/>
     
-      <category term="flash" scheme="http://yoursite.com/tags/flash/"/>
+      <category term="flash" scheme="https://love421.github.io/tags/flash/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装ZeroTier实现内网穿透</title>
-    <link href="http://yoursite.com/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    <id>http://yoursite.com/2019/07/30/Debian安装ZeroTier实现内网穿透/</id>
+    <link href="https://love421.github.io/2019/07/30/Debian%E5%AE%89%E8%A3%85ZeroTier%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    <id>https://love421.github.io/2019/07/30/Debian安装ZeroTier实现内网穿透/</id>
     <published>2019-07-29T16:00:00.000Z</published>
     <updated>2019-07-30T09:54:33.852Z</updated>
     
@@ -122,23 +144,23 @@
     
     </summary>
     
-      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
-      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
+      <category term="Debian" scheme="https://love421.github.io/categories/Debian/"/>
     
     
-      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
-      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+      <category term="debian" scheme="https://love421.github.io/tags/debian/"/>
     
-      <category term="ZeroTier" scheme="http://yoursite.com/tags/ZeroTier/"/>
+      <category term="ZeroTier" scheme="https://love421.github.io/tags/ZeroTier/"/>
     
   </entry>
   
   <entry>
     <title>解决Error listen EADDRINUSE问题</title>
-    <link href="http://yoursite.com/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2019/07/29/解决Error listen EADDRINUSE问题/</id>
+    <link href="https://love421.github.io/2019/07/29/%E8%A7%A3%E5%86%B3Error%20listen%20EADDRINUSE%E9%97%AE%E9%A2%98/"/>
+    <id>https://love421.github.io/2019/07/29/解决Error listen EADDRINUSE问题/</id>
     <published>2019-07-28T16:00:00.000Z</published>
     <updated>2019-07-29T08:43:00.826Z</updated>
     
@@ -150,23 +172,23 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
-      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
+      <category term="Debian" scheme="https://love421.github.io/categories/Debian/"/>
     
     
-      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+      <category term="debian" scheme="https://love421.github.io/tags/debian/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
     
-      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+      <category term="SSH" scheme="https://love421.github.io/tags/SSH/"/>
     
   </entry>
   
   <entry>
     <title>markdown常用语法记录</title>
-    <link href="http://yoursite.com/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
-    <id>http://yoursite.com/2019/07/29/markdown常用语法记录/</id>
+    <link href="https://love421.github.io/2019/07/29/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>https://love421.github.io/2019/07/29/markdown常用语法记录/</id>
     <published>2019-07-28T16:00:00.000Z</published>
     <updated>2019-07-28T16:00:00.000Z</updated>
     
@@ -178,17 +200,17 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
     
-      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
+      <category term="markdown" scheme="https://love421.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装花生壳实现内网穿透</title>
-    <link href="http://yoursite.com/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
-    <id>http://yoursite.com/2019/07/26/花生壳内网穿透/</id>
+    <link href="https://love421.github.io/2019/07/26/%E8%8A%B1%E7%94%9F%E5%A3%B3%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+    <id>https://love421.github.io/2019/07/26/花生壳内网穿透/</id>
     <published>2019-07-25T16:00:00.000Z</published>
     <updated>2019-07-25T16:00:00.000Z</updated>
     
@@ -200,21 +222,21 @@
     
     </summary>
     
-      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
     
-      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
-      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+      <category term="debian" scheme="https://love421.github.io/tags/debian/"/>
     
-      <category term="花生壳" scheme="http://yoursite.com/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
+      <category term="花生壳" scheme="https://love421.github.io/tags/%E8%8A%B1%E7%94%9F%E5%A3%B3/"/>
     
   </entry>
   
   <entry>
     <title>DMZ和端口转发区别、优缺点和适用场景</title>
-    <link href="http://yoursite.com/2019/07/25/DMZ/"/>
-    <id>http://yoursite.com/2019/07/25/DMZ/</id>
+    <link href="https://love421.github.io/2019/07/25/DMZ/"/>
+    <id>https://love421.github.io/2019/07/25/DMZ/</id>
     <published>2019-07-24T16:00:00.000Z</published>
     <updated>2019-07-24T16:00:00.000Z</updated>
     
@@ -226,19 +248,19 @@
     
     </summary>
     
-      <category term="内网穿透" scheme="http://yoursite.com/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/categories/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
     
-      <category term="DMZ" scheme="http://yoursite.com/tags/DMZ/"/>
+      <category term="DMZ" scheme="https://love421.github.io/tags/DMZ/"/>
     
-      <category term="内网穿透" scheme="http://yoursite.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
+      <category term="内网穿透" scheme="https://love421.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
   <entry>
     <title>解决执行hexo g报错ERROR Local hexo not found in XXX问题</title>
-    <link href="http://yoursite.com/2019/07/18/%E8%A7%A3%E5%86%B3hexo%20g%E6%8A%A5%E9%94%99/"/>
-    <id>http://yoursite.com/2019/07/18/解决hexo g报错/</id>
+    <link href="https://love421.github.io/2019/07/18/%E8%A7%A3%E5%86%B3hexo%20g%E6%8A%A5%E9%94%99/"/>
+    <id>https://love421.github.io/2019/07/18/解决hexo g报错/</id>
     <published>2019-07-17T16:00:00.000Z</published>
     <updated>2019-07-18T02:52:14.237Z</updated>
     
@@ -251,17 +273,41 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
+    <link href="https://love421.github.io/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
+    <id>https://love421.github.io/2019/07/17/hexo博客迁移/</id>
+    <published>2019-07-16T16:00:00.000Z</published>
+    <updated>2019-07-17T08:48:32.877Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
+    
+      <category term="星际蜗牛" scheme="https://love421.github.io/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
     
   </entry>
   
   <entry>
     <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
-    <link href="http://yoursite.com/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
-    <id>http://yoursite.com/2019/07/17/PVE下NAS启动不了/</id>
+    <link href="https://love421.github.io/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+    <id>https://love421.github.io/2019/07/17/PVE下NAS启动不了/</id>
     <published>2019-07-16T16:00:00.000Z</published>
     <updated>2019-07-17T04:54:02.462Z</updated>
     
@@ -274,43 +320,19 @@
     
     </summary>
     
-      <category term="黑群晖" scheme="http://yoursite.com/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+      <category term="黑群晖" scheme="https://love421.github.io/categories/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
     
-      <category term="PVE虚拟机" scheme="http://yoursite.com/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+      <category term="PVE虚拟机" scheme="https://love421.github.io/tags/PVE%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
-      <category term="黑群晖" scheme="http://yoursite.com/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
-    <link href="http://yoursite.com/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
-    <id>http://yoursite.com/2019/07/17/hexo博客迁移/</id>
-    <published>2019-07-16T16:00:00.000Z</published>
-    <updated>2019-07-17T08:48:32.877Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>前言：</strong> 博主的<a href="https://www.makedreamsir.xyz" target="_blank" rel="noopener">个人博客</a>是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。</p><a id="more"></a><h2 id="一、笔记本环境搭建"><a href="#一、笔记本环境搭建" class="headerlink" title="一、笔记本环境搭建"></a>一、笔记本环境搭建</h2><p><strong>1.笔记本安装Node.js</strong></p><p><strong>2.笔记本安装Git</strong></p><p><strong>3.在笔记本中新建一个文件夹hexo</strong></p><h2 id="二、拷贝蜗牛中文件"><a href="#二、拷贝蜗牛中文件" class="headerlink" title="二、拷贝蜗牛中文件"></a>二、拷贝蜗牛中文件</h2><p><strong>1.拷贝蜗牛中文件到笔记本新建的hexo文件夹中，主要拷贝如下文件：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/ZLtjn1.png" alt="ZLtjn1.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line">package.json</span><br><span class="line">scaffolds/</span><br><span class="line">source/</span><br><span class="line">themes/</span><br></pre></td></tr></table></figure><p><strong>其中<code>/</code>代表拷贝的是文件夹</strong></p><h2 id="三、安装模块"><a href="#三、安装模块" class="headerlink" title="三、安装模块"></a>三、安装模块</h2><p><strong>打开笔记本新建的hexo文件夹，并在hexo文件夹空白处右键鼠标，点击 Git Bash Here，输入以下命令：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.安装hexo</span><br><span class="line">   npm install -g hexo</span><br><span class="line"></span><br><span class="line">2.本地测试的时候需要用hexo server</span><br><span class="line">   npm i hexo-server</span><br><span class="line"></span><br><span class="line">3.将文章部署到github上的模块</span><br><span class="line">   npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">4.安装RSS插件</span><br><span class="line">   npm install hexo-generator-feed --save</span><br><span class="line"></span><br><span class="line">5.添加Sitemap,加速网页收录速度</span><br><span class="line">   npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure><h2 id="四、本地查看效果"><a href="#四、本地查看效果" class="headerlink" title="四、本地查看效果"></a>四、本地查看效果</h2><p><strong>执行如下命令之后，在浏览器打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>查看效果</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><strong>最后大功告成，再也不担心蜗牛挂了博客也随着挂了，enjoy！</strong></p><p><img src="https://static.dy208.cn/o_1dfvhpdot150h1igj1hlp16ddb2ba.png" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt; 博主的&lt;a href=&quot;https://www.makedreamsir.xyz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;个人博客&lt;/a&gt;是搭建在星际蜗牛上的，担心哪一天要是蜗牛挂了，博客再也随着去了，那就欲哭无泪啊。所以，将hexo博客从蜗牛迁移到笔记本上做到有备无患，防患于未然。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="星际蜗牛" scheme="http://yoursite.com/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
+      <category term="黑群晖" scheme="https://love421.github.io/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客页脚添加备案号</title>
-    <link href="http://yoursite.com/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
-    <id>http://yoursite.com/2019/07/12/博客页脚添加备案号/</id>
+    <link href="https://love421.github.io/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
+    <id>https://love421.github.io/2019/07/12/博客页脚添加备案号/</id>
     <published>2019-07-11T16:00:00.000Z</published>
     <updated>2019-07-12T09:00:07.154Z</updated>
     
@@ -323,45 +345,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
     
-      <category term="备案" scheme="http://yoursite.com/tags/%E5%A4%87%E6%A1%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-    <link href="http://yoursite.com/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-    <id>http://yoursite.com/2019/07/11/uISP分享/</id>
-    <published>2019-07-10T16:00:00.000Z</published>
-    <updated>2019-07-11T09:10:30.439Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="STM32" scheme="http://yoursite.com/categories/STM32/"/>
-    
-      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="STM32" scheme="http://yoursite.com/tags/STM32/"/>
-    
-      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="备案" scheme="https://love421.github.io/tags/%E5%A4%87%E6%A1%88/"/>
     
   </entry>
   
   <entry>
     <title>WIN系统仿MAC任务栏工具分享——RocketDock</title>
-    <link href="http://yoursite.com/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
-    <id>http://yoursite.com/2019/07/11/小鸭子任务栏分享/</id>
+    <link href="https://love421.github.io/2019/07/11/%E5%B0%8F%E9%B8%AD%E5%AD%90%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%88%86%E4%BA%AB/"/>
+    <id>https://love421.github.io/2019/07/11/小鸭子任务栏分享/</id>
     <published>2019-07-10T16:00:00.000Z</published>
     <updated>2019-07-11T07:48:15.546Z</updated>
     
@@ -373,19 +369,19 @@
     
     </summary>
     
-      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="实用软件分享" scheme="https://love421.github.io/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="实用软件" scheme="https://love421.github.io/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
-      <category term="RocketDock" scheme="http://yoursite.com/tags/RocketDock/"/>
+      <category term="RocketDock" scheme="https://love421.github.io/tags/RocketDock/"/>
     
   </entry>
   
   <entry>
     <title>录屏软件破解版分享——ApowerREC</title>
-    <link href="http://yoursite.com/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://yoursite.com/2019/07/11/录屏软件/</id>
+    <link href="https://love421.github.io/2019/07/11/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://love421.github.io/2019/07/11/录屏软件/</id>
     <published>2019-07-10T16:00:00.000Z</published>
     <updated>2019-07-11T09:42:01.776Z</updated>
     
@@ -397,17 +393,43 @@
     
     </summary>
     
-      <category term="实用软件分享" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+      <category term="实用软件分享" scheme="https://love421.github.io/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="实用软件" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+      <category term="实用软件" scheme="https://love421.github.io/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+    <link href="https://love421.github.io/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+    <id>https://love421.github.io/2019/07/11/uISP分享/</id>
+    <published>2019-07-10T16:00:00.000Z</published>
+    <updated>2019-07-11T09:10:30.439Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;code&gt;uISP&lt;/code&gt;是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具&lt;code&gt;FlashLoader&lt;/code&gt;。&lt;/strong&gt;&lt;br&gt;&lt;img src=&quot;https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="STM32" scheme="https://love421.github.io/categories/STM32/"/>
+    
+      <category term="实用软件分享" scheme="https://love421.github.io/categories/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="STM32" scheme="https://love421.github.io/tags/STM32/"/>
+    
+      <category term="实用软件" scheme="https://love421.github.io/tags/%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>解决github page自定义域名后实现https访问却不显示黑锁问题</title>
-    <link href="http://yoursite.com/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
-    <id>http://yoursite.com/2019/07/09/解决https开启不显示黑锁/</id>
+    <link href="https://love421.github.io/2019/07/09/%E8%A7%A3%E5%86%B3https%E5%BC%80%E5%90%AF%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%BB%91%E9%94%81/"/>
+    <id>https://love421.github.io/2019/07/09/解决https开启不显示黑锁/</id>
     <published>2019-07-08T16:00:00.000Z</published>
     <updated>2019-07-10T07:27:56.986Z</updated>
     
@@ -420,19 +442,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
     
-      <category term="SSL" scheme="http://yoursite.com/tags/SSL/"/>
+      <category term="SSL" scheme="https://love421.github.io/tags/SSL/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客美化之——IP签名图一网打尽</title>
-    <link href="http://yoursite.com/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
-    <id>http://yoursite.com/2019/07/09/IP签名图/</id>
+    <link href="https://love421.github.io/2019/07/09/IP%E7%AD%BE%E5%90%8D%E5%9B%BE/"/>
+    <id>https://love421.github.io/2019/07/09/IP签名图/</id>
     <published>2019-07-08T16:00:00.000Z</published>
     <updated>2019-07-12T09:48:37.253Z</updated>
     
@@ -445,44 +467,17 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+      <category term="hexo" scheme="https://love421.github.io/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
-    <link href="http://yoursite.com/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2019/07/05/解决Debian系统下普通用户无法访问root文件夹问题/</id>
-    <published>2019-07-04T16:00:00.000Z</published>
-    <updated>2019-07-05T08:31:01.179Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>Debian9</code>系统默认无法通过<code>root</code>身份直接登录<code>Xftp</code>，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。</p><p><img src="https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png" alt></p><a id="more"></a><p><strong>解决办法：</strong> 以普通用户身份登录<code>Debian9</code>系统的<code>SSH</code>，然后再用<code>su root</code>切换到root用户，最后输入<code>chmod -R 777 路径</code>即可更改路径下文件夹和子文件夹全部权限。</p><p><strong>最终效果如下：</strong></p><p><img src="https://static.dy208.cn/o_1df01ktrb1v5g17ptn6q1di6jfra.png" alt></p><p><strong>注意事项：</strong> 更改完之后，记得再更改回去哦，免得一些不必要的麻烦发生！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;问题描述：&lt;/strong&gt; &lt;code&gt;Debian9&lt;/code&gt;系统默认无法通过&lt;code&gt;root&lt;/code&gt;身份直接登录&lt;code&gt;Xftp&lt;/code&gt;，所以只能以普通用户的身份登录，但是这就导致了很多文件夹不能访问。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://static.dy208.cn/o_1df0184g6ak71c3fqho1pki185pa.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
-    
-    
-      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
-    
-      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
-    
-      <category term="Xftp" scheme="http://yoursite.com/tags/Xftp/"/>
+      <category term="hexo" scheme="https://love421.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-    <link href="http://yoursite.com/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2019/07/05/解决权限未更改回去引起的问题/</id>
+    <link href="https://love421.github.io/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://love421.github.io/2019/07/05/解决权限未更改回去引起的问题/</id>
     <published>2019-07-04T16:00:00.000Z</published>
     <updated>2019-07-11T06:44:52.721Z</updated>
     
@@ -495,12 +490,12 @@
     
     </summary>
     
-      <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
+      <category term="Debian" scheme="https://love421.github.io/categories/Debian/"/>
     
     
-      <category term="debian" scheme="http://yoursite.com/tags/debian/"/>
+      <category term="debian" scheme="https://love421.github.io/tags/debian/"/>
     
-      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+      <category term="SSH" scheme="https://love421.github.io/tags/SSH/"/>
     
   </entry>
   

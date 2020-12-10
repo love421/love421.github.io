@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>示波器分析解码IIC波形</title>
+      <link href="/2020/12/10/%E7%A4%BA%E6%B3%A2%E5%99%A8%E5%88%86%E6%9E%90IIC%E6%B3%A2%E5%BD%A2/"/>
+      <url>/2020/12/10/%E7%A4%BA%E6%B3%A2%E5%99%A8%E5%88%86%E6%9E%90IIC%E6%B3%A2%E5%BD%A2/</url>
+      
+        <content type="html"><![CDATA[<p>示波器分析解码IIC波形。</p><a id="more"></a><h2 id="测试设备："><a href="#测试设备：" class="headerlink" title="测试设备："></a>测试设备：</h2><p>1.MCU:STM32G0</p><p>2.IIC设备：lis2dh12(ST的三轴加速度计)</p><p>3.示波器：普源RIGOL DS1054Z</p><h2 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h2><p>1.开始信号：SCL在高电平期间，SDA由高变低即为开始信号</p><p>2.停止信号：SCL在高电平期间，SDA由低变高即为停止信号</p><p>3.应答信号ACK： 八位数据位发送完之后，第九个时钟即是ACK，0表示有ack，1表示nack</p><p>4.发送八位数据位的时候，<font size="5" color="red"><strong>电平变化总是发生在低电平期间</strong></font>，SCL为高电平器件不可以变动，只有开始信号和停止信号是在SCL为高器件变动</p><p>5.空闲态：SCL和SDA都为高</p><p>6.<font size="5" color="red"><strong>在切换数据的传输方向时，可以不必先产生停止条件再开始下次传输，而是直接再一次产生开始条件。</strong></font>I2C 总线在已经处于忙的状态下，再一次直接产生起始条件的情况被称为重复起始条件。例如：访问某一具有 I2C总线接口的 E2PROM 存储器时，主机先向存储器输入存储单元的地址信息（发送数据） ，然后再读取其中的存储内容（接收数据）。</p><p>7.启动信号START后紧接着发送一个地址字节，其中7位为被控器件的地址码，一位为读/写控制位R/W，R/W位为0表示由主控向被控器件写数据，R/W为1表示由主控向被控器件读数据；</p><p>8.START信号之后，主机的从设备地址发送出去。当从设备的ACK返回后，一个八位的子地址被发送出去，其低七位表示的是实际的寄存器地址，最高位表示的是是否地址自增。如果高位为1，则之后的寄存器地址自增，可允许多数据读写。</p><h2 id="时序图"><a href="#时序图" class="headerlink" title="时序图"></a>时序图</h2><p><img src="https://img-blog.csdnimg.cn/20201207110146755.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>1.黄色：SCL<br>2.蓝色：SDA<br>3.读取器件ID，理论上主控向IMU写数据即先发送器件地址（0x32）（R/W位为0），然后发送寄存器地址（0x0F），接着主控向IMU读数据即发送期间地址（0x33）（R/W位为1），接收IMU返回的值（0x33）。<br>4.示波器解码如下：<br><img src="https://img-blog.csdnimg.cn/20201207095710380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020120816410050.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM3NDQ5MzQy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电子DIY </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 3D打印机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客美化之——IP签名图一网打尽</title>
       <link href="/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/"/>
       <url>/2019/09/18/STM32%E5%AE%9A%E6%97%B6%E5%99%A8%E9%87%8D%E6%98%A0%E5%B0%84/</url>
@@ -266,33 +291,6 @@
     
     
     <entry>
-      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
-      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
-      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 黑群晖 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> PVE虚拟机 </tag>
-            
-            <tag> 黑群晖 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo博客从一台电脑迁移备份到另一台电脑</title>
       <link href="/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/"/>
       <url>/2019/07/17/hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB/</url>
@@ -320,6 +318,33 @@
     
     
     <entry>
+      <title>解决PVE虚拟机下kvm:cannot set up guest memory &#39;pc.ram&#39;:Cannot allocate memory</title>
+      <link href="/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/"/>
+      <url>/2019/07/17/PVE%E4%B8%8BNAS%E5%90%AF%E5%8A%A8%E4%B8%8D%E4%BA%86/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> <code>PVE</code>虚拟机下电机NAS启动按钮之后启动不了并报如下错误：</p><p><img src="https://s2.ax1x.com/2019/07/17/ZqTHFf.png" alt="ZqTHFf.png"></p><a id="more"></a><p><strong>解决办法：</strong> 黑群晖启动报错是内存不够，因为我们设置的内存是4G，而我们启动NAS的时候，还有一个Debian也在运行，Debian也占用内存，所以解决办法就是将NAS内存修改小一点即可。<br><img src="https://s2.ax1x.com/2019/07/17/Zq7MtK.png" alt="Zq7MtK.png"></p><p><strong>修改完再次点击启动效果如下：</strong></p><p><img src="https://s2.ax1x.com/2019/07/17/Zq7GXd.png" alt="Zq7GXd.png"></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 黑群晖 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PVE虚拟机 </tag>
+            
+            <tag> 黑群晖 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客页脚添加备案号</title>
       <link href="/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/"/>
       <url>/2019/07/12/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E8%84%9A%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%8F%B7/</url>
@@ -339,35 +364,6 @@
             <tag> hexo </tag>
             
             <tag> 备案 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
-      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
-      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
-      
-        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> STM32 </category>
-          
-          <category> 实用软件分享 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> STM32 </tag>
-            
-            <tag> 实用软件 </tag>
             
         </tags>
       
@@ -418,6 +414,35 @@
       
       
         <tags>
+            
+            <tag> 实用软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>秒杀官方的STM32串口下载ISP工具——uISP</title>
+      <link href="/2019/07/11/uISP%E5%88%86%E4%BA%AB/"/>
+      <url>/2019/07/11/uISP%E5%88%86%E4%BA%AB/</url>
+      
+        <content type="html"><![CDATA[<p><strong><code>uISP</code>是一款免费的通过串口为STM32烧写程序的工具，秒杀ST官方工具<code>FlashLoader</code>。</strong><br><img src="https://static.dy208.cn/o_1dfg3bf0ap0m1jdns3mn7e16aa.png" alt></p><a id="more"></a><h2 id="uISP优势："><a href="#uISP优势：" class="headerlink" title="uISP优势："></a>uISP优势：</h2><p>&#160; &#160; &#160; &#160;<strong>1、所有设置均可保存，下次打开只需点击<code>下载文件</code>即可实现一键下载，免去众多繁琐操作；</strong></p><p>&#160; &#160; &#160; &#160;<strong>2、采用串口硬件流控制STM32进入SYSTEM BOOT模式，免去手动复位的麻烦；</strong></p><p>&#160; &#160; &#160; &#160;<strong>3、可以选择<code>下载后直接跳转运行</code>实现程序烧写成功之后自动运行，无需手动更改BOOT选项实现硬件复位运行；</strong></p><p>&#160; &#160; &#160; &#160;<strong>4、免安装，打开即可使用；</strong></p><p>&#160; &#160; &#160; &#160;<strong>5、支持设置读保护和写保护；</strong></p><h2 id="安装包下载："><a href="#安装包下载：" class="headerlink" title="安装包下载："></a>安装包下载：</h2><p>&#160; &#160; &#160; &#160;<strong>网盘链接：<a href="https://www.lanzous.com/i4xqifg" target="_blank" rel="noopener">点我下载</a></strong></p><p><strong>最后的最后，看贴回帖是一种美德，你说呢！</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> STM32 </category>
+          
+          <category> 实用软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> STM32 </tag>
             
             <tag> 实用软件 </tag>
             
@@ -480,6 +505,33 @@
     
     
     <entry>
+      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
+      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Debian </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> debian </tag>
+            
+            <tag> SSH </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决Debian系统下普通用户无法访问root文件夹问题</title>
       <link href="/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/"/>
       <url>/2019/07/05/%E8%A7%A3%E5%86%B3Debian%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AEroot%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
@@ -501,33 +553,6 @@
             <tag> SSH </tag>
             
             <tag> Xftp </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>解决Permissions 0777 for &#39;/root/.ssh/id_rsa&#39; are too open问题</title>
-      <link href="/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/07/05/%E8%A7%A3%E5%86%B3%E6%9D%83%E9%99%90%E6%9C%AA%E6%9B%B4%E6%94%B9%E5%9B%9E%E5%8E%BB%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><strong>问题描述：</strong> 输入<code>ssh -T git@github.com</code>出现如下图警告：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @</span><br><span class="line">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</span><br><span class="line">Permissions 0777 for &apos;/root/.ssh/id_rsa&apos; are too open.</span><br><span class="line">It is required that your private key files are NOT accessible by others.</span><br><span class="line">This private key will be ignored.</span><br><span class="line">Load key &quot;/root/.ssh/id_rsa&quot;: bad permissions</span><br><span class="line">Permission denied (publickey).</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>解决办法：</strong> <code>id_rsa</code>文件默认权限属性是<code>700</code>，当初为了打开<code>root</code>文件夹临时更成了<code>777</code>，所以只要把<code>root</code>文件夹权限改回<code>700</code>即可</p><p><strong>操作步骤：</strong> 输入<code>chmod -R 700 /root</code>即可。</p><p><strong>最终效果如下：</strong><br><img src="https://static.dy208.cn/o_1df03orvfoc7g931joadavc23a.png" alt></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Debian </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> debian </tag>
-            
-            <tag> SSH </tag>
             
         </tags>
       
